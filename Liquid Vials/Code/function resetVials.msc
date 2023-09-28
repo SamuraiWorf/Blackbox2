@@ -1,0 +1,83 @@
+@using blackbox2_vials
+
+@if blockedVialInteract == true && exitOpen == false
+    @return
+@fi
+
+@var vial1 = Vial(BlockLocation(-3528,74,1710,"theta"),Int[0,0,1,2,3,1,4])
+@var vial2 = Vial(BlockLocation(-3524,74,1705,"theta"),Int[4,1,4,3,3,2,5])
+@var vial3 = Vial(BlockLocation(-3520,74,1705,"theta"),Int[5,2,5,5,5,3,2])
+@var vial4 = Vial(BlockLocation(-3516,74,1705,"theta"),Int[3,5,3,1,4,4,3])
+@var vial5 = Vial(BlockLocation(-3512,74,1705,"theta"),Int[2,1,4,5,2,4,2])
+@var vial6 = Vial(BlockLocation(-3508,74,1710,"theta"),Int[0,0,0,0,0,0,0])
+
+@fast
+
+@for Int i in list::range(0,7)
+    @bypass /setblock {{vial1.baseBlock.getX()}} {{vial1.baseBlock.getY()+7-i}} {{vial1.baseBlock.getZ()}} {{blocks[vial1.liquids[i]]}}
+    @bypass /setblock {{vial2.baseBlock.getX()}} {{vial2.baseBlock.getY()+7-i}} {{vial2.baseBlock.getZ()}} {{blocks[vial2.liquids[i]]}}
+    @bypass /setblock {{vial3.baseBlock.getX()}} {{vial3.baseBlock.getY()+7-i}} {{vial3.baseBlock.getZ()}} {{blocks[vial3.liquids[i]]}}
+    @bypass /setblock {{vial4.baseBlock.getX()}} {{vial4.baseBlock.getY()+7-i}} {{vial4.baseBlock.getZ()}} {{blocks[vial4.liquids[i]]}}
+    @bypass /setblock {{vial5.baseBlock.getX()}} {{vial5.baseBlock.getY()+7-i}} {{vial5.baseBlock.getZ()}} {{blocks[vial5.liquids[i]]}}
+    @bypass /setblock {{vial6.baseBlock.getX()}} {{vial6.baseBlock.getY()+7-i}} {{vial6.baseBlock.getZ()}} {{blocks[vial6.liquids[i]]}}
+@done
+
+@delay 1
+
+@bypass /setblock -3516 71 1707 air
+@bypass /setblock -3516 71 1708 air
+@bypass /setblock -3516 71 1709 air
+@bypass /setblock -3516 71 1710 air
+@bypass /setblock -3516 71 1711 air
+@bypass /setblock -3516 71 1712 air
+@bypass /setblock -3516 71 1713 air
+@bypass /setblock -3516 71 1714 air
+@bypass /setblock -3516 71 1715 air
+@bypass /setblock -3516 71 1716 air
+@bypass /setblock -3516 71 1717 air
+@bypass /setblock -3516 71 1718 air
+@bypass /setblock -3516 71 1719 air
+@bypass /setblock -3516 71 1720 air
+@bypass /setblock -3516 71 1721 air
+@bypass /setblock -3516 71 1722 air
+@bypass /setblock -3517 71 1722 air
+@bypass /setblock -3515 71 1722 air
+@bypass /setblock -3518 71 1722 air
+@bypass /setblock -3514 71 1722 air
+@bypass /setblock -3518 71 1723 air
+@bypass /setblock -3513 71 1722 air
+@bypass /setblock -3518 71 1724 air
+@bypass /setblock -3512 71 1722 air
+@bypass /setblock -3518 71 1725 air
+@bypass /setblock -3511 71 1722 air
+@bypass /setblock -3518 71 1726 air
+@bypass /setblock -3510 71 1722 air
+@bypass /setblock -3518 71 1727 air
+@bypass /setblock -3509 71 1722 air
+@bypass /setblock -3508 71 1722 air
+@bypass /setblock -3507 71 1722 air
+@bypass /setblock -3507 70 1722 air
+@bypass /setblock -3507 69 1722 air
+@bypass /setblock -3507 68 1722 air
+@bypass /setblock -3507 67 1722 air
+@bypass /setblock -3507 66 1722 air
+@bypass /setblock -3507 65 1722 air
+@bypass /setblock -3518 76 1728 light_gray_concrete
+@bypass /setblock -3518 77 1728 light_gray_concrete
+@bypass /setblock -3518 78 1728 light_gray_concrete
+@bypass /setblock -3518 79 1728 light_gray_concrete
+@bypass /setblock -3518 80 1728 light_gray_concrete
+@bypass /setblock -3512 79 1728 dark_oak_planks
+@bypass /setblock -3512 78 1728 dark_oak_planks
+@bypass /setblock -3512 77 1728 dark_oak_planks
+@bypass /setblock -3513 79 1728 dark_oak_planks
+@bypass /setblock -3513 78 1728 dark_oak_planks
+@bypass /setblock -3513 77 1728 dark_oak_planks
+@bypass /setblock -3514 79 1728 dark_oak_planks
+@bypass /setblock -3514 78 1728 dark_oak_planks
+@bypass /setblock -3514 77 1728 dark_oak_planks
+
+@var reColorInputs(null, 2)
+@var selectedVial = null
+@var blockedVialInteract = false
+@var exitOpen = false

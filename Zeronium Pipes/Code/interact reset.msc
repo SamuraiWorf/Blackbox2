@@ -1,0 +1,4 @@
+@using blackbox2_pipes
+@global_cooldown 6
+
+@var resetPipes()

@@ -1,0 +1,34 @@
+@fast
+
+# Namespace
+@bypass /namespace remove blackbox2_vials
+
+# Reset Button
+@bypass /script remove interact -3521 76 1715
+
+# Check Solution Button
+@bypass /script remove interact -3515 76 1715
+
+# Vial1 Button
+@bypass /script remove interact -3523 75 1712
+
+# Vial2 Button
+@bypass /script remove interact -3522 75 1710
+
+# Vial3 Button
+@bypass /script remove interact -3519 75 1710
+
+# Vial4 Button
+@bypass /script remove interact -3517 75 1710
+
+# Vial5 Button
+@bypass /script remove interact -3514 75 1710
+
+# Vial6 Button
+@bypass /script remove interact -3513 75 1712
+
+# Reset End Area:
+@bypass /script remove area theta worf_vial_end
+
+# Reset Start Area:
+@bypass /script remove area theta worf_vial_start

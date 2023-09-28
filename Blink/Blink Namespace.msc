@@ -1,0 +1,13 @@
+@fast
+
+@bypass /namespace define blackbox2_blink
+@bypass /variable define blackbox2_blink Boolean interactBlock = false
+
+@bypass /type define blackbox2_blink BlinkPad
+@bypass /type field define blackbox2_blink BlinkPad Location pos
+@bypass /type field define blackbox2_blink BlinkPad Int state
+@bypass /type field define blackbox2_blink BlinkPad BlinkPad state0Target
+@bypass /type field define blackbox2_blink BlinkPad BlinkPad state1Target
+@bypass /type constructor define blackbox2_blink BlinkPad(Location pos)
+
+@bypass /script import constructor blackbox2_blink BlinkPad(Location) https://paste.minr.org/dahoridoko

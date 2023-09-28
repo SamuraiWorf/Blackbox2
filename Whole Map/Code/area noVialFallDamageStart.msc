@@ -1,0 +1,3 @@
+@fast
+
+@bypass /effect give @p minecraft:slow_falling 5 1 true

@@ -1,0 +1,2 @@
+@var this.baseBlock = baseBlock
+@var this.liquids = liquids

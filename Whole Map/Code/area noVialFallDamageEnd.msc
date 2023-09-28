@@ -1,0 +1,3 @@
+@fast
+
+@bypass /effect clear @p minecraft:slow_falling

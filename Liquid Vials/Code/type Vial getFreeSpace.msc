@@ -1,0 +1,11 @@
+@define Int freeSpace = 0
+
+@for Int i in this.liquids
+    @if i == 0
+        @var freeSpace += 1
+    @else
+        @return freeSpace
+    @fi
+@done
+
+@return freeSpace

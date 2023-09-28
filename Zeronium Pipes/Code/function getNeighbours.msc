@@ -1,0 +1,7 @@
+@define Int x = current.getX()
+@define Int y = current.getY()
+@define Int z = current.getZ()
+@define String w = "theta"
+
+@define Block[] blocks = Block[Block(x+1,y,z,w),Block(x-1,y,z,w),Block(x,y,z+1,w),Block(x,y,z-1,w)]
+@return blocks

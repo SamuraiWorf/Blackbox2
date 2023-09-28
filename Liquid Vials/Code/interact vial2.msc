@@ -1,0 +1,2 @@
+@using blackbox2_vials
+@var interactVial(block, vial2)

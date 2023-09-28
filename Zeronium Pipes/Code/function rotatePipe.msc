@@ -1,0 +1,23 @@
+@global_cooldown 6
+
+@fast
+
+@define String w = "theta"
+
+@define String block1 = Block(x+1,y,z,w).getBlockType().toLowerCase()
+@define String block2 = Block(x+1,y,z+1,w).getBlockType().toLowerCase()
+@define String block3 = Block(x,y,z+1,w).getBlockType().toLowerCase()
+@define String block4 = Block(x-1,y,z+1,w).getBlockType().toLowerCase()
+@define String block5 = Block(x-1,y,z,w).getBlockType().toLowerCase()
+@define String block6 = Block(x-1,y,z-1,w).getBlockType().toLowerCase()
+@define String block7 = Block(x,y,z-1,w).getBlockType().toLowerCase()
+@define String block8 = Block(x+1,y,z-1,w).getBlockType().toLowerCase()
+
+@bypass /setblock {{x+1}} {{y}} {{z}} {{block7}}
+@bypass /setblock {{x+1}} {{y}} {{z+1}} {{block8}}
+@bypass /setblock {{x}} {{y}} {{z+1}} {{block1}}
+@bypass /setblock {{x-1}} {{y}} {{z+1}} {{block2}}
+@bypass /setblock {{x-1}} {{y}} {{z}} {{block3}}
+@bypass /setblock {{x-1}} {{y}} {{z-1}} {{block4}}
+@bypass /setblock {{x}} {{y}} {{z-1}} {{block5}}
+@bypass /setblock {{x+1}} {{y}} {{z-1}} {{block6}}

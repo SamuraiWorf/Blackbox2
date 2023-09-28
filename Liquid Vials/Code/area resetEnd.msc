@@ -1,0 +1,4 @@
+@using blackbox2_vials
+@global_cooldown 6
+@delay 3s
+@var resetVials()

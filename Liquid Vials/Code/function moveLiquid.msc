@@ -1,0 +1,5 @@
+@define Int[] fromLiquid = from.getTopLiquid()
+
+@var from.removeTopLiquid()
+@delay 12
+@var to.putLiquid(fromLiquid[0], fromLiquid[1])

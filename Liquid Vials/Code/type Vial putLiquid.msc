@@ -1,0 +1,31 @@
+@define Int[] topLiquid = this.getTopLiquid()
+@define Int freeSpace = this.getFreeSpace()
+@define Int startY = this.baseBlock.getY() + 9
+
+@fast
+
+@if amount > freeSpace
+    @return
+@fi
+
+@if type != topLiquid[0] && topLiquid[0] != 0
+    @return
+@fi
+
+@for Int i in list::range(0, freeSpace + 2)
+    @for Int d in list::range(0, amount)
+	@if startY - i + d + 1 <= startY
+            @bypass /setblock {{this.baseBlock.getX()}} {{startY - i + d + 1}} {{this.baseBlock.getZ()}} air
+        @fi
+	@if startY - i + d <= startY
+            @bypass /setblock {{this.baseBlock.getX()}} {{startY - i + d}} {{this.baseBlock.getZ()}} {{blocks[type]}}
+        @fi
+    @done
+    @delay 4
+@done
+
+@for Int i in list::range(freeSpace-amount, freeSpace)
+    @var this.liquids[i] = type
+@done
+
+@return

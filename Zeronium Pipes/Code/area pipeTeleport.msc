@@ -1,0 +1,10 @@
+@using blackbox2_pipes
+
+@fast
+
+@if exitOpen == true
+    @var player.teleport(Position(Location(-3468.5D, 72D, 1731.5D, "theta"), player.getPosition().getYaw(), player.getPosition().getPitch()))
+@else
+    @player &4&lThe puzzle is not solved yet!
+    @var player.teleport(Position(Location(-3472.5D, 65D, 1731.5D, "theta"), player.getPosition().getYaw(), player.getPosition().getPitch()))
+@fi

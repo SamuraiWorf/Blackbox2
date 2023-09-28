@@ -1,0 +1,6 @@
+@using blackbox2_pipes
+@global_cooldown 6
+
+@if pipeTesting == false && exitOpen == false
+    @var rotatePipe(block.getX(), block.getY()-2, block.getZ())
+@fi

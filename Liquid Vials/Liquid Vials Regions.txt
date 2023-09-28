@@ -1,0 +1,8 @@
+Select -3523 90 1725 and -3527 90 1723 (Diamond Blocks)
+/rg define worf_vial_start
+
+Select -3533 69 1727 and -3504 84 1701 (Diamond Blocks)
+/rg define worf_vial_area
+
+Select -3515 80 1730 and -3511 76 1730 (Diamond Blocks)
+/rg define worf_vial_end

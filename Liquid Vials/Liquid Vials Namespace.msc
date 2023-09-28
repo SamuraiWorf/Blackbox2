@@ -1,0 +1,43 @@
+@fast
+
+@bypass /namespace define blackbox2_vials
+@bypass /variable define blackbox2_vials String[] blocks = String["air","green_concrete","orange_concrete","white_concrete","light_blue_concrete","gray_concrete"]
+@bypass /variable define blackbox2_vials Boolean blockedVialInteract = false
+@bypass /variable define blackbox2_vials Boolean exitOpen = false
+
+@bypass /type define blackbox2_vials Vial
+@bypass /type field define blackbox2_vials Vial BlockLocation baseBlock
+@bypass /type field define blackbox2_vials Vial Int[] liquids
+@bypass /type constructor define blackbox2_vials Vial(BlockLocation baseBlock, Int[] liquids)
+@bypass /type method define blackbox2_vials Vial Int[] getTopLiquid()
+@bypass /type method define blackbox2_vials Vial Int getFreeSpace()
+@bypass /type method define blackbox2_vials Vial Void removeTopLiquid()
+@bypass /type method define blackbox2_vials Vial Void putLiquid(Int type, Int amount)
+
+@bypass /script import constructor blackbox2_vials Vial(BlockLocation, Int[]) https://paste.minr.org/sonoxayefi
+@bypass /script import method blackbox2_vials Vial getTopLiquid https://paste.minr.org/egilemaxof
+@bypass /script import method blackbox2_vials Vial getFreeSpace https://paste.minr.org/rihizecipa
+@bypass /script import method blackbox2_vials Vial removeTopLiquid https://paste.minr.org/adalogijoj
+@bypass /script import method blackbox2_vials Vial putLiquid https://paste.minr.org/nipehiwepi
+
+@bypass /variable define blackbox2_vials Vial vial1 = Vial(BlockLocation(-3528,74,1710,"theta"),Int[0,0,1,2,3,1,4])
+@bypass /variable define blackbox2_vials Vial vial2 = Vial(BlockLocation(-3524,74,1705,"theta"),Int[4,1,4,3,3,2,5])
+@bypass /variable define blackbox2_vials Vial vial3 = Vial(BlockLocation(-3520,74,1705,"theta"),Int[5,2,5,5,5,3,2])
+@bypass /variable define blackbox2_vials Vial vial4 = Vial(BlockLocation(-3516,74,1705,"theta"),Int[3,5,3,1,4,4,3])
+@bypass /variable define blackbox2_vials Vial vial5 = Vial(BlockLocation(-3512,74,1705,"theta"),Int[2,1,4,5,2,4,2])
+@bypass /variable define blackbox2_vials Vial vial6 = Vial(BlockLocation(-3508,74,1710,"theta"),Int[0,0,0,0,0,0,0])
+@bypass /variable define blackbox2_vials Vial selectedVial = null
+
+@bypass /function define blackbox2_vials Void resetVials()
+@bypass /function define blackbox2_vials Void moveLiquid(Vial from, Vial to)
+@bypass /function define blackbox2_vials Void reColorInputs(Block clicked, Int type)
+@bypass /function define blackbox2_vials Void interactVial(Block clicked, Vial interact)
+@bypass /function define blackbox2_vials Boolean checkSolution(Vial check)
+@bypass /function define blackbox2_vials Void applySolution()
+
+@bypass /script import function blackbox2_vials reColorInputs https://paste.minr.org/ejugopoliz
+@bypass /script import function blackbox2_vials resetVials https://paste.minr.org/ucebisirot
+@bypass /script import function blackbox2_vials moveLiquid https://paste.minr.org/baxivejogu
+@bypass /script import function blackbox2_vials interactVial https://paste.minr.org/kimosiyafe
+@bypass /script import function blackbox2_vials checkSolution https://paste.minr.org/wopadekubu
+@bypass /script import function blackbox2_vials applySolution https://paste.minr.org/natadofume

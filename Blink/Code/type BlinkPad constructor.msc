@@ -1,0 +1,2 @@
+@var this.pos = pos
+@var this.state = 0

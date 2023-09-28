@@ -1,0 +1,59 @@
+@using blackbox2_pipes
+
+@fast
+
+@for Int i in list::range(0,400)
+    @if ends.length() > 0
+        @define Int endLength = ends.length()
+
+        @define Int newEnds = 0
+
+        @for Int d in list::range(0, endLength)
+            @define BlockVector3 end = ends[endLength-d-1]
+            @define String endType = endTypes[endLength-d-1]
+
+            @define Block[] neighbours = getNeighbours(end)
+
+            @if endType == "gray_concrete"
+                @var neighbours[4] = Block(end.getX(), end.getY()+1, end.getZ(), "theta")
+                @var neighbours[5] = Block(end.getX(), end.getY()-1, end.getZ(), "theta")
+            @fi
+
+            @for Block b in neighbours
+                @define String nType = b.getBlockType().toLowerCase()
+
+                @if nType == "green_concrete"
+                    @return true
+                @fi
+
+                @define Boolean isEnd = endType == "light_blue_concrete" && (nType == "blue_concrete" || nType == "magenta_concrete")
+
+                @var isEnd = isEnd || endType == "blue_concrete" && (nType == "blue_concrete" || nType == "light_blue_concrete")
+
+                @var isEnd = isEnd || endType == "magenta_concrete" && (nType == "purple_concrete" || nType == "light_blue_concrete" || nType == "light_gray_concrete" || nType == "gray_concrete")
+
+                @var isEnd = isEnd || endType == "purple_concrete" && (nType == "purple_concrete" || nType == "magenta_concrete")
+
+                @var isEnd = isEnd || endType == "light_gray_concrete" && (nType == "light_gray_concrete" || nType == "magenta_concrete")
+
+                @var isEnd = isEnd || endType == "gray_concrete" && (nType == "gray_concrete" || nType == "magenta_concrete")
+
+                @if isEnd == true
+                    @var ends[ends.length()] = b.getLocation().asBlockVector3()
+                    @var endTypes[endTypes.length()] = nType
+                    @var newEnds += 1
+                    @bypass /setblock {{b.getX()}} {{b.getY()}} {{b.getZ()}} orange_concrete
+                @fi
+            @done
+
+            @var ends.remove(ends.length()-1-newEnds)
+            @var endTypes.remove(endTypes.length()-1-newEnds)
+        @done
+
+        @delay 3
+    @else
+        @return false
+    @fi
+@done
+
+@return false

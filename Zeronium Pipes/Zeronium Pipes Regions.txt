@@ -1,0 +1,4 @@
+Select -3503 66 1736 and -3503 62 1738. Regionname: worf_pipe_start Owner: samurai_worf
+Select -3502 56 1745 and -3466 84 1713. Regionname: worf_pipe_area Owner: samurai_worf
+Select -3472 56 1737 and -3462 60 1726. Regionname: worf_pipe_tp Owner: samurai_worf
+Select -3463 70 1733 and -3463 74 1729. Regionname: worf_pipe_end Owner: samurai_worf

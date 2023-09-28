@@ -1,0 +1,65 @@
+@fast
+
+@bypass /namespace remove blackbox2_pipes
+
+@bypass /script remove interact -3490 63 1738
+@bypass /script remove interact -3490 63 1735
+@bypass /script remove interact -3490 63 1732
+@bypass /script remove interact -3490 63 1729
+@bypass /script remove interact -3490 63 1726
+@bypass /script remove interact -3490 63 1723
+@bypass /script remove interact -3490 63 1720
+@delay 1
+@bypass /script remove interact -3487 63 1738
+@bypass /script remove interact -3487 63 1735
+@bypass /script remove interact -3487 63 1732
+@bypass /script remove interact -3487 63 1729
+@bypass /script remove interact -3487 63 1726
+@bypass /script remove interact -3487 63 1723
+@bypass /script remove interact -3487 63 1720
+@delay 1
+@bypass /script remove interact -3484 63 1738
+@bypass /script remove interact -3484 63 1735
+@bypass /script remove interact -3484 63 1732
+@bypass /script remove interact -3484 63 1729
+@bypass /script remove interact -3484 63 1723
+@bypass /script remove interact -3484 63 1720
+@delay 1
+@bypass /script remove interact -3481 63 1738
+@bypass /script remove interact -3481 63 1735
+@bypass /script remove interact -3481 63 1732
+@bypass /script remove interact -3481 63 1729
+@bypass /script remove interact -3481 63 1726
+@bypass /script remove interact -3481 63 1723
+@bypass /script remove interact -3481 63 1720
+@delay 1
+@bypass /script remove interact -3478 63 1738
+@bypass /script remove interact -3478 63 1735
+@bypass /script remove interact -3478 63 1732
+@bypass /script remove interact -3478 63 1729
+@bypass /script remove interact -3478 63 1726
+@bypass /script remove interact -3478 63 1723
+@bypass /script remove interact -3478 63 1720
+@delay 1
+@bypass /script remove interact -3475 63 1738
+@bypass /script remove interact -3475 63 1735
+@bypass /script remove interact -3475 63 1732
+@bypass /script remove interact -3475 63 1729
+@bypass /script remove interact -3475 63 1726
+@bypass /script remove interact -3475 63 1723
+@bypass /script remove interact -3475 63 1720
+
+# reset button
+@bypass /script remove interact -3489 65 1742
+
+# check solution button
+@bypass /script remove interact -3486 65 1742
+
+# area start
+@bypass /script remove area theta worf_pipe_start
+
+# area tp
+@bypass /script remove area theta worf_pipe_tp
+
+# area end
+@bypass /script remove area theta worf_pipe_end

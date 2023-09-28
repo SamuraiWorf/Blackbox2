@@ -1,0 +1,7 @@
+@define Boolean correctSolution = false
+
+@if check.liquids[0] == 2 && check.liquids[1] == 2 && check.liquids[2] == 2 && check.liquids[3] == 2 && check.liquids[4] == 2 && check.liquids[5] == 2 && check.liquids[6] == 2
+    @var correctSolution = true
+@fi
+
+@return correctSolution

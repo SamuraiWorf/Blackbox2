@@ -1,0 +1,33 @@
+@using blackbox2_vials
+
+@if blockedVialInteract == true
+    @return
+@fi
+
+@var blockedVialInteract = true
+
+@define Boolean canMove = true
+
+@if selectedVial == null
+    @var selectedVial = interact
+    @var reColorInputs(clicked, 0)
+@elseif selectedVial == interact
+    @var selectedVial = null
+    @var reColorInputs(clicked, 2)
+@else
+    @if selectedVial.getTopLiquid()[1] > interact.getFreeSpace()
+        @player &4&lNot enough room in target vial!
+        @var canMove = false
+    @elseif selectedVial.getTopLiquid()[0] != interact.getTopLiquid()[0] && interact.getTopLiquid()[0] != 0
+        @player &4&lMismatching liquids!
+        @var canMove = false
+    @fi
+    @if canMove == true
+        @var reColorInputs(clicked, 1)
+        @var moveLiquid(selectedVial, interact)
+    @fi
+    @var selectedVial = null
+    @var reColorInputs(clicked, 2)
+@fi
+
+@var blockedVialInteract = false

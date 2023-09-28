@@ -1,0 +1,16 @@
+@define Int[] topLiquid = Int[0,0]
+
+@for Int i in this.liquids
+    @if i != 0
+        @if topLiquid[0] == 0
+            @var topLiquid[0] = i
+            @var topLiquid[1] += 1
+        @elseif i == topLiquid[0]
+            @var topLiquid[1] += 1
+        @else
+            @return topLiquid
+        @fi
+    @fi
+@done
+
+@return topLiquid

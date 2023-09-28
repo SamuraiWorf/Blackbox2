@@ -1,0 +1,26 @@
+@using blackbox2_pipes
+
+@global_cooldown 6
+
+@if pipeTesting == true || exitOpen == true
+    @return
+@fi
+
+@var pipeTesting = true
+
+@player &f&lOpening Zeronium Valve...
+
+@define Boolean solved = testSolution(BlockVector3[BlockVector3(-3492,61,1738)], String["magenta_concrete"])
+
+@if solved == true
+    @player &6&lGood Job!
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..80] ~ ~ ~ 1 1
+    @delay 16
+    @var applySolution()
+    @var exitOpen = true
+@else
+    @player &4&lInvalid Solution
+    @delay 30
+    @var pipeTesting = false
+    @var resetPipes()
+@fi

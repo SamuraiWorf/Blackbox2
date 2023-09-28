@@ -1,0 +1,25 @@
+@fast
+
+@if type == 0
+    @bypass /setblock -3523 75 1712 lime_concrete
+    @bypass /setblock -3522 75 1710 lime_concrete
+    @bypass /setblock -3519 75 1710 lime_concrete
+    @bypass /setblock -3517 75 1710 lime_concrete
+    @bypass /setblock -3514 75 1710 lime_concrete
+    @bypass /setblock -3513 75 1712 lime_concrete
+    @bypass /setblock {{clicked.getX()}} {{clicked.getY()}} {{clicked.getZ()}} red_concrete
+@elseif type == 1
+    @bypass /setblock -3523 75 1712 red_concrete
+    @bypass /setblock -3522 75 1710 red_concrete
+    @bypass /setblock -3519 75 1710 red_concrete
+    @bypass /setblock -3517 75 1710 red_concrete
+    @bypass /setblock -3514 75 1710 red_concrete
+    @bypass /setblock -3513 75 1712 red_concrete
+@else
+    @bypass /setblock -3523 75 1712 yellow_concrete
+    @bypass /setblock -3522 75 1710 yellow_concrete
+    @bypass /setblock -3519 75 1710 yellow_concrete
+    @bypass /setblock -3517 75 1710 yellow_concrete
+    @bypass /setblock -3514 75 1710 yellow_concrete
+    @bypass /setblock -3513 75 1712 yellow_concrete
+@fi
