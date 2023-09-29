@@ -1,0 +1,27 @@
+@using blackbox2_blink
+
+@fast
+
+@var purplePad.state0Target = limePad
+@var purplePad.state1Target = yellowPad
+
+@var limePad.state0Target = pinkPad
+@var limePad.state1Target = orangePad
+
+@var pinkPad.state0Target = purplePad
+@var pinkPad.state1Target = redPad
+
+@var orangePad.state0Target = aquaPad
+@var orangePad.state1Target = pinkPad
+
+@var aquaPad.state0Target = pinkPad
+@var aquaPad.state1Target = bluePad
+
+@var yellowPad.state0Target = orangePad
+@var yellowPad.state1Target = aquaPad
+
+@var redPad.state0Target = yellowPad
+@var redPad.state1Target = aquaPad
+
+@var bluePad.state0Target = end
+@var bluePad.state1Target = yellowPad
