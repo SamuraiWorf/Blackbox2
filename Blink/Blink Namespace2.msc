@@ -2,26 +2,26 @@
 
 @fast
 
-@var purplePad.state0Target = limePad
-@var purplePad.state1Target = yellowPad
+@var purplePad.state0Target = limePad.pos
+@var purplePad.state1Target = yellowPad.pos
 
-@var limePad.state0Target = pinkPad
-@var limePad.state1Target = orangePad
+@var limePad.state0Target = pinkPad.pos
+@var limePad.state1Target = orangePad.pos
 
-@var pinkPad.state0Target = purplePad
-@var pinkPad.state1Target = redPad
+@var pinkPad.state0Target = purplePad.pos
+@var pinkPad.state1Target = redPad.pos
 
-@var orangePad.state0Target = aquaPad
-@var orangePad.state1Target = pinkPad
+@var orangePad.state0Target = aquaPad.pos
+@var orangePad.state1Target = pinkPad.pos
 
-@var aquaPad.state0Target = pinkPad
-@var aquaPad.state1Target = bluePad
+@var aquaPad.state0Target = pinkPad.pos
+@var aquaPad.state1Target = bluePad.pos
 
-@var yellowPad.state0Target = orangePad
-@var yellowPad.state1Target = aquaPad
+@var yellowPad.state0Target = orangePad.pos
+@var yellowPad.state1Target = aquaPad.pos
 
-@var redPad.state0Target = yellowPad
-@var redPad.state1Target = aquaPad
+@var redPad.state0Target = yellowPad.pos
+@var redPad.state1Target = aquaPad.pos
 
-@var bluePad.state0Target = end
-@var bluePad.state1Target = yellowPad
+@var bluePad.state0Target = end.pos
+@var bluePad.state1Target = yellowPad.pos
