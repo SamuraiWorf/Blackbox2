@@ -1,0 +1,4 @@
+@using blackbox2_blink
+
+@var switchState(yellowPad)
+@var switchState(bluePad)

@@ -1,0 +1,20 @@
+@fast
+
+@bypass /namespace remove blackbox2_blink
+
+@bypass /script remove area zero blackbox2_blink_pi2pu
+@bypass /script remove area zero blackbox2_blink_pi2re
+@bypass /script remove area zero blackbox2_blink_pu2gr
+@bypass /script remove area zero blackbox2_blink_pu2ye
+@bypass /script remove area zero blackbox2_blink_gr2pi
+@bypass /script remove area zero blackbox2_blink_gr2o
+@bypass /script remove area zero blackbox2_blink_o2aq
+@bypass /script remove area zero blackbox2_blink_o2pi
+@bypass /script remove area zero blackbox2_blink_aq2bl
+@bypass /script remove area zero blackbox2_blink_aq2pi
+@bypass /script remove area zero blackbox2_blink_bl2en
+@bypass /script remove area zero blackbox2_blink_bl2ye
+@bypass /script remove area zero blackbox2_blink_re2aq
+@bypass /script remove area zero blackbox2_blink_re2ye
+@bypass /script remove area zero blackbox2_blink_ye2aq
+@bypass /script remove area zero blackbox2_blink_ye2o

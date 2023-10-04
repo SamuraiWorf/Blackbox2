@@ -1,2 +1,3 @@
 @var this.pos = pos
 @var this.state = 0
+@var this.targets = Location[]

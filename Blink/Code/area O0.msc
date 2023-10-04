@@ -1,0 +1,3 @@
+@using blackbox2_blink
+
+@var blink(orangePad, 0, player)
