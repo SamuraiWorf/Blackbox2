@@ -1,0 +1,13 @@
+@using blackbox2_blink
+@fast
+
+@var pinkPad.state = 0
+@var purplePad.state = 0
+@var limePad.state = 0
+@var orangePad.state = 0
+@var aquaPad.state = 0
+@var bluePad.state = 0
+@var redPad.state = 0
+@var yellowPad.state = 0
+
+@var interactBlock = false
