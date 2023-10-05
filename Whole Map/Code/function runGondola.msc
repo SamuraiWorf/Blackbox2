@@ -3,17 +3,17 @@
 @fast
 
 # start location gondola
-@define BlockLocation loc = BlockLocation(-1498,116,711,"Zero")
+@define BlockLocation loc = BlockLocation(-3458,69,1729,"Theta")
 
 @for Int i in list::range(0,gondolaXChanges.length())
-    @define BlockLocation next = BlockLocation(loc.getX() + gondolaXChanges[i],loc.getY() + gondolaYChanges[i],loc.getZ() + gondolaZChanges[i],"Zero")
+    @define BlockLocation next = BlockLocation(loc.getX() + gondolaXChanges[i],loc.getY() + gondolaYChanges[i],loc.getZ() + gondolaZChanges[i],"Theta")
 
     @define BlockVector3 locMax = BlockVector3(loc.getX()+4, loc.getY()+5, loc.getZ()+4)
 
     # tp players
-    @define Region currentSpace = Region(loc.getX()+1, loc.getY()+1, loc.getZ()+1, loc.getX()+3, loc.getY()+4, loc.getZ()+3, "Zero")
+    @define Region currentSpace = Region(loc.getX()+1, loc.getY()+1, loc.getZ()+1, loc.getX()+3, loc.getY()+4, loc.getZ()+3, "Theta")
     @for Player p in currentSpace.getPlayersInside()
-        @define Location newLocation = Location(p.getX()+gondolaXChanges[i], p.getY()+gondolaYChanges[i], p.getZ()+gondolaZChanges[i], "Zero")
+        @define Location newLocation = Location(p.getX()+gondolaXChanges[i], p.getY()+gondolaYChanges[i], p.getZ()+gondolaZChanges[i], "Theta")
         @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
         @var p.teleport(newPosition)
     @done
@@ -22,7 +22,7 @@
     @bypass /fill {{loc.getX()}} {{loc.getY()}} {{loc.getZ()}} {{locMax.getX()}} {{locMax.getY()}} {{locMax.getZ()}} air
     
     # place
-    @bypass /clone -1500 118 695 -1496 123 699 {{next.getX()}} {{next.getY()}} {{next.getZ()}}
+    @bypass /clone -3461 77 1741 -3457 82 1745 {{next.getX()}} {{next.getY()}} {{next.getZ()}}
 
     @var loc = next
 
@@ -34,19 +34,19 @@
 @bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 1.059
 
 # open exit
-@bypass /setblock -1507 89 686 deepslate_tiles
-@bypass /setblock -1507 90 686 air
-@bypass /setblock -1507 91 686 air
-@bypass /setblock -1507 90 685 dark_oak_fence
-@bypass /setblock -1507 90 687 dark_oak_fence
-@bypass /setblock -1507 90 684 dark_oak_trapdoor[facing=north, open=true, half=bottom]
-@bypass /setblock -1506 90 684 dark_oak_trapdoor[facing=north, open=true, half=bottom]
-@bypass /setblock -1507 90 688 dark_oak_trapdoor[facing=south, open=true, half=bottom]
-@bypass /setblock -1506 90 688 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -3470 39 1705 deepslate_tiles
+@bypass /setblock -3470 40 1705 air
+@bypass /setblock -3470 41 1705 air
+@bypass /setblock -3470 41 1704 dark_oak_fence
+@bypass /setblock -3470 41 1706 dark_oak_fence
+@bypass /setblock -3470 41 1703 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -3469 41 1703 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -3470 41 1707 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -3469 41 1707 dark_oak_trapdoor[facing=south, open=true, half=bottom]
 
-@bypass /setblock -1508 90 685 air
-@bypass /setblock -1508 90 686 air
-@bypass /setblock -1508 90 687 air
-@bypass /setblock -1508 92 685 air
-@bypass /setblock -1508 92 686 air
-@bypass /setblock -1508 92 687 air
+@bypass /setblock -3471 40 1704 air
+@bypass /setblock -3471 40 1705 air
+@bypass /setblock -3471 40 1706 air
+@bypass /setblock -3471 42 1704 air
+@bypass /setblock -3471 42 1705 air
+@bypass /setblock -3471 42 1706 air

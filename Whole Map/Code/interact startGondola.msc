@@ -15,20 +15,20 @@
 @var gondolaHome = false
 
 # TP inbetweeners outside to the start
-@define Region blockingSpace = Region(-1498, 117, 711, -1500, 121, 715, "Zero")
+@define Region blockingSpace = Region(-3458, 70, 1729, -3460, 75, 1733, "Theta")
 @for Player p in blockingSpace.getPlayersInside()
-    @define Location newLocation = Location(-1501.5D, 118D, 713.5D, "Zero")
-    @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
+    @define Location newLocation = Location(-3461.5D, 71D, 1731.5D, "Theta")
+    @define Position newPosition = Position(newLocation, -90.0, 0.0)
     @var p.teleport(newPosition)
 @done
 
 # block entrance
-@bypass /setblock -1499 118 712 deepslate_tile_wall
-@bypass /setblock -1499 118 713 deepslate_tile_wall
-@bypass /setblock -1499 118 714 deepslate_tile_wall
-@bypass /setblock -1499 120 712 barrier
-@bypass /setblock -1499 120 713 barrier
-@bypass /setblock -1499 120 714 barrier
+@bypass /setblock -3459 71 1730 deepslate_tile_wall
+@bypass /setblock -3459 71 1731 deepslate_tile_wall
+@bypass /setblock -3459 71 1732 deepslate_tile_wall
+@bypass /setblock -3459 73 1730 barrier
+@bypass /setblock -3459 73 1731 barrier
+@bypass /setblock -3459 73 1732 barrier
 
 @var runGondola()
 

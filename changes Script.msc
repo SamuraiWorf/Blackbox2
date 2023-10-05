@@ -4,3 +4,5 @@
 
 @bypass /script import interact -3515 76 1715 https://paste.minr.org/axowadazux
 @bypass /script import function blackbox2_vials applySolution https://paste.minr.org/natadofume
+
+@bypass /script import interact -3467 76 1731 https://paste.minr.org/hitovayowe

@@ -6,10 +6,10 @@
 @bypass /variable define blackbox2 Boolean gondolaReseting = false
 @bypass /variable define blackbox2 Boolean gondolaHome = true
 
-@bypass /variable define blackbox2 Int[] gondolaXChanges = Int[5,5,6,0,0,0,0,0,0,0,0,0,0,0,0,-5,-5,-5,-5,-5]
-@bypass /variable define blackbox2 Int[] gondolaYChanges = Int[0,0,0,-5,-5,-5,-5,-5,-3,0,0,0,0,0,0,0,0,0,0,0]
-@bypass /variable define blackbox2 Int[] gondolaZChanges = Int[0,0,0,0,0,0,0,0,0,-5,-5,-5,-5,-5,-2,0,0,0,0,0]
+@bypass /variable define blackbox2 Int[] gondolaXChanges = Int[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-4,-4,-4,-4,-4]
+@bypass /variable define blackbox2 Int[] gondolaYChanges = Int[0,0,-4,-4,-4,-4,-4,-4,-4,-3,0,0,0,0,0,0,0,0,0,0,0]
+@bypass /variable define blackbox2 Int[] gondolaZChanges = Int[0,0,0,0,0,0,0,0,0,0,-4,-4,-4,-4,-4,-6,0,0,0,0,0]
 
 @bypass /function define blackbox2 Void runGondola()
 
-@bypass /script import function blackbox2 runGondola https://paste.minr.org/goguxakelu
+@bypass /script import function blackbox2 runGondola https://paste.minr.org/irobepipiq

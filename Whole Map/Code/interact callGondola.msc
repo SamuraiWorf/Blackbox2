@@ -16,46 +16,46 @@
 @var gondolaReseting = true
 
 # place starting gondola
-@bypass /clone -1500 118 695 -1496 123 699 -1498 116 711
+@bypass /clone -3461 77 1741 -3457 82 1745 -3458 69 1729
 
 @bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 1.059
 
 # open entrance
-@bypass /setblock -1498 117 713 deepslate_tiles
-@bypass /setblock -1498 118 713 air
-@bypass /setblock -1498 119 713 air
-@bypass /setblock -1498 118 712 dark_oak_fence
-@bypass /setblock -1498 118 714 dark_oak_fence
-@bypass /setblock -1498 118 711 dark_oak_trapdoor[facing=north, open=true, half=bottom]
-@bypass /setblock -1497 118 711 dark_oak_trapdoor[facing=north, open=true, half=bottom]
-@bypass /setblock -1498 118 715 dark_oak_trapdoor[facing=south, open=true, half=bottom]
-@bypass /setblock -1497 118 715 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -3458 70 1731 deepslate_tiles
+@bypass /setblock -3458 71 1731 air
+@bypass /setblock -3458 72 1731 air
+@bypass /setblock -3458 71 1730 dark_oak_fence
+@bypass /setblock -3458 71 1732 dark_oak_fence
+@bypass /setblock -3458 71 1729 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -3457 71 1729 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -3458 71 1733 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -3457 71 1733 dark_oak_trapdoor[facing=south, open=true, half=bottom]
 
-@bypass /setblock -1499 118 712 air
-@bypass /setblock -1499 118 713 air
-@bypass /setblock -1499 118 714 air
-@bypass /setblock -1499 120 712 air
-@bypass /setblock -1499 120 713 air
-@bypass /setblock -1499 120 714 air
+@bypass /setblock -3459 71 1730 air
+@bypass /setblock -3459 71 1731 air
+@bypass /setblock -3459 71 1732 air
+@bypass /setblock -3459 73 1730 air
+@bypass /setblock -3459 73 1731 air
+@bypass /setblock -3459 73 1732 air
 
 # tp inbetween players to exit
-@define Region blockingSpace = Region(-1501, 87, 684, -1510, 94, 688, "Zero")
+@define Region blockingSpace = Region(-3462, 38, 1703, -3472, 44, 1707, "Theta")
 @for Player p in blockingSpace.getPlayersInside()
-    @define Location newLocation = Location(-1511.5D, 90D, 686.5D, "Zero")
-    @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
+    @define Location newLocation = Location(-3473.5D, 40D, 1705.5D, "Theta")
+    @define Position newPosition = Position(newLocation, 90.0, 0.0)
     @var p.teleport(newPosition)
 @done
 
 # close exit
-@bypass /setblock -1508 90 685 deepslate_tile_wall
-@bypass /setblock -1508 90 686 deepslate_tile_wall
-@bypass /setblock -1508 90 687 deepslate_tile_wall
-@bypass /setblock -1508 92 685 barrier
-@bypass /setblock -1508 92 686 barrier
-@bypass /setblock -1508 92 687 barrier
+@bypass /setblock -3471 40 1704 deepslate_tile_wall
+@bypass /setblock -3471 40 1705 deepslate_tile_wall
+@bypass /setblock -3471 40 1706 deepslate_tile_wall
+@bypass /setblock -3471 42 1704 barrier
+@bypass /setblock -3471 42 1705 barrier
+@bypass /setblock -3471 42 1706 barrier
 
 # remove ending gondola
-@bypass /fill -1507 88 684 -1503 93 688 air
+@bypass /fill -3465 38 1703 -3470 44 1707 air
 
 @var gondolaReseting = false
 @var gondolaHome = true

@@ -1,2 +1,5 @@
 Select -3523 99 1725 and -3525 88 1723. Regionname: worf_vial_fall_start Owner: samurai_worf
 Select -3522 84 1725 and -3526 84 1722. Regionname: worf_vial_fall_end Owner: samurai_worf
+
+Select -3440 33 1738 and -3460 31 1695. Regionname: worf_gondola_tp1 Owner: samurai_worf
+Select -3476 33 1715 and -3461 31 1695. Regionname: worf_gondola_tp2 Owner: samurai_worf
