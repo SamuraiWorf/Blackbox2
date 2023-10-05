@@ -61,3 +61,6 @@
 
 # area end
 @bypass /script import area theta worf_pipe_end https://paste.minr.org/kumivoseji
+
+# stuck tp
+@bypass /script import interact -3467 76 1731 https://paste.minr.org/hitovayowe
