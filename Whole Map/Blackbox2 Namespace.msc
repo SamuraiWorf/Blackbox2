@@ -2,14 +2,14 @@
 
 @bypass /namespace define blackbox2
 
-@bypass /variable define blackbox2 Boolean isRunning = false
+@bypass /variable define blackbox2 Boolean gondolaRunning = false
+@bypass /variable define blackbox2 Boolean gondolaReseting = false
+@bypass /variable define blackbox2 Boolean gondolaHome = true
 
 @bypass /variable define blackbox2 Int[] gondolaXChanges = Int[5,5,6,0,0,0,0,0,0,0,0,0,0,0,0,-5,-5,-5,-5,-5]
 @bypass /variable define blackbox2 Int[] gondolaYChanges = Int[0,0,0,-5,-5,-5,-5,-5,-3,0,0,0,0,0,0,0,0,0,0,0]
 @bypass /variable define blackbox2 Int[] gondolaZChanges = Int[0,0,0,0,0,0,0,0,0,-5,-5,-5,-5,-5,-2,0,0,0,0,0]
 
-@bypass /function define blackbox2 Void resetGondola()
 @bypass /function define blackbox2 Void runGondola()
 
-@bypass /script import function blackbox2 resetGondola https://paste.minr.org/dixuqumoma
-@bypass /script import function blackbox2 runGondola https://paste.minr.org/ipidezarid
+@bypass /script import function blackbox2 runGondola https://paste.minr.org/goguxakelu

@@ -1,9 +1,26 @@
 @using blackbox2
 
+@global_cooldown 10
+
 @fast
 
+@if gondolaRunning
+    @player &l&4The gondola is still moving!
+    @return
+@fi
+
+@if gondolaReseting || gondolaHome
+    @return
+@fi
+
+@var gondolaReseting = true
+
+# place starting gondola
 @bypass /clone -1500 118 695 -1496 123 699 -1498 116 711
 
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 1.059
+
+# open entrance
 @bypass /setblock -1498 117 713 deepslate_tiles
 @bypass /setblock -1498 118 713 air
 @bypass /setblock -1498 119 713 air
@@ -21,13 +38,15 @@
 @bypass /setblock -1499 120 713 air
 @bypass /setblock -1499 120 714 air
 
+# tp inbetween players to exit
 @define Region blockingSpace = Region(-1501, 87, 684, -1510, 94, 688, "Zero")
 @for Player p in blockingSpace.getPlayersInside()
-    @define Location newLocation = Location(-1511.5D, 90D, 686.5D, "zero")
+    @define Location newLocation = Location(-1511.5D, 90D, 686.5D, "Zero")
     @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
     @var p.teleport(newPosition)
 @done
 
+# close exit
 @bypass /setblock -1508 90 685 deepslate_tile_wall
 @bypass /setblock -1508 90 686 deepslate_tile_wall
 @bypass /setblock -1508 90 687 deepslate_tile_wall
@@ -35,6 +54,8 @@
 @bypass /setblock -1508 92 686 barrier
 @bypass /setblock -1508 92 687 barrier
 
+# remove ending gondola
 @bypass /fill -1507 88 684 -1503 93 688 air
 
-@var isRunning = false
+@var gondolaReseting = false
+@var gondolaHome = true

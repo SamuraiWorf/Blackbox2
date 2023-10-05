@@ -4,3 +4,9 @@
 
 @bypass /script remove area theta worf_vial_fall_start
 @bypass /script remove area theta worf_vial_fall_end
+
+# start gondola
+@bypass /script remove interact -1496 119 716
+
+# call gondola
+@bypass /script remove interact -1502 119 716
