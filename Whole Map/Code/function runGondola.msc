@@ -1,0 +1,44 @@
+@using blackbox2
+
+@fast
+
+@define BlockLocation loc = BlockLocation(-1498,116,711,"zero")
+
+@for Int i in list::range(0,gondolaXChanges.length())
+    @define BlockLocation next = BlockLocation(loc.getX() + gondolaXChanges[i],loc.getY() + gondolaYChanges[i],loc.getZ() + gondolaZChanges[i],"zero")
+
+    @define BlockVector3 locMax = BlockVector3(loc.getX()+4, loc.getY()+5, loc.getZ()+4)
+    @define Region currentSpace = Region(loc.getX()+1, loc.getY()+1, loc.getZ()+1, loc.getX()+3, loc.getY()+4, loc.getZ()+3, "Zero")
+    @for Player p in currentSpace.getPlayersInside()
+        @define Location newLocation = Location(p.getX()+gondolaXChanges[i], p.getY()+gondolaYChanges[i], p.getZ()+gondolaZChanges[i], "zero")
+        @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
+        @var p.teleport(newPosition)
+    @done
+
+    @bypass /fill {{loc.getX()}} {{loc.getY()}} {{loc.getZ()}} {{locMax.getX()}} {{locMax.getY()}} {{locMax.getZ()}} air
+    
+    @bypass /clone -1500 118 695 -1496 123 699 {{next.getX()}} {{next.getY()}} {{next.getZ()}}
+
+    @var loc = next
+
+    @if i < gondolaXChanges.length()-1
+        @delay 20
+    @fi
+@done
+
+@bypass /setblock -1507 89 686 deepslate_tiles
+@bypass /setblock -1507 90 686 air
+@bypass /setblock -1507 91 686 air
+@bypass /setblock -1507 90 685 dark_oak_fence
+@bypass /setblock -1507 90 687 dark_oak_fence
+@bypass /setblock -1507 90 684 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -1506 90 684 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -1507 90 688 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -1506 90 688 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+
+@bypass /setblock -1508 90 685 air
+@bypass /setblock -1508 90 686 air
+@bypass /setblock -1508 90 687 air
+@bypass /setblock -1508 92 685 air
+@bypass /setblock -1508 92 686 air
+@bypass /setblock -1508 92 687 air

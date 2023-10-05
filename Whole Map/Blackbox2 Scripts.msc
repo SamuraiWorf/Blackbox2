@@ -2,3 +2,5 @@
 
 @bypass /script import area theta worf_vial_fall_start https://paste.minr.org/etedesujil
 @bypass /script import area theta worf_vial_fall_end https://paste.minr.org/oyejugiyas
+
+@bypass /script import interact -1496 119 716 https://paste.minr.org/huxebugupu

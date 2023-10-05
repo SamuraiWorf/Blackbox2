@@ -1,0 +1,40 @@
+@using blackbox2
+
+@fast
+
+@bypass /clone -1500 118 695 -1496 123 699 -1498 116 711
+
+@bypass /setblock -1498 117 713 deepslate_tiles
+@bypass /setblock -1498 118 713 air
+@bypass /setblock -1498 119 713 air
+@bypass /setblock -1498 118 712 dark_oak_fence
+@bypass /setblock -1498 118 714 dark_oak_fence
+@bypass /setblock -1498 118 711 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -1497 118 711 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -1498 118 715 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -1497 118 715 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+
+@bypass /setblock -1499 118 712 air
+@bypass /setblock -1499 118 713 air
+@bypass /setblock -1499 118 714 air
+@bypass /setblock -1499 120 712 air
+@bypass /setblock -1499 120 713 air
+@bypass /setblock -1499 120 714 air
+
+@define Region blockingSpace = Region(-1501, 87, 684, -1510, 94, 688, "Zero")
+@for Player p in blockingSpace.getPlayersInside()
+    @define Location newLocation = Location(-1511.5D, 90D, 686.5D, "zero")
+    @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
+    @var p.teleport(newPosition)
+@done
+
+@bypass /setblock -1508 90 685 deepslate_tile_wall
+@bypass /setblock -1508 90 686 deepslate_tile_wall
+@bypass /setblock -1508 90 687 deepslate_tile_wall
+@bypass /setblock -1508 92 685 barrier
+@bypass /setblock -1508 92 686 barrier
+@bypass /setblock -1508 92 687 barrier
+
+@bypass /fill -1507 88 684 -1503 93 688 air
+
+@var isRunning = false

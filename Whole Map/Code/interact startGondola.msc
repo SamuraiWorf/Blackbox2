@@ -1,0 +1,26 @@
+@using blackbox2
+
+@global_cooldown 10
+
+@if isRunning
+    @player &l&4The gondola is already moving!
+    @return
+@fi
+
+@var isRunning = true
+
+@define Region blockingSpace = Region(-1498, 117, 711, -1500, 121, 715, "Zero")
+@for Player p in blockingSpace.getPlayersInside()
+    @define Location newLocation = Location(-1501.5D, 118D, 713.5D, "zero")
+    @define Position newPosition = Position(newLocation, p.getYaw(), p.getPitch())
+    @var p.teleport(newPosition)
+@done
+
+@bypass /setblock -1499 118 712 deepslate_tile_wall
+@bypass /setblock -1499 118 713 deepslate_tile_wall
+@bypass /setblock -1499 118 714 deepslate_tile_wall
+@bypass /setblock -1499 120 712 barrier
+@bypass /setblock -1499 120 713 barrier
+@bypass /setblock -1499 120 714 barrier
+
+@var runGondola()
