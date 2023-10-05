@@ -37,12 +37,12 @@
 @bypass /setblock -3470 39 1705 deepslate_tiles
 @bypass /setblock -3470 40 1705 air
 @bypass /setblock -3470 41 1705 air
-@bypass /setblock -3470 41 1704 dark_oak_fence
-@bypass /setblock -3470 41 1706 dark_oak_fence
-@bypass /setblock -3470 41 1703 dark_oak_trapdoor[facing=north, open=true, half=bottom]
-@bypass /setblock -3469 41 1703 dark_oak_trapdoor[facing=north, open=true, half=bottom]
-@bypass /setblock -3470 41 1707 dark_oak_trapdoor[facing=south, open=true, half=bottom]
-@bypass /setblock -3469 41 1707 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -3470 40 1704 dark_oak_fence
+@bypass /setblock -3470 40 1706 dark_oak_fence
+@bypass /setblock -3470 40 1703 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -3469 40 1703 dark_oak_trapdoor[facing=north, open=true, half=bottom]
+@bypass /setblock -3470 40 1707 dark_oak_trapdoor[facing=south, open=true, half=bottom]
+@bypass /setblock -3469 40 1707 dark_oak_trapdoor[facing=south, open=true, half=bottom]
 
 @bypass /setblock -3471 40 1704 air
 @bypass /setblock -3471 40 1705 air

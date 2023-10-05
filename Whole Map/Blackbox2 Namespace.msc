@@ -12,4 +12,4 @@
 
 @bypass /function define blackbox2 Void runGondola()
 
-@bypass /script import function blackbox2 runGondola https://paste.minr.org/irobepipiq
+@bypass /script import function blackbox2 runGondola https://paste.minr.org/asujikoxem
