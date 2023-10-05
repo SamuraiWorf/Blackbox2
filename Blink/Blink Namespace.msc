@@ -8,8 +8,10 @@
 @bypass /type field define blackbox2_blink BlinkPad Int state
 @bypass /type field define blackbox2_blink BlinkPad Location[] targets
 @bypass /type constructor define blackbox2_blink BlinkPad(Location pos)
+@bypass /type method define blackbox2_blink BlinkPad Void switchState()
 
 @bypass /script import constructor blackbox2_blink BlinkPad(Location) https://paste.minr.org/vabixusuwo
+@bypass /script import method blackbox2_blink BlinkPad switchState https://paste.minr.org/wasukuqatu
 
 @delay 5
 
@@ -21,9 +23,6 @@
 @bypass /variable define blackbox2_blink BlinkPad yellowPad = BlinkPad(Location(-1505.5D,65D,709.5D,"zero"))
 @bypass /variable define blackbox2_blink BlinkPad redPad = BlinkPad(Location(-1514.5D,65D,709.5D,"zero"))
 @bypass /variable define blackbox2_blink BlinkPad bluePad = BlinkPad(Location(-1526.5D,65D,709.5D,"zero"))
-
-@bypass /function define blackbox2_blink Void switchState(BlinkPad blinkPad)
-@bypass /script import function blackbox2_blink switchState https://paste.minr.org/amanuwomow
 
 @bypass /function define blackbox2_blink Void blink(BlinkPad blinkPad, Int validState, Player player)
 @bypass /script import function blackbox2_blink blink https://paste.minr.org/ucibokuwus

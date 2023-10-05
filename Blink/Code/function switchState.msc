@@ -1,5 +1,0 @@
-@if blinkPad.state == 0
-    @var blinkPad.state = 1
-@else
-    @var blinkPad.state = 0
-@fi

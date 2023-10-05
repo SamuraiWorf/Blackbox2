@@ -18,3 +18,10 @@
 @bypass /script remove area zero blackbox2_blink_re2ye
 @bypass /script remove area zero blackbox2_blink_ye2aq
 @bypass /script remove area zero blackbox2_blink_ye2o
+
+@bypass /script remove interact -1506 66 740 zero
+@bypass /script remove interact -1517 66 740 zero
+@bypass /script remove interact -1504 66 709 zero
+@bypass /script remove interact -1515 66 707 zero
+@bypass /script remove interact -1527 66 711 zero
+@bypass /script remove interact -1511 66 743 zero
