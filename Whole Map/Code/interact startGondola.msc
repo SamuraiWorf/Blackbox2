@@ -7,6 +7,11 @@
     @return
 @fi
 
+@if gondolaHome == false
+    @player &l&4The gondola is not here!
+    @return
+@fi
+
 @if gondolaReseting
     @return
 @fi
