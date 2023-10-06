@@ -1,39 +1,47 @@
 @fast
 
-@bypass /script import area zero blackbox2_blink_pi2pu https://paste.minr.org/igazoqefet
-@bypass /script import area zero blackbox2_blink_pi2re https://paste.minr.org/moligacato
+# pi - pu, re
+@bypass /script import ground -1513 64 731 https://paste.minr.org/umavatayap
+@bypass /script import ground -1516 64 725 https://paste.minr.org/vewuwanura
 
-@bypass /script import area zero blackbox2_blink_pu2gr https://paste.minr.org/curavolupi
-@bypass /script import area zero blackbox2_blink_pu2ye https://paste.minr.org/olizuzeloc
+# pu - li, ye
+@bypass /script import ground -1509 64 738 https://paste.minr.org/ixihotabof
+@bypass /script import ground -1506 64 735 https://paste.minr.org/ocataxiled
 
-@bypass /script import area zero blackbox2_blink_gr2pi https://paste.minr.org/qobedaveno
-@bypass /script import area zero blackbox2_blink_gr2o https://paste.minr.org/batodaqaji
+# li - pi, o
+@bypass /script import ground -1515 64 735 https://paste.minr.org/tisileqeho
+@bypass /script import ground -1512 64 735 https://paste.minr.org/icaxukodah
 
-@bypass /script import area zero blackbox2_blink_o2aq https://paste.minr.org/isigixizas
-@bypass /script import area zero blackbox2_blink_o2pi https://paste.minr.org/osikositad
+# o - aq, pi
+@bypass /script import ground -1509 64 724 https://paste.minr.org/emerejukuy
+@bypass /script import ground -1509 64 727 https://paste.minr.org/ikalofahov
 
-@bypass /script import area zero blackbox2_blink_aq2pi https://paste.minr.org/opuvanotur
-@bypass /script import area zero blackbox2_blink_aq2bl https://paste.minr.org/esosipayos
+# aq - bl, pi
+@bypass /script import ground -1523 64 714 https://paste.minr.org/kasajivera
+@bypass /script import ground -1517 64 720 https://paste.minr.org/azosetutos
 
-@bypass /script import area zero blackbox2_blink_bl2en https://paste.minr.org/leruyurare
-@bypass /script import area zero blackbox2_blink_bl2ye https://paste.minr.org/nayopacavi
+# bl - end, ye
+@bypass /script import ground -1530 64 709 https://paste.minr.org/agilaciqas
+@bypass /script import ground -1524 64 709 https://paste.minr.org/ehisaviwej
 
-@bypass /script import area zero blackbox2_blink_re2ye https://paste.minr.org/oladuzebim
-@bypass /script import area zero blackbox2_blink_re2aq https://paste.minr.org/yijaqolelu
+# re - ye, aq
+@bypass /script import ground -1512 64 709 https://paste.minr.org/azigiximaf
+@bypass /script import ground -1518 64 712 https://paste.minr.org/atanewopeb
 
-@bypass /script import area zero blackbox2_blink_ye2aq https://paste.minr.org/dimuhowida
-@bypass /script import area zero blackbox2_blink_ye2o https://paste.minr.org/bekenukina
+# ye - o, aq
+@bypass /script import ground -1506 64 712 https://paste.minr.org/udesupafac
+@bypass /script import ground -1509 64 712 https://paste.minr.org/bacidaboru
 
 # lapis
-@bypass /script import interact -1506 66 740 zero https://paste.minr.org/norufotoko
+@bypass /script import interact -1506 66 740 zero https://paste.minr.org/bucexuwati
 # gold
-@bypass /script import interact -1517 66 740 zero https://paste.minr.org/obugoganaz
+@bypass /script import interact -1517 66 740 zero https://paste.minr.org/efureyecoj
 # netherite
-@bypass /script import interact -1504 66 709 zero https://paste.minr.org/aluyehoseb
+@bypass /script import interact -1504 66 709 zero https://paste.minr.org/susedebuwi
 # emerald
-@bypass /script import interact -1515 66 707 zero https://paste.minr.org/givugonufu
+@bypass /script import interact -1515 66 707 zero https://paste.minr.org/ezagudaxaw
 # diamond
-@bypass /script import interact -1527 66 711 zero https://paste.minr.org/dotilogasu
+@bypass /script import interact -1527 66 711 zero https://paste.minr.org/urulefewob
 
 # reset
 @bypass /script import interact -1511 66 743 zero https://paste.minr.org/umuyavuted

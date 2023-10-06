@@ -1,5 +1,1 @@
 @using blackbox2_blink
-
-@var pinkPad.switchState()
-@var yellowPad.switchState()
-@var bluePad.switchState()

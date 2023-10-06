@@ -6,7 +6,7 @@
 @var limePad.state = 0
 @var orangePad.state = 0
 @var aquaPad.state = 0
-@var bluePad.state = 0
+@var bluePad.state = 1
 @var redPad.state = 0
 @var yellowPad.state = 0
 

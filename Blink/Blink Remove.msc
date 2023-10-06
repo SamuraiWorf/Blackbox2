@@ -2,22 +2,30 @@
 
 @bypass /namespace remove blackbox2_blink
 
-@bypass /script remove area zero blackbox2_blink_pi2pu
-@bypass /script remove area zero blackbox2_blink_pi2re
-@bypass /script remove area zero blackbox2_blink_pu2gr
-@bypass /script remove area zero blackbox2_blink_pu2ye
-@bypass /script remove area zero blackbox2_blink_gr2pi
-@bypass /script remove area zero blackbox2_blink_gr2o
-@bypass /script remove area zero blackbox2_blink_o2aq
-@bypass /script remove area zero blackbox2_blink_o2pi
-@bypass /script remove area zero blackbox2_blink_aq2bl
-@bypass /script remove area zero blackbox2_blink_aq2pi
-@bypass /script remove area zero blackbox2_blink_bl2en
-@bypass /script remove area zero blackbox2_blink_bl2ye
-@bypass /script remove area zero blackbox2_blink_re2aq
-@bypass /script remove area zero blackbox2_blink_re2ye
-@bypass /script remove area zero blackbox2_blink_ye2aq
-@bypass /script remove area zero blackbox2_blink_ye2o
+# pi - pu, re
+@bypass /script remove ground -1513 64 731
+@bypass /script remove ground -1516 64 725
+# pu - li, ye
+@bypass /script remove ground -1509 64 738
+@bypass /script remove ground -1506 64 735
+# li - pi, o
+@bypass /script remove ground -1515 64 735
+@bypass /script remove ground -1512 64 735
+# o - aq, pi
+@bypass /script remove ground -1509 64 724
+@bypass /script remove ground -1509 64 727
+# aq - bl, pi
+@bypass /script remove ground -1523 64 714
+@bypass /script remove ground -1517 64 720
+# bl - end, ye
+@bypass /script remove ground -1530 64 709
+@bypass /script remove ground -1524 64 709
+# re - ye, aq
+@bypass /script remove ground -1512 64 709
+@bypass /script remove ground -1518 64 712
+# ye - o, aq
+@bypass /script remove ground -1506 64 712
+@bypass /script remove ground -1509 64 712
 
 @bypass /script remove interact -1506 66 740 zero
 @bypass /script remove interact -1517 66 740 zero

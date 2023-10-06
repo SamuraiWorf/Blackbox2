@@ -2,6 +2,8 @@
 
 @fast
 
+@var reset()
+
 @var pinkPad.targets.append(purplePad.pos)
 @var pinkPad.targets.append(redPad.pos)
 
@@ -14,8 +16,8 @@
 @var orangePad.targets.append(aquaPad.pos)
 @var orangePad.targets.append(pinkPad.pos)
 
-@var aquaPad.targets.append(pinkPad.pos)
 @var aquaPad.targets.append(bluePad.pos)
+@var aquaPad.targets.append(pinkPad.pos)
 
 @var bluePad.targets.append(Location(-1532.5D,65D,709.5D,"zero"))
 @var bluePad.targets.append(yellowPad.pos)
@@ -23,5 +25,5 @@
 @var redPad.targets.append(yellowPad.pos)
 @var redPad.targets.append(aquaPad.pos)
 
-@var yellowPad.targets.append(aquaPad.pos)
 @var yellowPad.targets.append(orangePad.pos)
+@var yellowPad.targets.append(aquaPad.pos)

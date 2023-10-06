@@ -28,4 +28,4 @@
 @bypass /script import function blackbox2_blink blink https://paste.minr.org/ucibokuwus
 
 @bypass /function define blackbox2_blink Void reset()
-@bypass /script import function blackbox2_blink reset https://paste.minr.org/uzorijiger
+@bypass /script import function blackbox2_blink reset https://paste.minr.org/yuginuragi
