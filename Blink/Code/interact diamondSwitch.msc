@@ -1,2 +1,4 @@
 @using blackbox2_blink
 
+@var pinkPad.switchState()
+@var aquaPad.switchState()

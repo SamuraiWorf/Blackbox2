@@ -20,9 +20,9 @@
 # bl - end, ye
 @bypass /script remove ground -1530 64 709
 @bypass /script remove ground -1524 64 709
-# re - ye, aq
+# re - ye, li
 @bypass /script remove ground -1512 64 709
-@bypass /script remove ground -1518 64 712
+@bypass /script remove ground -1515 64 712
 # ye - o, aq
 @bypass /script remove ground -1506 64 712
 @bypass /script remove ground -1509 64 712

@@ -23,7 +23,7 @@
 @var bluePad.targets.append(yellowPad.pos)
 
 @var redPad.targets.append(yellowPad.pos)
-@var redPad.targets.append(aquaPad.pos)
+@var redPad.targets.append(limePad.pos)
 
 @var yellowPad.targets.append(orangePad.pos)
 @var yellowPad.targets.append(aquaPad.pos)
