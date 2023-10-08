@@ -1,0 +1,11 @@
+@define Double minX1 = this.position.getX()-0.25D
+@define Double minZ1 = this.position.getZ()-0.25D
+@define Double maxX1 = this.position.getX()+0.25D
+@define Double maxZ1 = this.position.getZ()+0.25D
+
+@define Double minX2 = ball.getX()-0.25D
+@define Double minZ2 = ball.getZ()-0.25D
+@define Double maxX2 = ball.getX()+0.25D
+@define Double maxZ2 = ball.getZ()+0.25D
+
+@return minX1 <= maxX2 && maxX1 >= minX2 && minZ1 <= maxZ2 && maxZ1 >= minZ2

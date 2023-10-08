@@ -1,3 +1,6 @@
 @var this.pos = pos
 @var this.state = 0
 @var this.targets = Location[]
+@var this.padPositions = Location[]
+@var this.clonePos1 = Location[]
+@var this.clonePos2 = Location[]

@@ -1,0 +1,101 @@
+@using blackbox2_bowling
+
+@global_cooldown 8
+
+@if interactBlock == true
+    @player &4&l[!] &f&rThe lane is in use!
+    @return
+@fi
+
+@var interactBlock = true
+
+@define Double yawSign = player.getYaw()/math::abs(Double(player.getYaw()))
+@define Vector2 direction = Vector2(Double(yawSign*(math::abs(Double(player.getYaw()/180.0))-1)),-Double(math::abs(Double(player.getYaw()))/90.0D-1.0D))
+
+@define Vector2 prePos = Vector2(player.getX(), player.getZ())
+@define Double yaw360 = Double(player.getYaw()+180)
+
+@delay 1
+
+@define Double speed = prePos.distance(Vector2(player.getX(), player.getZ()))
+
+@delay 8
+
+@define Double yaw3602 = Double(player.getYaw()+180)
+
+@define Double yawDist = yaw3602 - yaw360
+
+@var yawDist = (yawDist+180) % 360 - 180
+
+@if math::abs(yawDist) > 180
+    @var yawDist = 360 + yaw3602 - yaw360
+@fi
+
+@delay 1
+
+@define Double spin = -yawDist/360.0D
+
+@var sendBall(math::abs(speed)+0.5D,spin/20.0D,direction,pos)
+
+@define Int hits = 0
+
+@if pin1.hit == true
+    @var hits = hits + 1
+@fi
+
+@if pin2.hit == true
+    @var hits = hits + 1
+@fi
+
+@if pin3.hit == true
+    @var hits = hits + 1
+@fi
+
+@if pin4.hit == true
+    @var hits = hits + 1
+@fi
+
+@if pin5.hit == true
+    @var hits = hits + 1
+@fi
+
+@if pin6.hit == true
+    @var hits = hits + 1
+@fi
+
+@if pin7.hit == true
+    @var hits = hits + 1
+@fi
+
+@delay 10
+
+@if currentBall == 1
+    @player &6&l{{hits}} pins down!
+    @player &fReadying next shot!
+    @var currentBall = 2
+@else
+    @delay 6
+    @if hits == 0
+        @player &f&l[0] Goose Egg, better luck next time!
+    @elseif hits == 1
+        @player &f&l[1] Ouch!
+    @elseif hits == 2
+        @player &7&l[2] You can do better than that!
+    @elseif hits == 3
+        @player &7&l[3] Not bad, but there's room for improvement!
+    @elseif hits == 4
+        @player &2&l[4] Good start!
+    @elseif hits == 5
+        @player &2&l[5] Nice job!
+    @elseif hits == 6
+        @player &6&l[6] Very well done!
+    @else
+        @player &6&l[7] STRIKE!!! LEGENDARY!!
+    @fi
+
+    @delay 6
+    @player &fReseting the lane!
+    @var reset()
+@fi
+
+@var interactBlock = false

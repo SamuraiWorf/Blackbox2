@@ -1,0 +1,5 @@
+@using blackbox2_bowling
+
+@global_cooldown 8
+
+@var bowlingTurn(player, Vector2(-5196.5D,-8606.5D))

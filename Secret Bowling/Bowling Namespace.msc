@@ -1,0 +1,32 @@
+@bypass /namespace define blackbox2_bowling
+
+@bypass /type define blackbox2_bowling Pin
+@bypass /type field define blackbox2_bowling Pin Vector2 position
+@bypass /type field define blackbox2_bowling Pin Boolean hit
+
+@bypass /type constructor define blackbox2_bowling Pin(Vector2 position)
+@bypass /script import constructor blackbox2_bowling Pin(Vector2) https://paste.minr.org/dosaqesisu
+
+@bypass /type method define blackbox2_bowling Pin Boolean isHit(Vector2 ball)
+@bypass /script import method blackbox2_bowling Pin isHit https://paste.minr.org/ecesuxoyuv
+
+@bypass /variable define blackbox2_bowling Pin pin1 = Pin(Vector2(-5197.5,-8617.5))
+@bypass /variable define blackbox2_bowling Pin pin2 = Pin(Vector2(-5196.5,-8618.5))
+@bypass /variable define blackbox2_bowling Pin pin3 = Pin(Vector2(-5197.5,-8618.5))
+@bypass /variable define blackbox2_bowling Pin pin4 = Pin(Vector2(-5198.5,-8618.5))
+@bypass /variable define blackbox2_bowling Pin pin5 = Pin(Vector2(-5196.5,-8619.5))
+@bypass /variable define blackbox2_bowling Pin pin6 = Pin(Vector2(-5197.5,-8619.5))
+@bypass /variable define blackbox2_bowling Pin pin7 = Pin(Vector2(-5198.5,-8619.5))
+
+@bypass /variable define blackbox2_bowling Int ball = 0
+@bypass /variable define blackbox2_bowling Int currentBall = 1
+@bypass /variable define blackbox2_bowling Boolean interactBlock = false
+
+@bypass /function define blackbox2_bowling Void sendBall(Double speed, Double spin, Vector2 direction, Vector2 start)
+@bypass /script import function blackbox2_bowling sendBall https://paste.minr.org/urojoyiqak
+
+@bypass /function define blackbox2_bowling Void reset()
+@bypass /script import function blackbox2_bowling reset https://paste.minr.org/pijaxikiga
+
+@bypass /function define blackbox2_bowling Void bowlingTurn(Player player, Vector2 pos)
+@bypass /script import function blackbox2_bowling bowlingTurn https://paste.minr.org/itidimupag

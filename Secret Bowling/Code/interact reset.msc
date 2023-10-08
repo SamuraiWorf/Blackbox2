@@ -1,0 +1,9 @@
+@using blackbox2_bowling
+
+@global_cooldown 8
+
+@if interactBlock == true
+    @return
+@fi
+
+@var reset()

@@ -1,0 +1,5 @@
+@using blackbox2_bowling
+
+@var ball = 0
+
+@player &l&dPink &r&fbowling ball equipped!
