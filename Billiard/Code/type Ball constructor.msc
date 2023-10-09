@@ -1,0 +1,4 @@
+@var this.position = position
+@var this.velocity = Vector2(0.0D, 0.0D)
+@var this.moving = false
+@var this.sunk = false

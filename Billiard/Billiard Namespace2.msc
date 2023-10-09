@@ -1,0 +1,39 @@
+@using blackbox2_billiard
+
+# cue
+@var balls.append(Ball(Vector2(-5189.5D,-8608.5D)))
+
+# 9
+@var balls.append(Ball(Vector2(-5189.5D,-8612.5D)))
+
+# 1
+@var balls.append(Ball(Vector2(-5189.125D,-8613.25D)))
+# 2
+@var balls.append(Ball(Vector2(-5189.875D,-8613.25D)))
+
+# 10
+@var balls.append(Ball(Vector2(-5188.75D,-8614D)))
+# 8
+@var balls.append(Ball(Vector2(-5189.5D,-8614D)))
+# 11
+@var balls.append(Ball(Vector2(-5190.25D,-8614D)))
+
+# 3
+@var balls.append(Ball(Vector2(-5188.375D,-8614.75D)))
+# 12
+@var balls.append(Ball(Vector2(-5189.125D,-8614.75D)))
+# 4
+@var balls.append(Ball(Vector2(-5189.875D,-8614.75D)))
+# 13
+@var balls.append(Ball(Vector2(-5190.625D,-8614.75D)))
+
+# 5
+@var balls.append(Ball(Vector2(-5188.0D,-8615.5D)))
+# 14
+@var balls.append(Ball(Vector2(-5188.75D,-8615.5D)))
+# 6
+@var balls.append(Ball(Vector2(-5189.5D,-8615.5D)))
+# 15
+@var balls.append(Ball(Vector2(-5190.25D,-8615.5D)))
+# 7
+@var balls.append(Ball(Vector2(-5191.0D,-8615.5D)))

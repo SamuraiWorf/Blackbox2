@@ -1,0 +1,12 @@
+@bypass /namespace define blackbox2_billiard
+
+@bypass /type define blackbox2_billiard Ball
+@bypass /type field define blackbox2_billiard Ball Vector2 position
+@bypass /type field define blackbox2_billiard Ball Vector2 velocity
+@bypass /type field define blackbox2_billiard Ball Boolean moving
+@bypass /type field define blackbox2_billiard Ball Boolean sunk
+@bypass /type constructor define blackbox2_billiard Ball(Vector2 position)
+
+@bypass /script import constructor blackbox2_billiard Ball(Vector2) https://paste.minr.org/igahiyuxek
+
+@bypass /variable define blackbox2_billiard Ball[] balls

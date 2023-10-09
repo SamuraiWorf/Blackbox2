@@ -1,0 +1,23 @@
+15 Balls
+-> 8Ball
+
+5 Cues, for different strengths
+not facing, instead direction via playerpos <-> cueballpos
+
+-> now we have speed and initial direction for the cueballpos
+
+Consider each ball as a circle of radius 0.25
+
+Then simulate on timestep with 1 tick delay
+
+if radii added sq larger than distance sq -> Collision
+
+keep a list of moving balls (maybe just the cue ball)
+check collision of each moving ball agains each other ball (unique pairs only)
+-> each ball has info on which balls were collided with
+
+for each ball now calculate new velocity
+
+add velocity to position per ball
+
+next tick
