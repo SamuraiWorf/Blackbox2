@@ -9,4 +9,7 @@
 
 @bypass /script import constructor blackbox2_billiard Ball(Vector2) https://paste.minr.org/igahiyuxek
 
-@bypass /variable define blackbox2_billiard Ball[] balls
+@bypass /variable define blackbox2_billiard Ball[] balls = Ball[]
+@bypass /variable define blackbox2_billiard Int[] ids = Int[]
+@bypass /variable define blackbox2_billiard String[] textures = String[]
+@bypass /variable define blackbox2_billiard String[] ballNames = String[]
