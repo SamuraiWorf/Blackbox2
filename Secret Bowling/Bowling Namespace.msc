@@ -23,10 +23,10 @@
 @bypass /variable define blackbox2_bowling Boolean interactBlock = false
 
 @bypass /function define blackbox2_bowling Void sendBall(Double speed, Double spin, Vector2 direction, Vector2 start)
-@bypass /script import function blackbox2_bowling sendBall https://paste.minr.org/urojoyiqak
+@bypass /script import function blackbox2_bowling sendBall https://paste.minr.org/edarazorab
 
 @bypass /function define blackbox2_bowling Void reset()
-@bypass /script import function blackbox2_bowling reset https://paste.minr.org/pijaxikiga
+@bypass /script import function blackbox2_bowling reset https://paste.minr.org/iyoqugejif
 
 @bypass /function define blackbox2_bowling Void bowlingTurn(Player player, Vector2 pos)
 @bypass /script import function blackbox2_bowling bowlingTurn https://paste.minr.org/itidimupag
