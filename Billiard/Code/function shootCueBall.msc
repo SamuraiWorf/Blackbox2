@@ -16,42 +16,42 @@
             @var balls[d].position = Vector2(balls[d].position.getX() + balls[d].velocity.getX(), balls[d].position.getZ() + balls[d].velocity.getZ())
 
             # left side
-            @if balls[d].position.getX() < -5192.75D
-                @if balls[d].position.getZ() >= -8606.75D || balls[d].position.getZ() <= -8617.25D || (balls[d].position.getZ() >= -8612.75D && balls[d].position.getZ() <= -8611.25D)
+            @if balls[d].position.getX() < -5192.7D
+                @if balls[d].position.getZ() >= -8606.85D || balls[d].position.getZ() <= -8617.15D || (balls[d].position.getZ() >= -8612.85D && balls[d].position.getZ() <= -8611.15D)
                     @var balls[d].sink(d)
                 @fi
-                @define Double offset = -5192.75D - balls[d].position.getX()
-                @var balls[d].position = Vector2(balls[d].position.getX() + offset + 0.25D, balls[d].position.getZ())
+                @define Double offset = -5192.7D - balls[d].position.getX()
+                @var balls[d].position = Vector2(balls[d].position.getX() + offset + 0.3D, balls[d].position.getZ())
                 @var balls[d].velocity = Vector2(-balls[d].velocity.getX(), balls[d].velocity.getZ())
             @fi
 
             # right side
-            @if balls[d].position.getX() > -5186.25D
-                @if balls[d].position.getZ() >= -8606.75D || balls[d].position.getZ() <= -8617.25D || (balls[d].position.getZ() >= -8612.75D && balls[d].position.getZ() <= -8611.25D)
+            @if balls[d].position.getX() > -5186.3D
+                @if balls[d].position.getZ() >= -8606.85D || balls[d].position.getZ() <= -8617.15D || (balls[d].position.getZ() >= -8612.85D && balls[d].position.getZ() <= -8611.15D)
                     @var balls[d].sink(d)
                 @fi
-                @define Double offset = balls[d].position.getX() - -5186.25D
-                @var balls[d].position = Vector2(balls[d].position.getX() - offset - 0.25D, balls[d].position.getZ())
+                @define Double offset = balls[d].position.getX() - -5186.3D
+                @var balls[d].position = Vector2(balls[d].position.getX() - offset - 0.3D, balls[d].position.getZ())
                 @var balls[d].velocity = Vector2(-balls[d].velocity.getX(), balls[d].velocity.getZ())
             @fi
 
             # top side
-            @if balls[d].position.getZ() < -8617.75D
-                @if balls[d].position.getX() >= -5186.75D || balls[d].position.getX() <= -5192.25D
+            @if balls[d].position.getZ() < -8617.7D
+                @if balls[d].position.getX() >= -5186.85D || balls[d].position.getX() <= -5192.15D
                     @var balls[d].sink(d)
                 @fi
-                @define Double offset = -8617.75D - balls[d].position.getZ()
-                @var balls[d].position = Vector2(balls[d].position.getX(), balls[d].position.getZ() + offset + 0.25D)
+                @define Double offset = -8617.7D - balls[d].position.getZ()
+                @var balls[d].position = Vector2(balls[d].position.getX(), balls[d].position.getZ() + offset + 0.3D)
                 @var balls[d].velocity = Vector2(balls[d].velocity.getX(), -balls[d].velocity.getZ())
             @fi
 
             # bottom side
-            @if balls[d].position.getZ() > -8606.25D
-                @if balls[d].position.getX() >= -5186.75D || balls[d].position.getX() <= -5192.25D
+            @if balls[d].position.getZ() > -8606.3D
+                @if balls[d].position.getX() >= -5186.85D || balls[d].position.getX() <= -5192.15D
                     @var balls[d].sink(d)
                 @fi
-                @define Double offset = balls[d].position.getZ() - -8606.25D
-                @var balls[d].position = Vector2(balls[d].position.getX(), balls[d].position.getZ() - offset - 0.25D)
+                @define Double offset = balls[d].position.getZ() - -8606.3D
+                @var balls[d].position = Vector2(balls[d].position.getX(), balls[d].position.getZ() - offset - 0.3D)
                 @var balls[d].velocity = Vector2(balls[d].velocity.getX(), -balls[d].velocity.getZ())
             @fi
 
@@ -68,12 +68,12 @@
         @if balls[d].sunk == false
             @for Int g in list::range(d,16)
                 @if d != g && balls[g].sunk == false
-                    @if balls[d].position.distanceSq(balls[g].position) <= 0.25
+                    @if balls[d].position.distanceSq(balls[g].position) <= 0.36
                         @var colliding[colliding.length()] = d
                         @var colliding[colliding.length()] = g
 
                         @define Double dist = balls[d].position.distance(balls[g].position)
-                        @define Double overlap = 0.5D* (dist - 0.5D)
+                        @define Double overlap = 0.5D* (dist - 0.6D)
                         @define Vector2 dir = Vector2(balls[d].position.getX() - balls[g].position.getX(), balls[d].position.getZ() - balls[g].position.getZ()).normalise()
 
                         @var balls[d].position = Vector2(balls[d].position.getX() - overlap * dir.getX(), balls[d].position.getZ() - overlap * dir.getZ())
