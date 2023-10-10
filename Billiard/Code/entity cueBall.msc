@@ -1,3 +1,21 @@
 @using blackbox2_billiard
 
-@var shootCueBall(0.2D, Vector2(player.getX(),player.getZ()))
+@fast
+
+@define Item item = player.getItemInMainHand()
+
+@if item == null || item.getItemType() != "STICK"
+    @return
+@fi
+
+@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str1]} } }]")
+    @var shootCueBall(0.2D, Vector2(player.getX(),player.getZ()))
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str2]} } }]")
+    @var shootCueBall(0.4D, Vector2(player.getX(),player.getZ()))
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str3]} } }]")
+    @var shootCueBall(0.6D, Vector2(player.getX(),player.getZ()))
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str4]} } }]")
+    @var shootCueBall(0.8D, Vector2(player.getX(),player.getZ()))
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str5]} } }]")
+    @var shootCueBall(1.0D, Vector2(player.getX(),player.getZ()))
+@fi

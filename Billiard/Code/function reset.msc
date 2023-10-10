@@ -4,59 +4,48 @@
 
 # cue
 @var balls[0].position = Vector2(-5189.5D,-8608.5D)
-@var balls[0].velocity = Vector2(0.0D,0.0D)
 
 # 9
 @var balls[1].position = Vector2(-5189.5D,-8612.5D)
-@var balls[1].velocity = Vector2(0.0D,0.0D)
 
 # 1
 @var balls[2].position = Vector2(-5189.125D,-8613.25D)
-@var balls[2].velocity = Vector2(0.0D,0.0D)
 # 2
 @var balls[3].position = Vector2(-5189.875D,-8613.25D)
-@var balls[3].velocity = Vector2(0.0D,0.0D)
 
 # 10
 @var balls[4].position = Vector2(-5188.75D,-8614D)
-@var balls[4].velocity = Vector2(0.0D,0.0D)
 # 8
 @var balls[5].position = Vector2(-5189.5D,-8614D)
-@var balls[5].velocity = Vector2(0.0D,0.0D)
 # 11
 @var balls[6].position = Vector2(-5190.25D,-8614D)
-@var balls[6].velocity = Vector2(0.0D,0.0D)
 
 # 3
 @var balls[7].position = Vector2(-5188.375D,-8614.75D)
-@var balls[7].velocity = Vector2(0.0D,0.0D)
 # 12
 @var balls[8].position = Vector2(-5189.125D,-8614.75D)
-@var balls[8].velocity = Vector2(0.0D,0.0D)
 # 4
 @var balls[9].position = Vector2(-5189.875D,-8614.75D)
-@var balls[9].velocity = Vector2(0.0D,0.0D)
 # 13
 @var balls[10].position = Vector2(-5190.625D,-8614.75D)
-@var balls[10].velocity = Vector2(0.0D,0.0D)
 
 # 5
 @var balls[11].position = Vector2(-5188.0D,-8615.5D)
-@var balls[11].velocity = Vector2(0.0D,0.0D)
 # 14
 @var balls[12].position = Vector2(-5188.75D,-8615.5D)
-@var balls[12].velocity = Vector2(0.0D,0.0D)
 # 6
 @var balls[13].position = Vector2(-5189.5D,-8615.5D)
-@var balls[13].velocity = Vector2(0.0D,0.0D)
 # 15
 @var balls[14].position = Vector2(-5190.25D,-8615.5D)
-@var balls[14].velocity = Vector2(0.0D,0.0D)
 # 7
 @var balls[15].position = Vector2(-5191.0D,-8615.5D)
-@var balls[15].velocity = Vector2(0.0D,0.0D)
 
 @bypass /teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
+
+@for Int i in list::range(0,16)
+    @var balls[i].sunk = false
+    @var balls[i].velocity = Vector2(0.0D,0.0D)
+@done
 
 @for Int i in list::range(1,16)
     @bypass /minecraft:kill @e[name="{{ballNames[i]}}"]

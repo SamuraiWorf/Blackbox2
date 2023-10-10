@@ -1,0 +1,9 @@
+@using blackbox2_billiard
+
+@var this.sunk = true
+@player {{ballVisual[index]}} &r&fhas been sunk!
+@if index == 0
+    @bypass /teleport @e[name="{{ballNames[index]}}"] -5189.5 61.8 -8608.5
+@else
+    @bypass /minecraft:kill @e[name="{{ballNames[index]}}"]
+@fi

@@ -1,0 +1,17 @@
+@using blackbox2_billiard
+
+@for Int i in list::range(0, 36)
+    @define Item item = player.getItem(i)
+
+    @if item != null && item.getItemType() == "STICK" 
+        @var player.setItem(i, null)
+    @fi
+@done
+
+@delay 4
+
+@bypass /give {{player.getName()}} stick{Tags:["str1"],display:{Name:'[{"text":"Pool Cue","italic":false}]',Lore:['[{"text":"Strength ","italic":false,"color":"white"},{"text":"1","color":"gray","bold":true}]']},HideFlags:1} 1
+@bypass /give {{player.getName()}} stick{Tags:["str2"],display:{Name:'[{"text":"Pool Cue","italic":false}]',Lore:['[{"text":"Strength ","italic":false,"color":"white"},{"text":"2","color":"aqua","bold":true}]']},HideFlags:1} 1
+@bypass /give {{player.getName()}} stick{Tags:["str3"],display:{Name:'[{"text":"Pool Cue","italic":false}]',Lore:['[{"text":"Strength ","italic":false,"color":"white"},{"text":"3","color":"green","bold":true}]']},HideFlags:1} 1
+@bypass /give {{player.getName()}} stick{Tags:["str4"],display:{Name:'[{"text":"Pool Cue","italic":false}]',Lore:['[{"text":"Strength ","italic":false,"color":"white"},{"text":"4","color":"dark_purple","bold":true}]']},HideFlags:1} 1
+@bypass /give {{player.getName()}} stick{Tags:["str5"],display:{Name:'[{"text":"Pool Cue","italic":false}]',Lore:['[{"text":"Strength ","italic":false,"color":"white"},{"text":"5","color":"gold","bold":true}]']},HideFlags:1} 1
