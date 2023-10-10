@@ -84,7 +84,7 @@
 @var ids.append(770880961)
 @var textures.append("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJmMDcxYzAzMTU2N2I4NWM5ZmRiY2U1NmU1ZjM0YzlhZTkzMjY2YWI0MTJkZGE5YzZiYTM3NWU4NzliMiJ9fX0=")
 @var ballNames.append("blackbox2_billiard_12")
-@var ballVisual.append("&l&112 Ball")
+@var ballVisual.append("&l&d12 Ball")
 # 4
 @var balls.append(Ball(Vector2(-5189.875D,-8614.75D)))
 @var ids.append(1714632459)
@@ -93,7 +93,7 @@
 @var ids.append(-1718901427)
 @var textures.append("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5YzVlNDI3YzEwNmFkY2U2ZjE4ZDdlOTFmZWRmNDg4M2IwMzRjNDhlNTFkNTU3ZDNhMmQzMDZmNDE0In19fQ==")
 @var ballNames.append("blackbox2_billiard_4")
-@var ballVisual.append("&l&4 Ball")
+@var ballVisual.append("&l&d4 Ball")
 # 13
 @var balls.append(Ball(Vector2(-5190.625D,-8614.75D)))
 @var ids.append(1262465389)
@@ -102,7 +102,7 @@
 @var ids.append(-774554550)
 @var textures.append("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVjYjRhMjQ3MzM5ZjBiMGE1NjFmYTJjZmI5ZjI1NTMyM2Y2Njk1YjRmN2M4MmU2MWVhODY0OTY1MDdiZDcifX19")
 @var ballNames.append("blackbox2_billiard_13")
-@var ballVisual.append("&l&i13 Ball")
+@var ballVisual.append("&l&613 Ball")
 
 # 5
 @var balls.append(Ball(Vector2(-5188.0D,-8615.5D)))
@@ -112,7 +112,7 @@
 @var ids.append(-1279259939)
 @var textures.append("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU5OGQyYzEwMTE2MzQyYjYxY2FlZjU2Mzc1ZDdjZjJhMWY4YjY2YjMwYTcxNWUxOGY1ZDg5MDhlZjA4YyJ9fX0=")
 @var ballNames.append("blackbox2_billiard_5")
-@var ballVisual.append("&l&i5 Ball")
+@var ballVisual.append("&l&65 Ball")
 # 14
 @var balls.append(Ball(Vector2(-5188.75D,-8615.5D)))
 @var ids.append(-2127166956)
@@ -121,7 +121,7 @@
 @var ids.append(1013895410)
 @var textures.append("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRhOWQ0YTJkNTVlOWQ4MTdmZjA3YWViYzMxMTNkZDU4NDU3ZTgyYmU1NGNjYTMxYTgyNGM2ZDZhYmE2In19fQ==")
 @var ballNames.append("blackbox2_billiard_14")
-@var ballVisual.append("&l&j14 Ball")
+@var ballVisual.append("&l&214 Ball")
 # 6
 @var balls.append(Ball(Vector2(-5189.5D,-8615.5D)))
 @var ids.append(1426822657)
@@ -130,7 +130,7 @@
 @var ids.append(761122548)
 @var textures.append("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODhkMTUyMTMzMWI5ZDZlODFmYTgxNzgxZTM3NmRmNjNiOWM2NTRmY2QwODEwYzBkOTgyYjBhM2VlNmY2In19fQ==")
 @var ballNames.append("blackbox2_billiard_6")
-@var ballVisual.append("&l&j6 Ball")
+@var ballVisual.append("&l&26 Ball")
 # 15
 @var balls.append(Ball(Vector2(-5190.25D,-8615.5D)))
 @var ids.append(-335080803)
@@ -151,7 +151,7 @@
 @var ballVisual.append("&l&47 Ball")
 
 @bypass /function define blackbox2_billiard Void reset()
-@bypass /script import function blackbox2_billiard reset https://paste.minr.org/afalanipux
+@bypass /script import function blackbox2_billiard reset https://paste.minr.org/hugudivoci
 
 @bypass /function define blackbox2_billiard Void shootCueBall(Double speed, Vector2 playerPos)
-@bypass /script import function blackbox2_billiard shootCueBall https://paste.minr.org/ahusutarif
+@bypass /script import function blackbox2_billiard shootCueBall https://paste.minr.org/noziqujiri

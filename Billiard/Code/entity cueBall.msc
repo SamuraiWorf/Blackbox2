@@ -8,6 +8,13 @@
     @return
 @fi
 
+@if interactBlock
+    @player &4The balls are still moving!
+    @return
+@fi
+
+@var interactBlock = true
+
 @if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str1]} } }]")
     @var shootCueBall(0.2D, Vector2(player.getX(),player.getZ()))
 @elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str2]} } }]")
@@ -19,3 +26,5 @@
 @elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str5]} } }]")
     @var shootCueBall(1.0D, Vector2(player.getX(),player.getZ()))
 @fi
+
+@var interactBlock = false

@@ -2,6 +2,13 @@
 
 @fast
 
+@if interactBlock
+    @player &4The balls are still moving!
+    @return
+@fi
+
+@var interactBlock = true
+
 # cue
 @var balls[0].position = Vector2(-5189.5D,-8608.5D)
 
@@ -59,5 +66,7 @@
 @done
 
 @delay 5
+
+@var interactBlock = false
 
 @player &l&4[!] &8Table reset!

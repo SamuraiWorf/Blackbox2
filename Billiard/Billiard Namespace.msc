@@ -15,3 +15,4 @@
 @bypass /variable define blackbox2_billiard String[] textures = String[]
 @bypass /variable define blackbox2_billiard String[] ballNames = String[]
 @bypass /variable define blackbox2_billiard String[] ballVisual = String[]
+@bypass /variable define blackbox2_billiard Boolean interactBlock = false
