@@ -48,36 +48,36 @@
 
     # static collisions
     @for Int d in list::range(0,16)
-        @for Int g in list::range(0,16)
+        @for Int g in list::range(d,16)
             @if d != g
                 @if balls[d].position.distanceSq(balls[g].position) <= 0.25
                     @var colliding[colliding.length()] = d
                     @var colliding[colliding.length()] = g
 
-                    # @define Double dist = balls[d].position.distance(balls[g].position)
-                    # @define Double overlap = 0.5D* dist - 0.5D
-                    # @define Vector2 dir = Vector2(balls[d].position.getX() - balls[g].position.getX(), balls[d].position.getZ() - balls[g].position.getZ()).normalise()
+                    @define Double dist = balls[d].position.distance(balls[g].position)
+                    @define Double overlap = 0.5D* (dist - 0.5D)
+                    @define Vector2 dir = Vector2(balls[d].position.getX() - balls[g].position.getX(), balls[d].position.getZ() - balls[g].position.getZ()).normalise()
 
-                    # @var balls[d].position = Vector2(balls[d].position.getX() - overlap * dir.getX(), balls[d].position.getZ() - overlap * dir.getZ())
-                    # @var balls[g].position = Vector2(balls[d].position.getX() + overlap * dir.getX(), balls[d].position.getZ() + overlap * dir.getZ())
+                    @var balls[d].position = Vector2(balls[d].position.getX() - overlap * dir.getX(), balls[d].position.getZ() - overlap * dir.getZ())
+                    @var balls[g].position = Vector2(balls[d].position.getX() + overlap * dir.getX(), balls[d].position.getZ() + overlap * dir.getZ())
                 @fi
             @fi
         @done
     @done
 
     # dynamic collisions
-    @for Int d in list::range(0,colliding.length()/2)
-        @define Ball b1 = balls[colliding[d*2]]
-        @define Ball b2 = balls[colliding[d*2+1]]
-
-        @define Vector2 normal = Vector2(b2.position.getX() - b1.position.getX(), b2.position.getZ() - b1.position.getZ()).normalise()
-        @define Vector2 tangent = Vector2(-normal.getZ(), normal.getX())
-        @define Vector2 dotTan = Vector2(b1.velocity.getX() * tangent.getX() + b1.velocity.getZ() * tangent.getZ(), b2.velocity.getX() * tangent.getX() + b2.velocity.getZ() * tangent.getZ())
-        @define Vector2 dotNormal = Vector2(b1.velocity.getX() * normal.getX() + b1.velocity.getZ() * normal.getZ(), b2.velocity.getX() * normal.getX() + b2.velocity.getZ() * normal.getZ())
+    # @for Int d in list::range(0,colliding.length()/2)
+    #     @define Ball b1 = balls[colliding[d*2]]
+    #     @define Ball b2 = balls[colliding[d*2+1]]
+# 
+    #     @define Vector2 normal = Vector2(b2.position.getX() - b1.position.getX(), b2.position.getZ() - b1.position.getZ()).normalise()
+    #     @define Vector2 tangent = Vector2(-normal.getZ(), normal.getX())
+    #     @define Vector2 dotTan = Vector2(b1.velocity.getX() * tangent.getX() + b1.velocity.getZ() * tangent.getZ(), b2.velocity.getX() * tangent.getX() + b2.velocity.getZ() * tangent.getZ())
+      #   @define Vector2 dotNormal = Vector2(b1.velocity.getX() * normal.getX() + b1.velocity.getZ() * normal.getZ(), b2.velocity.getX() * normal.getX() + b2.velocity.getZ() * normal.getZ())
         
-        @var b2.velocity = Vector2(tangent.getX() * dotTan.getX() + normal.getX() * dotNormal.getZ(), tangent.getZ() * dotTan.getX() + normal.getZ() * dotNormal.getZ())
-        @var b1.velocity = Vector2(tangent.getX() * dotTan.getZ() + normal.getX() * dotNormal.getX(), tangent.getZ() * dotTan.getZ() + normal.getZ() * dotNormal.getX())
-    @done
+     #   @var b2.velocity = Vector2(tangent.getX() * dotTan.getX() + normal.getX() * dotNormal.getZ(), tangent.getZ() * dotTan.getX() + normal.getZ() * dotNormal.getZ())
+     #   @var b1.velocity = Vector2(tangent.getX() * dotTan.getZ() + normal.getX() * dotNormal.getX(), tangent.getZ() * dotTan.getZ() + normal.getZ() * dotNormal.getX())
+ #   @done
 
     # "render" balls
     @for Int d in list::range(0,16)
