@@ -8,17 +8,21 @@
 
 @for Int i in list::range(0,100)
 
+    @define Boolean anyMoving = false
+
     @define Int[] colliding = Int[]
 
     # Update physics
     @for Int d in list::range(0,16)
+        @define Boolean sunk = false
+
         @if balls[d].sunk == false
             @var balls[d].position = Vector2(balls[d].position.getX() + balls[d].velocity.getX(), balls[d].position.getZ() + balls[d].velocity.getZ())
 
             # left side
             @if balls[d].position.getX() < -5192.7D
                 @if balls[d].position.getZ() >= -8606.85D || balls[d].position.getZ() <= -8617.15D || (balls[d].position.getZ() >= -8612.85D && balls[d].position.getZ() <= -8611.15D)
-                    @var balls[d].sink(d)
+                    @var sunk = true
                 @fi
                 @define Double offset = -5192.7D - balls[d].position.getX()
                 @var balls[d].position = Vector2(balls[d].position.getX() + offset + 0.3D, balls[d].position.getZ())
@@ -28,7 +32,7 @@
             # right side
             @if balls[d].position.getX() > -5186.3D
                 @if balls[d].position.getZ() >= -8606.85D || balls[d].position.getZ() <= -8617.15D || (balls[d].position.getZ() >= -8612.85D && balls[d].position.getZ() <= -8611.15D)
-                    @var balls[d].sink(d)
+                    @var sunk = true
                 @fi
                 @define Double offset = balls[d].position.getX() - -5186.3D
                 @var balls[d].position = Vector2(balls[d].position.getX() - offset - 0.3D, balls[d].position.getZ())
@@ -38,7 +42,7 @@
             # top side
             @if balls[d].position.getZ() < -8617.7D
                 @if balls[d].position.getX() >= -5186.85D || balls[d].position.getX() <= -5192.15D
-                    @var balls[d].sink(d)
+                    @var sunk = true
                 @fi
                 @define Double offset = -8617.7D - balls[d].position.getZ()
                 @var balls[d].position = Vector2(balls[d].position.getX(), balls[d].position.getZ() + offset + 0.3D)
@@ -48,17 +52,23 @@
             # bottom side
             @if balls[d].position.getZ() > -8606.3D
                 @if balls[d].position.getX() >= -5186.85D || balls[d].position.getX() <= -5192.15D
-                    @var balls[d].sink(d)
+                    @var sunk = true
                 @fi
                 @define Double offset = balls[d].position.getZ() - -8606.3D
                 @var balls[d].position = Vector2(balls[d].position.getX(), balls[d].position.getZ() - offset - 0.3D)
                 @var balls[d].velocity = Vector2(balls[d].velocity.getX(), -balls[d].velocity.getZ())
             @fi
 
+            @if sunk
+                @var balls[d].sink(d)
+            @fi
+
             @var balls[d].velocity = Vector2(balls[d].velocity.getX()*0.965D, balls[d].velocity.getZ()*0.965D)
 
             @if balls[d].velocity.length() <= 0.025
                 @var balls[d].velocity = Vector2(0.0D, 0.0D)
+            @else
+                @var anyMoving = true
             @fi
         @fi
     @done
@@ -78,6 +88,8 @@
 
                         @var balls[d].position = Vector2(balls[d].position.getX() - overlap * dir.getX(), balls[d].position.getZ() - overlap * dir.getZ())
                         @var balls[g].position = Vector2(balls[g].position.getX() + overlap * dir.getX(), balls[g].position.getZ() + overlap * dir.getZ())
+
+                        @var anyMoving = true
                     @fi
                 @fi
             @done
@@ -85,18 +97,18 @@
     @done
 
     # dynamic collisions
-    @for Int d in list::range(0,colliding.length()/2)
-        @define Ball b1 = balls[colliding[d*2]]
-        @define Ball b2 = balls[colliding[d*2+1]]
-
-        @define Vector2 normal = Vector2(b2.position.getX() - b1.position.getX(), b2.position.getZ() - b1.position.getZ()).normalise()
-        @define Vector2 tangent = Vector2(-normal.getZ(), normal.getX())
-        @define Vector2 dotTan = Vector2(b1.velocity.getX() * tangent.getX() + b1.velocity.getZ() * tangent.getZ(), b2.velocity.getX() * tangent.getX() + b2.velocity.getZ() * tangent.getZ())
-        @define Vector2 dotNormal = Vector2(b1.velocity.getX() * normal.getX() + b1.velocity.getZ() * normal.getZ(), b2.velocity.getX() * normal.getX() + b2.velocity.getZ() * normal.getZ())
-        
-        @var b2.velocity = Vector2(tangent.getX() * dotTan.getX() + normal.getX() * dotNormal.getZ(), tangent.getZ() * dotTan.getX() + normal.getZ() * dotNormal.getZ())
-        @var b1.velocity = Vector2(tangent.getX() * dotTan.getZ() + normal.getX() * dotNormal.getX(), tangent.getZ() * dotTan.getZ() + normal.getZ() * dotNormal.getX())
-    @done
+    # @for Int d in list::range(0,colliding.length()/2)
+    #    @define Ball b1 = balls[colliding[d*2]]
+    #    @define Ball b2 = balls[colliding[d*2+1]]
+#
+    #    @define Vector2 normal = Vector2(b2.position.getX() - b1.position.getX(), b2.position.getZ() - b1.position.getZ()).normalise()
+    #    @define Vector2 tangent = Vector2(-normal.getZ(), normal.getX())
+    #    @define Vector2 dotTan = Vector2(b1.velocity.getX() * tangent.getX() + b1.velocity.getZ() * tangent.getZ(), b2.velocity.getX() * tangent.getX() + b2.velocity.getZ() * tangent.getZ())
+     #   @define Vector2 dotNormal = Vector2(b1.velocity.getX() * normal.getX() + b1.velocity.getZ() * normal.getZ(), b2.velocity.getX() * normal.getX() + b2.velocity.getZ() * normal.getZ())
+     #   
+     #   @var b2.velocity = Vector2(tangent.getX() * dotTan.getX() + normal.getX() * dotNormal.getZ(), tangent.getZ() * dotTan.getX() + normal.getZ() * dotNormal.getZ())
+    #    @var b1.velocity = Vector2(tangent.getX() * dotTan.getZ() + normal.getX() * dotNormal.getX(), tangent.getZ() * dotTan.getZ() + normal.getZ() * dotNormal.getX())
+  #  @done
 
     # "render" balls
     @for Int d in list::range(0,16)
@@ -104,6 +116,10 @@
             @bypass /teleport @e[name="{{ballNames[d]}}"] {{balls[d].position.getX()}} 63.8 {{balls[d].position.getZ()}}
         @fi
     @done
+
+    @if anyMoving == false
+        @var i = 98
+    @fi
 
     @delay 1
 

@@ -15,16 +15,18 @@
 
 @var interactBlock = true
 
-@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str1]} } }]")
-    @var shootCueBall(0.2D, Vector2(player.getX(),player.getZ()))
-@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str2]} } }]")
-    @var shootCueBall(0.4D, Vector2(player.getX(),player.getZ()))
-@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str3]} } }]")
-    @var shootCueBall(0.6D, Vector2(player.getX(),player.getZ()))
-@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str4]} } }]")
-    @var shootCueBall(0.8D, Vector2(player.getX(),player.getZ()))
-@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[str5]} } }]")
-    @var shootCueBall(1.0D, Vector2(player.getX(),player.getZ()))
+@bypass /fill -5191 68 -8622 -5189 69 -8622 red_concrete
+
+@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[cue]} } }]")
+    @define Double distance = Vector2(player.getX(),player.getZ()).distance(Vector2(entity.getX(),entity.getZ()))
+
+    @if distance / 3.0D > 1
+        @var shootCueBall(1.0D, Vector2(player.getX(),player.getZ()))
+    @else
+        @var shootCueBall(distance / 3.0D, Vector2(player.getX(),player.getZ()))
+    @fi
 @fi
+
+@bypass /fill -5191 68 -8622 -5189 69 -8622 lime_concrete
 
 @var interactBlock = false
