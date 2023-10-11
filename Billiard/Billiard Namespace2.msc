@@ -154,4 +154,7 @@
 @bypass /script import function blackbox2_billiard reset https://paste.minr.org/qayabodiye
 
 @bypass /function define blackbox2_billiard Void shootCueBall(Double speed, Vector2 playerPos)
-@bypass /script import function blackbox2_billiard shootCueBall https://paste.minr.org/cejaqetewe
+@bypass /script import function blackbox2_billiard shootCueBall https://paste.minr.org/umemuvibit
+
+@bypass /function define blackbox2_billiard Void resolveCollisions()
+@bypass /script import function blackbox2_billiard resolveCollisions https://paste.minr.org/ifosimosil
