@@ -1,5 +1,7 @@
 @using blackbox2_billiard
 
+@cooldown 5
+
 @for Int i in list::range(0, 36)
     @define Item item = player.getItem(i)
 

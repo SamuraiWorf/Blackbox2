@@ -1,0 +1,72 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Boolean anyMoving = false
+
+# Update physics
+@for Int i in list::range(0,16)
+    @define Boolean sunk = false
+
+    @var balls[i].position = Vector2(balls[i].position.getX() + balls[i].velocity.getX(), balls[i].position.getZ() + balls[i].velocity.getZ())
+
+    @if balls[i].sunk == false
+        # left side
+        @if balls[i].position.getX() < -5193D + radius
+            @if balls[i].position.getZ() >= -8607D + radius/2 || balls[i].position.getZ() <= -8617D - radius/2 || (balls[i].position.getZ() >= -8613D + radius/2 && balls[i].position.getZ() <= -8611D - radius/2)
+                @var sunk = true
+            @else
+                @var balls[i].position = Vector2(-5193D + radius, balls[i].position.getZ())
+                @var balls[i].velocity = Vector2(-balls[i].velocity.getX(), balls[i].velocity.getZ())
+            @fi
+        @fi
+
+        # right side
+        @if balls[i].position.getX() > -5186D - radius
+            @if balls[i].position.getZ() >= -8607D + radius/2 || balls[i].position.getZ() <= -8617D - radius/2 || (balls[i].position.getZ() >= -8613D + radius/2 && balls[i].position.getZ() <= -8611D - radius/2)
+                @var sunk = true
+            @else
+                @var balls[i].position = Vector2(-5186D - radius, balls[i].position.getZ())
+                @var balls[i].velocity = Vector2(-balls[i].velocity.getX(), balls[i].velocity.getZ())
+            @fi
+        @fi
+
+        # top side
+        @if balls[i].position.getZ() < -8618D + radius
+            @if balls[i].position.getX() >= -5187D + radius/2 || balls[i].position.getX() <= -5192D - radius/2
+                @var sunk = true
+            @else
+                @var balls[i].position = Vector2(balls[i].position.getX(), -8618D + radius)
+                @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -balls[i].velocity.getZ())
+            @fi
+        @fi
+
+        # bottom side
+        @if balls[i].position.getZ() > -8606D - radius
+            @if balls[i].position.getX() >= -5187D + radius/2 || balls[i].position.getX() <= -5192D - radius/2
+                @var sunk = true
+            @else
+                @var balls[i].position = Vector2(balls[i].position.getX(), -8606D - radius)
+                @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -balls[i].velocity.getZ())
+            @fi
+        @fi
+    @fi
+
+    @if sunk
+        @var balls[i].sink(i)
+    @fi
+
+    @if balls[i].sunk && balls[i].velocity.lengthSq() > 0.025D
+        @var updateSunkMovement(i)
+    @fi
+
+    @var balls[i].velocity = Vector2(balls[i].velocity.getX()*0.965D, balls[i].velocity.getZ()*0.965D)
+
+    @if balls[i].velocity.length() <= 0.025D
+        @var balls[i].velocity = Vector2(0.0D, 0.0D)
+    @else
+        @var anyMoving = true
+    @fi
+@done
+
+@return anyMoving

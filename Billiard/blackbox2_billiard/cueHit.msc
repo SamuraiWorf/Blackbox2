@@ -1,0 +1,39 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Item item = player.getItemInMainHand()
+
+@if item == null || item.getItemType() != "STICK"
+    @return
+@fi
+
+@if interactBlock
+    @player &4The balls are still moving!
+    @return
+@fi
+
+@var interactBlock = true
+
+@bypass /fill -5191 68 -8622 -5189 69 -8622 red_concrete
+
+@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[cue]} } }]")
+    @define Double distance = player.getLocation().asVector2().distance(entity.getLocation().asVector2())
+    @define Vector2 direction = Vector2(entity.getX()-player.getX(), entity.getZ()-player.getZ()).normalise()
+
+    @define Double speed = distance / 3.0D
+
+    @if distance / 3.0D > 1.2D
+        @var speed = 1.2D
+    @fi
+
+    @var balls[0].velocity = Vector2(direction.getX()*speed, direction.getZ()*speed)
+
+    @var update()
+
+    @var postShot()
+@fi
+
+@bypass /fill -5191 68 -8622 -5189 69 -8622 lime_concrete
+
+@var interactBlock = false

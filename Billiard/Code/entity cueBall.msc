@@ -1,32 +1,5 @@
 @using blackbox2_billiard
 
-@fast
+@global_cooldown 5
 
-@define Item item = player.getItemInMainHand()
-
-@if item == null || item.getItemType() != "STICK"
-    @return
-@fi
-
-@if interactBlock
-    @player &4The balls are still moving!
-    @return
-@fi
-
-@var interactBlock = true
-
-@bypass /fill -5191 68 -8622 -5189 69 -8622 red_concrete
-
-@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[cue]} } }]")
-    @define Double distance = Vector2(player.getX(),player.getZ()).distance(Vector2(entity.getX(),entity.getZ()))
-
-    @if distance / 3.0D > 1
-        @var shootCueBall(1.0D, Vector2(player.getX(),player.getZ()))
-    @else
-        @var shootCueBall(distance / 3.0D, Vector2(player.getX(),player.getZ()))
-    @fi
-@fi
-
-@bypass /fill -5191 68 -8622 -5189 69 -8622 lime_concrete
-
-@var interactBlock = false
+@var cueHit(player, entity)

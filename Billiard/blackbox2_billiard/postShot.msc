@@ -2,12 +2,6 @@
 
 @fast
 
-@define Vector2 direction = Vector2(balls[0].position.getX()-playerPos.getX(),balls[0].position.getZ() - playerPos.getZ()).normalise()
-
-@var balls[0].velocity = Vector2(direction.getX()*speed, direction.getZ()*speed)
-
-@var resolveCollisions()
-
 @if balls[0].sunk == true
     @bypass /teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
     @var balls[0].sunk = false

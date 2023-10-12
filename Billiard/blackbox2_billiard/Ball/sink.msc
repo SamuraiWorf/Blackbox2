@@ -1,0 +1,4 @@
+@using blackbox2_billiard
+
+@var this.sunk = true
+@player {{ballVisualNames[index]}} &r&fhas been sunk!
