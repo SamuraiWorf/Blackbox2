@@ -80,6 +80,10 @@
 
 @bypass /setblock -5190 67 -8621 minecraft:magenta_glazed_terracotta[facing=south]
 
+@var team = 1
+@var solids = 0
+@var winner = 0
+
 @var interactBlock = false
 
 @player &l&4[!] &8Table reset!

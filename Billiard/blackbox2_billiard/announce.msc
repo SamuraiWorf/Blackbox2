@@ -1,0 +1,5 @@
+@using blackbox2_billiard
+
+@fast
+
+@player {{message}}

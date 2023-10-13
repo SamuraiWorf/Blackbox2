@@ -74,6 +74,14 @@
 
     @if sunk
         @var balls[i].sink(i)
+        @if solids == 0 && i != 8 && i != 0
+            @if i >= 9
+                @var solids = 3 - team
+            @else
+                @var solids = team
+            @fi
+            @var showSets()
+        @fi
     @fi
 
     @var balls[i].velocity = Vector2(balls[i].velocity.getX()*0.965D, balls[i].velocity.getZ()*0.965D)

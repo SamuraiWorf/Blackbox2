@@ -104,11 +104,14 @@
 
     Int team = 1
     Int solids = 0
+    Int winner = 0
 
+    Void announce(String message)
     Void reset()
     Void cueHit(Player player, Entity entity)
     Void update()
     Boolean updateMovement()
+    Void showSets()
     Void updateSunkMovement(Int index)
     Boolean resolveCollisions()
     Boolean areColliding(blackbox2_billiard::Ball b1, blackbox2_billiard::Ball b2)

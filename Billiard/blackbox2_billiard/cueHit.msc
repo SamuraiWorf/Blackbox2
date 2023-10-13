@@ -13,6 +13,11 @@
     @return
 @fi
 
+@if winner != 0
+    @player &4The game is already over!
+    @return
+@fi
+
 @var interactBlock = true
 
 @bypass /fill -5191 68 -8622 -5189 69 -8622 red_concrete
