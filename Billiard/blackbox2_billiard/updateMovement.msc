@@ -13,8 +13,13 @@
     @if balls[i].sunk == false
         # left side
         @if balls[i].position.getX() < -5193D + radius
-            @if balls[i].position.getZ() >= -8607D + radius/2 || balls[i].position.getZ() <= -8617D - radius/2 || (balls[i].position.getZ() >= -8613D + radius/2 && balls[i].position.getZ() <= -8611D - radius/2)
-                @var sunk = true
+            @if balls[i].position.getZ() >= -8607D + radius || balls[i].position.getZ() <= -8617D - radius || (balls[i].position.getZ() >= -8613D + radius && balls[i].position.getZ() <= -8611D - radius)
+                @if balls[i].position.getX() < -5193D
+                    @var sunk = true
+                    @if balls[i].velocity.getX() > -0.05D
+                        @var balls[i].velocity = Vector2(-0.05D, balls[i].velocity.getZ())
+                    @fi
+                @fi
             @else
                 @var balls[i].position = Vector2(-5193D + radius, balls[i].position.getZ())
                 @var balls[i].velocity = Vector2(-balls[i].velocity.getX(), balls[i].velocity.getZ())
@@ -23,8 +28,13 @@
 
         # right side
         @if balls[i].position.getX() > -5186D - radius
-            @if balls[i].position.getZ() >= -8607D + radius/2 || balls[i].position.getZ() <= -8617D - radius/2 || (balls[i].position.getZ() >= -8613D + radius/2 && balls[i].position.getZ() <= -8611D - radius/2)
-                @var sunk = true
+            @if balls[i].position.getZ() >= -8607D + radius || balls[i].position.getZ() <= -8617D - radius || (balls[i].position.getZ() >= -8613D + radius && balls[i].position.getZ() <= -8611D - radius)
+                @if balls[i].position.getX() > -5186D
+                    @var sunk = true
+                    @if balls[i].velocity.getX() < 0.05D
+                        @var balls[i].velocity = Vector2(0.05D, balls[i].velocity.getZ())
+                    @fi
+                @fi
             @else
                 @var balls[i].position = Vector2(-5186D - radius, balls[i].position.getZ())
                 @var balls[i].velocity = Vector2(-balls[i].velocity.getX(), balls[i].velocity.getZ())
@@ -33,8 +43,13 @@
 
         # top side
         @if balls[i].position.getZ() < -8618D + radius
-            @if balls[i].position.getX() >= -5187D + radius/2 || balls[i].position.getX() <= -5192D - radius/2
-                @var sunk = true
+            @if balls[i].position.getX() >= -5187D + radius || balls[i].position.getX() <= -5192D - radius
+                @if balls[i].position.getZ() < -8618D
+                    @var sunk = true
+                    @if balls[i].velocity.getZ() > -0.05D
+                        @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -0.05D)
+                    @fi
+                @fi
             @else
                 @var balls[i].position = Vector2(balls[i].position.getX(), -8618D + radius)
                 @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -balls[i].velocity.getZ())
@@ -43,8 +58,13 @@
 
         # bottom side
         @if balls[i].position.getZ() > -8606D - radius
-            @if balls[i].position.getX() >= -5187D + radius/2 || balls[i].position.getX() <= -5192D - radius/2
-                @var sunk = true
+            @if balls[i].position.getX() >= -5187D + radius || balls[i].position.getX() <= -5192D - radius
+                @if balls[i].position.getZ() > -8606D
+                    @var sunk = true
+                    @if balls[i].velocity.getZ() < 0.05D
+                        @var balls[i].velocity = Vector2(balls[i].velocity.getX(), 0.05D)
+                    @fi
+                @fi
             @else
                 @var balls[i].position = Vector2(balls[i].position.getX(), -8606D - radius)
                 @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -balls[i].velocity.getZ())
@@ -56,16 +76,20 @@
         @var balls[i].sink(i)
     @fi
 
-    @if balls[i].sunk && balls[i].velocity.lengthSq() > 0.025D
-        @var updateSunkMovement(i)
-    @fi
-
     @var balls[i].velocity = Vector2(balls[i].velocity.getX()*0.965D, balls[i].velocity.getZ()*0.965D)
 
     @if balls[i].velocity.length() <= 0.025D
         @var balls[i].velocity = Vector2(0.0D, 0.0D)
     @else
         @var anyMoving = true
+    @fi
+
+    @if balls[i].sunk
+        @if balls[i].height > 63
+            @var anyMoving = true
+            @var balls[i].height = balls[i].height - 0.1D
+        @fi
+        @var updateSunkMovement(i)
     @fi
 @done
 

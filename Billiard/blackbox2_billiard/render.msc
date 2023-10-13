@@ -5,8 +5,8 @@
 # "render" balls
 @for Int d in list::range(0,16)
     @if balls[d].sunk == false
-        @bypass /teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} 63.8 {{balls[d].position.getZ()}}
+        @bypass /teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} {{balls[d].height}} {{balls[d].position.getZ()}}
     @else
-        @bypass /teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} 63.0 {{balls[d].position.getZ()}}
+        @bypass /teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} {{balls[d].height}} {{balls[d].position.getZ()}}
     @fi
 @done

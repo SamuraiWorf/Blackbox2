@@ -5,6 +5,7 @@
 @if balls[0].sunk == true
     @bypass /teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
     @var balls[0].sunk = false
+    @var balls[0].height = 63.8D
     @var balls[0].position = Vector2(-5189.5D,-8608.5D)
     @var balls[0].velocity = Vector2(0.0D,0.0D)
 @fi

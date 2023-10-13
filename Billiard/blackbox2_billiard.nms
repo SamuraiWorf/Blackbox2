@@ -102,6 +102,9 @@
     Boolean interactBlock = false
     final Double radius = 0.24D
 
+    Int team = 1
+    Int solids = 0
+
     Void reset()
     Void cueHit(Player player, Entity entity)
     Void update()
@@ -116,6 +119,7 @@
 
         Ball(Vector2 position)
 
+        Double height
         Vector2 position
         Vector2 velocity
         Boolean sunk

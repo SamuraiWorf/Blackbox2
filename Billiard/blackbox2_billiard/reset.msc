@@ -49,6 +49,7 @@
 @for Int i in list::range(0,16)
     @var balls[i].sunk = false
     @var balls[i].velocity = Vector2(0.0D,0.0D)
+    @var balls[i].height = 63.8D
 @done
 
 @for Int i in list::range(1,16)

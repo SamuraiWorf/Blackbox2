@@ -1,7 +1,6 @@
 15 Balls
 -> 8Ball
 
-fix collision response (dynamic)
 2 player turn system variable and do the arrow
 implement billiard rules:
     - 8 ball last or lose otherwise
@@ -10,4 +9,3 @@ implement billiard rules:
     
 place full / half sides when first ball is sunk
 make announcements "global" in the billiard area
-finish billiard room
