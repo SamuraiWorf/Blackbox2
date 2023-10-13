@@ -13,36 +13,37 @@
 
 # cue
 @var balls[0].position = Vector2(-5189.5D,-8608.5D)
-# 9
-@var balls[1].position = Vector2(-5189.5D,-8612.5D)
 # 1
-@var balls[2].position = Vector2(-5189.125D,-8613.25D)
+@var balls[1].position = Vector2(-5189.125D,-8613.25D)
 # 2
-@var balls[3].position = Vector2(-5189.875D,-8613.25D)
-# 10
-@var balls[4].position = Vector2(-5188.75D,-8614D)
-# 8
-@var balls[5].position = Vector2(-5189.5D,-8614D)
-# 11
-@var balls[6].position = Vector2(-5190.25D,-8614D)
+@var balls[2].position = Vector2(-5189.875D,-8613.25D)
 # 3
-@var balls[7].position = Vector2(-5188.375D,-8614.75D)
-# 12
-@var balls[8].position = Vector2(-5189.125D,-8614.75D)
+@var balls[3].position = Vector2(-5188.375D,-8614.75D)
 # 4
-@var balls[9].position = Vector2(-5189.875D,-8614.75D)
-# 13
-@var balls[10].position = Vector2(-5190.625D,-8614.75D)
+@var balls[4].position = Vector2(-5189.875D,-8614.75D)
 # 5
-@var balls[11].position = Vector2(-5188.0D,-8615.5D)
-# 14
-@var balls[12].position = Vector2(-5188.75D,-8615.5D)
+@var balls[5].position = Vector2(-5188.0D,-8615.5D)
 # 6
-@var balls[13].position = Vector2(-5189.5D,-8615.5D)
-# 15
-@var balls[14].position = Vector2(-5190.25D,-8615.5D)
+@var balls[6].position = Vector2(-5189.5D,-8615.5D)
 # 7
-@var balls[15].position = Vector2(-5191.0D,-8615.5D)
+@var balls[7].position = Vector2(-5191.0D,-8615.5D)
+# 8
+@var balls[8].position = Vector2(-5189.5D,-8614D)
+# 9
+@var balls[9].position = Vector2(-5189.5D,-8612.5D)
+# 10
+@var balls[10].position = Vector2(-5188.75D,-8614D)
+# 11
+@var balls[11].position = Vector2(-5190.25D,-8614D)
+# 12
+@var balls[12].position = Vector2(-5189.125D,-8614.75D)
+# 13
+@var balls[13].position = Vector2(-5190.625D,-8614.75D)
+# 14
+@var balls[14].position = Vector2(-5188.75D,-8615.5D)
+# 15
+@var balls[15].position = Vector2(-5190.25D,-8615.5D)
+
 
 @bypass /teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
 
@@ -83,6 +84,10 @@
 @var team = 1
 @var solids = 0
 @var winner = 0
+@var sunkCopper = 0
+@var sunkCoal = 0
+
+@var sunkThisShot = Int[]
 
 @var interactBlock = false
 
