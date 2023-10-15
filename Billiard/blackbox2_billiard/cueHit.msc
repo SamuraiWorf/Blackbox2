@@ -20,7 +20,7 @@
 
 @var interactBlock = true
 
-@bypass /fill -5191 68 -8622 -5189 69 -8622 red_concrete
+@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 red_concrete
 
 @if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[cue]} } }]")
     @define Double distance = player.getLocation().asVector2().distance(entity.getLocation().asVector2())
@@ -39,6 +39,6 @@
     @var postShot()
 @fi
 
-@bypass /fill -5191 68 -8622 -5189 69 -8622 lime_concrete
+@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 lime_concrete
 
 @var interactBlock = false

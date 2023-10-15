@@ -9,7 +9,7 @@
 
 @var interactBlock = true
 
-@bypass /fill -5191 68 -8622 -5189 69 -8622 red_concrete
+@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 red_concrete
 
 # cue
 @var balls[0].position = Vector2(-5189.5D,-8608.5D)
@@ -45,7 +45,7 @@
 @var balls[15].position = Vector2(-5190.25D,-8615.5D)
 
 
-@bypass /teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
+@console /execute in minecraft:overworld run teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
 
 @for Int i in list::range(0,16)
     @var balls[i].sunk = false
@@ -54,32 +54,32 @@
 @done
 
 @for Int i in list::range(1,16)
-    @bypass /minecraft:kill @e[name="{{ballEntityNames[i]}}"]
+    @console /execute in minecraft:overworld run minecraft:kill @e[name="{{ballEntityNames[i]}}"]
 @done
 
 @slow
 
 @for Int i in list::range(1,16)
     @define Int offset = i*4
-    @bypass /summon armor_stand {{balls[i].position.getX()}} 63.8 {{balls[i].position.getZ()}} {DisabledSlots:4144959,Invisible:1b,Silent:1b,Small:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"{{ballEntityNames[i]}}"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;{{headUUIDs[offset]}},{{headUUIDs[offset+1]}},{{headUUIDs[offset+2]}},{{headUUIDs[offset+3]}}],Properties:{textures:[{Value:"{{headTextures[i]}}"}]}}}}]}
+    @console /execute in minecraft:overworld run summon armor_stand {{balls[i].position.getX()}} 63.8 {{balls[i].position.getZ()}} {DisabledSlots:4144959,Invisible:1b,Silent:1b,Small:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"{{ballEntityNames[i]}}"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;{{headUUIDs[offset]}},{{headUUIDs[offset+1]}},{{headUUIDs[offset+2]}},{{headUUIDs[offset+3]}}],Properties:{textures:[{Value:"{{headTextures[i]}}"}]}}}}]}
 @done
 
 @delay 5
 
-@bypass /fill -5191 68 -8622 -5189 69 -8622 lime_concrete
+@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 lime_concrete
 
-@bypass /fill -5195 68 -8622 -5192 66 -8622 white_concrete
-@bypass /fill -5188 68 -8622 -5185 66 -8622 white_concrete
+@console /execute in minecraft:overworld run fill -5195 68 -8622 -5192 66 -8622 white_concrete
+@console /execute in minecraft:overworld run fill -5188 68 -8622 -5185 66 -8622 white_concrete
 
-@bypass /fill -5194 68 -8621 -5193 66 -8621 air
-@bypass /setblock -5195 67 -8621 air
-@bypass /setblock -5192 67 -8621 air
+@console /execute in minecraft:overworld run fill -5194 68 -8621 -5193 66 -8621 air
+@console /execute in minecraft:overworld run setblock -5195 67 -8621 air
+@console /execute in minecraft:overworld run setblock -5192 67 -8621 air
 
-@bypass /fill -5187 68 -8621 -5186 66 -8621 air
-@bypass /setblock -5188 67 -8621 air
-@bypass /setblock -5185 67 -8621 air
+@console /execute in minecraft:overworld run fill -5187 68 -8621 -5186 66 -8621 air
+@console /execute in minecraft:overworld run setblock -5188 67 -8621 air
+@console /execute in minecraft:overworld run setblock -5185 67 -8621 air
 
-@bypass /setblock -5190 67 -8621 minecraft:magenta_glazed_terracotta[facing=south]
+@console /execute in minecraft:overworld run setblock -5190 67 -8621 minecraft:magenta_glazed_terracotta[facing=south]
 
 @var team = 1
 @var solids = 0

@@ -6,24 +6,24 @@
 
     @if solids == 1
         @var announce("&6&lCopper &f&rplays &lsolids!")
-        @bypass /fill -5195 68 -8622 -5192 66 -8622 orange_concrete
-        @bypass /fill -5188 67 -8622 -5185 67 -8622 gray_concrete
+        @console /execute in minecraft:overworld run fill -5195 68 -8622 -5192 66 -8622 orange_concrete
+        @console /execute in minecraft:overworld run fill -5188 67 -8622 -5185 67 -8622 gray_concrete
     @else
         @var announce("&6&lCopper &f&rplays &lstripes!")
-        @bypass /fill -5195 67 -8622 -5192 67 -8622 orange_concrete
-        @bypass /fill -5188 68 -8622 -5185 66 -8622 gray_concrete
+        @console /execute in minecraft:overworld run fill -5195 67 -8622 -5192 67 -8622 orange_concrete
+        @console /execute in minecraft:overworld run fill -5188 68 -8622 -5185 66 -8622 gray_concrete
     @fi
 
 @else
 
     @if solids == 2
         @var announce("&8&lCoal &f&rplays &lsolids!")
-        @bypass /fill -5195 67 -8622 -5192 67 -8622 orange_concrete
-        @bypass /fill -5188 68 -8622 -5185 66 -8622 gray_concrete
+        @console /execute in minecraft:overworld run fill -5195 67 -8622 -5192 67 -8622 orange_concrete
+        @console /execute in minecraft:overworld run fill -5188 68 -8622 -5185 66 -8622 gray_concrete
     @else
         @var announce("&8&lCoal &f&rplays &lstripes!")
-        @bypass /fill -5195 68 -8622 -5192 66 -8622 orange_concrete
-        @bypass /fill -5188 67 -8622 -5185 67 -8622 gray_concrete
+        @console /execute in minecraft:overworld run fill -5195 68 -8622 -5192 66 -8622 orange_concrete
+        @console /execute in minecraft:overworld run fill -5188 67 -8622 -5185 67 -8622 gray_concrete
     @fi
 
 @fi
