@@ -2,10 +2,4 @@
 
 @fast
 
-@define Region table = Region(-5197,64,-8600,-5184,75,-8622,"Zero")
-
-@for Player player in table.getPlayersInside()
-
-    @var player.sendMessageFancy(text::TextComponent[text::TextComponent(message)])
-
-@done
+@console /tellraw @e[x=-5190,y=69,z=-8612,distance=0..30,type=player] {{slytools::cnv(message)}}
