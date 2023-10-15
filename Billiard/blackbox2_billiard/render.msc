@@ -5,8 +5,8 @@
 # "render" balls
 @for Int d in list::range(0,16)
     @if balls[d].sunk == false
-        @console /execute in minecraft:overworld run teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} {{balls[d].height}} {{balls[d].position.getZ()}}
+        @console /execute in minecraft:theta run teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} {{balls[d].height}} {{balls[d].position.getZ()}}
     @else
-        @console /execute in minecraft:overworld run teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} {{balls[d].height}} {{balls[d].position.getZ()}}
+        @console /execute in minecraft:theta run teleport @e[name="{{ballEntityNames[d]}}"] {{balls[d].position.getX()}} {{balls[d].height}} {{balls[d].position.getZ()}}
     @fi
 @done

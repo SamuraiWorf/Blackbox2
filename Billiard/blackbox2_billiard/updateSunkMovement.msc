@@ -22,54 +22,54 @@
 @done
 
 # X
-@if x < -5186D + radius && x > -5189.5D
-    @var ball.position = Vector2(-5186D + radius, z)
+@if x < -3361D + radius && x > -3364.5D
+    @var ball.position = Vector2(-3361D + radius, z)
     @var ball.velocity = Vector2(-vx, vz)
 @fi
 
-@if x > -5192D - radius && x < -5189.5D
-    @var ball.position = Vector2(-5192D - radius, z)
+@if x > -3368D - radius && x < -3364.5D
+    @var ball.position = Vector2(-3368D - radius, z)
     @var ball.velocity = Vector2(-vx, vz)
 @fi
 
 # Z
-@if z < -8607 + radius && z > -8610D
-    @var ball.position = Vector2(x, -8607 + radius)
+@if z < 1763D + radius && z > 1760.5D
+    @var ball.position = Vector2(x, 1763D + radius)
     @var ball.velocity = Vector2(vx, -vz)
 @fi
 
-@if z < -8613 + radius && z > -8617D
-    @var ball.position = Vector2(x, -8613 + radius)
+@if z < 1756D + radius && z > 1753.5D
+    @var ball.position = Vector2(x, 1756D + radius)
     @var ball.velocity = Vector2(vx, -vz)
 @fi
 
-@if z > -8617 - radius && z < -8614D
-    @var ball.position = Vector2(x, -8617 - radius)
+@if z > 1751D - radius && z < 1753.5D
+    @var ball.position = Vector2(x, 1751D - radius)
     @var ball.velocity = Vector2(vx, -vz)
 @fi
 
-@if z > -8611 - radius && z < -8607D
-    @var ball.position = Vector2(x, -8611 - radius)
+@if z > 1758D - radius && z < 1760.5D
+    @var ball.position = Vector2(x, 1758D - radius)
     @var ball.velocity = Vector2(vx, -vz)
 @fi
 
 # outer 4
-@if x - radius < -5194D
-    @var ball.position = Vector2(-5194D + radius, z)
+@if x - radius < -3367D
+    @var ball.position = Vector2(-3367D + radius, z)
     @var ball.velocity = Vector2(0.0D, vz)
 @fi
 
-@if x + radius > -5185D
-    @var ball.position = Vector2(-5185D - radius, z)
+@if x + radius > -3359D
+    @var ball.position = Vector2(-3359D - radius, z)
     @var ball.velocity = Vector2(0.0D, vz)
 @fi
 
-@if z - radius < -8619
-    @var ball.position = Vector2(x, -8619 + radius)
+@if z - radius < 1749D
+    @var ball.position = Vector2(x, 1749D + radius)
     @var ball.velocity = Vector2(vx, 0.0D)
 @fi
 
-@if z + radius > -8605
-    @var ball.position = Vector2(x, -8605 - radius)
+@if z + radius > 1765D
+    @var ball.position = Vector2(x, 1765D - radius)
     @var ball.velocity = Vector2(vx, 0.0D)
 @fi

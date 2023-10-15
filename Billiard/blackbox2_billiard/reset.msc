@@ -9,77 +9,81 @@
 
 @var interactBlock = true
 
-@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 red_concrete
+@console /execute in minecraft:theta run fill -3366 211 1743 -3364 211 1743 red_concrete
+@console /execute in minecraft:theta run fill -3366 210 1743 -3366 209 1743 red_concrete
+@console /execute in minecraft:theta run fill -3364 210 1743 -3364 209 1743 red_concrete
+@console /execute in minecraft:theta run fill -3366 208 1743 -3364 208 1743 red_concrete
 
 # cue
-@var balls[0].position = Vector2(-5189.5D,-8608.5D)
+@var balls[0].position = Vector2(-3364.5D,1760.5D)
 # 1
-@var balls[1].position = Vector2(-5189.125D,-8613.25D)
+@var balls[1].position = Vector2(-3364.125D,1755.25D)
 # 2
-@var balls[2].position = Vector2(-5189.875D,-8613.25D)
+@var balls[2].position = Vector2(-3364.875D,1755.25D)
 # 3
-@var balls[3].position = Vector2(-5188.375D,-8614.75D)
+@var balls[3].position = Vector2(-3363.375D,1753.75D)
 # 4
-@var balls[4].position = Vector2(-5189.875D,-8614.75D)
+@var balls[4].position = Vector2(-3364.875D,1753.75D)
 # 5
-@var balls[5].position = Vector2(-5188.0D,-8615.5D)
+@var balls[5].position = Vector2(-3363.0D,1753D)
 # 6
-@var balls[6].position = Vector2(-5189.5D,-8615.5D)
+@var balls[6].position = Vector2(-3364.5D,1753D)
 # 7
-@var balls[7].position = Vector2(-5191.0D,-8615.5D)
+@var balls[7].position = Vector2(-3366.0D,1753D)
 # 8
-@var balls[8].position = Vector2(-5189.5D,-8614D)
+@var balls[8].position = Vector2(-3364.5D,1754.5D)
 # 9
-@var balls[9].position = Vector2(-5189.5D,-8612.5D)
+@var balls[9].position = Vector2(-3364.5D,1756D)
 # 10
-@var balls[10].position = Vector2(-5188.75D,-8614D)
+@var balls[10].position = Vector2(-3363.75D,1754.5D)
 # 11
-@var balls[11].position = Vector2(-5190.25D,-8614D)
+@var balls[11].position = Vector2(-3365.25D,1754.5D)
 # 12
-@var balls[12].position = Vector2(-5189.125D,-8614.75D)
+@var balls[12].position = Vector2(-3364.125D,1753.75D)
 # 13
-@var balls[13].position = Vector2(-5190.625D,-8614.75D)
+@var balls[13].position = Vector2(-3365.625D,1753.75D)
 # 14
-@var balls[14].position = Vector2(-5188.75D,-8615.5D)
+@var balls[14].position = Vector2(-3363.75D,1753D)
 # 15
-@var balls[15].position = Vector2(-5190.25D,-8615.5D)
+@var balls[15].position = Vector2(-3365.25D,1753D)
 
 
-@console /execute in minecraft:overworld run teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
+@console /execute in minecraft:theta run teleport @e[name="blackbox2_billiard_cueBall"] -3364.5 204.8 1760.5
 
 @for Int i in list::range(0,16)
     @var balls[i].sunk = false
     @var balls[i].velocity = Vector2(0.0D,0.0D)
-    @var balls[i].height = 63.8D
+    @var balls[i].height = 204.8D
 @done
 
 @for Int i in list::range(1,16)
-    @console /execute in minecraft:overworld run minecraft:kill @e[name="{{ballEntityNames[i]}}"]
+    @console /execute in minecraft:theta run kill @e[name="{{ballEntityNames[i]}}"]
 @done
 
 @slow
 
 @for Int i in list::range(1,16)
     @define Int offset = i*4
-    @console /execute in minecraft:overworld run summon armor_stand {{balls[i].position.getX()}} 63.8 {{balls[i].position.getZ()}} {DisabledSlots:4144959,Invisible:1b,Silent:1b,Small:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"{{ballEntityNames[i]}}"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;{{headUUIDs[offset]}},{{headUUIDs[offset+1]}},{{headUUIDs[offset+2]}},{{headUUIDs[offset+3]}}],Properties:{textures:[{Value:"{{headTextures[i]}}"}]}}}}]}
+    @console /execute in minecraft:theta run summon armor_stand {{balls[i].position.getX()}} 204.8 {{balls[i].position.getZ()}} {DisabledSlots:4144959,Invisible:1b,Silent:1b,Small:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"{{ballEntityNames[i]}}"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;{{headUUIDs[offset]}},{{headUUIDs[offset+1]}},{{headUUIDs[offset+2]}},{{headUUIDs[offset+3]}}],Properties:{textures:[{Value:"{{headTextures[i]}}"}]}}}}]}
 @done
 
 @delay 5
 
-@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 lime_concrete
+@console /execute in minecraft:theta run fill -3366 211 1743 -3364 211 1743 lime_concrete
+@console /execute in minecraft:theta run fill -3366 210 1743 -3366 209 1743 lime_concrete
+@console /execute in minecraft:theta run fill -3364 210 1743 -3364 209 1743 lime_concrete
+@console /execute in minecraft:theta run fill -3366 208 1743 -3364 208 1743 lime_concrete
 
-@console /execute in minecraft:overworld run fill -5195 68 -8622 -5192 66 -8622 white_concrete
-@console /execute in minecraft:overworld run fill -5188 68 -8622 -5185 66 -8622 white_concrete
+# here
+@console /execute in minecraft:theta run fill -3372 208 1743 -3369 211 1743 white_concrete
+@console /execute in minecraft:theta run fill -3361 208 1743 -3358 211 1743 white_concrete
 
-@console /execute in minecraft:overworld run fill -5194 68 -8621 -5193 66 -8621 air
-@console /execute in minecraft:overworld run setblock -5195 67 -8621 air
-@console /execute in minecraft:overworld run setblock -5192 67 -8621 air
+@console /execute in minecraft:theta run fill -3372 210 1744 -3369 209 1744 air
 
-@console /execute in minecraft:overworld run fill -5187 68 -8621 -5186 66 -8621 air
-@console /execute in minecraft:overworld run setblock -5188 67 -8621 air
-@console /execute in minecraft:overworld run setblock -5185 67 -8621 air
+@console /execute in minecraft:theta run fill -3361 210 1744 -3358 209 1744 air
 
-@console /execute in minecraft:overworld run setblock -5190 67 -8621 minecraft:magenta_glazed_terracotta[facing=south]
+@console /execute in minecraft:theta run setblock -3365 210 1743 magenta_glazed_terracotta[facing=south]
+@console /execute in minecraft:theta run setblock -3365 209 1743 magenta_glazed_terracotta[facing=south]
 
 @var team = 1
 @var solids = 0

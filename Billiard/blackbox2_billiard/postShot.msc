@@ -49,17 +49,19 @@
 
     @if team == 1
         @var announce("&fTeam &6&lCopper&f&r's turn!")
-        @console /execute in minecraft:overworld run setblock -5190 67 -8621 magenta_glazed_terracotta[facing=south]
+        @console /execute in minecraft:theta run setblock -3365 210 1743 magenta_glazed_terracotta[facing=south]
+        @console /execute in minecraft:theta run setblock -3365 209 1743 magenta_glazed_terracotta[facing=south]
     @else
         @var announce("&fTeam &8&lCoal&f&r's turn!")
-        @console /execute in minecraft:overworld run setblock -5190 67 -8621 magenta_glazed_terracotta[facing=north]
+        @console /execute in minecraft:theta run setblock -3365 210 1743 magenta_glazed_terracotta[facing=north]
+        @console /execute in minecraft:theta run setblock -3365 209 1743 magenta_glazed_terracotta[facing=north]
     @fi
 
     @if sunkCue
-        @console /execute in minecraft:overworld run teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
+        @console /execute in minecraft:theta run teleport @e[name="blackbox2_billiard_cueBall"] -3364.5 204.8 1760.5
         @var balls[0].sunk = false
-        @var balls[0].height = 63.8D
-        @var balls[0].position = Vector2(-5189.5D,-8608.5D)
+        @var balls[0].height = 204.8D
+        @var balls[0].position = Vector2(-3364.5D,1760.5D)
         @var balls[0].velocity = Vector2(0.0D,0.0D)
     @fi
 

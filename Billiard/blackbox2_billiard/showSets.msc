@@ -6,24 +6,24 @@
 
     @if solids == 1
         @var announce("&6&lCopper &f&rplays &lsolids!")
-        @console /execute in minecraft:overworld run fill -5195 68 -8622 -5192 66 -8622 orange_concrete
-        @console /execute in minecraft:overworld run fill -5188 67 -8622 -5185 67 -8622 gray_concrete
+        @console /execute in minecraft:theta run fill -3372 208 1743 -3369 211 1743 orange_concrete
+        @console /execute in minecraft:theta run fill -3361 210 1743 -3358 209 1743 gray_concrete
     @else
         @var announce("&6&lCopper &f&rplays &lstripes!")
-        @console /execute in minecraft:overworld run fill -5195 67 -8622 -5192 67 -8622 orange_concrete
-        @console /execute in minecraft:overworld run fill -5188 68 -8622 -5185 66 -8622 gray_concrete
+        @console /execute in minecraft:theta run fill -3372 209 1743 -3369 210 1743 orange_concrete
+        @console /execute in minecraft:theta run fill -3361 211 1743 -3358 208 1743 gray_concrete
     @fi
 
 @else
 
     @if solids == 2
         @var announce("&8&lCoal &f&rplays &lsolids!")
-        @console /execute in minecraft:overworld run fill -5195 67 -8622 -5192 67 -8622 orange_concrete
-        @console /execute in minecraft:overworld run fill -5188 68 -8622 -5185 66 -8622 gray_concrete
+        @console /execute in minecraft:theta run fill -3372 209 1743 -3369 210 1743 orange_concrete
+        @console /execute in minecraft:theta run fill -3361 211 1743 -3358 208 1743 gray_concrete
     @else
         @var announce("&8&lCoal &f&rplays &lstripes!")
-        @console /execute in minecraft:overworld run fill -5195 68 -8622 -5192 66 -8622 orange_concrete
-        @console /execute in minecraft:overworld run fill -5188 67 -8622 -5185 67 -8622 gray_concrete
+        @console /execute in minecraft:theta run fill -3372 208 1743 -3369 211 1743 orange_concrete
+        @console /execute in minecraft:theta run fill -3361 210 1743 -3358 209 1743 gray_concrete
     @fi
 
 @fi

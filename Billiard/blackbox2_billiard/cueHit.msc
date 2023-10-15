@@ -20,7 +20,10 @@
 
 @var interactBlock = true
 
-@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 red_concrete
+@console /execute in minecraft:theta run fill -3366 211 1743 -3364 211 1743 red_concrete
+@console /execute in minecraft:theta run fill -3366 210 1743 -3366 209 1743 red_concrete
+@console /execute in minecraft:theta run fill -3364 210 1743 -3364 209 1743 red_concrete
+@console /execute in minecraft:theta run fill -3366 208 1743 -3364 208 1743 red_concrete
 
 @if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[cue]} } }]")
     @define Double distance = player.getLocation().asVector2().distance(entity.getLocation().asVector2())
@@ -39,6 +42,9 @@
     @var postShot()
 @fi
 
-@console /execute in minecraft:overworld run fill -5191 68 -8622 -5189 69 -8622 lime_concrete
+@console /execute in minecraft:theta run fill -3366 211 1743 -3364 211 1743 lime_concrete
+@console /execute in minecraft:theta run fill -3366 210 1743 -3366 209 1743 lime_concrete
+@console /execute in minecraft:theta run fill -3364 210 1743 -3364 209 1743 lime_concrete
+@console /execute in minecraft:theta run fill -3366 208 1743 -3364 208 1743 lime_concrete
 
 @var interactBlock = false

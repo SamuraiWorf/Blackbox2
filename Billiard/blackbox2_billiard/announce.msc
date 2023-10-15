@@ -2,4 +2,4 @@
 
 @fast
 
-@console /execute in minecraft:overworld run tellraw @e[x=-5190,y=69,z=-8612,distance=0..30,type=player] {{slytools::cnv(message)}}
+@console /execute in minecraft:theta run tellraw @e[x=-3365,y=214,z=1756,distance=0..30,type=player] {{slytools::cnv(message)}}
