@@ -54,8 +54,8 @@
 @fi
 
 # outer 4
-@if x - radius < -3367D
-    @var ball.position = Vector2(-3367D + radius, z)
+@if x - radius < -3370D
+    @var ball.position = Vector2(-3370D + radius, z)
     @var ball.velocity = Vector2(0.0D, vz)
 @fi
 
