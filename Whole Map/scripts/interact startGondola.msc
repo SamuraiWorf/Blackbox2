@@ -28,12 +28,12 @@
 @done
 
 # block entrance
-@bypass /setblock -3459 71 1730 deepslate_tile_wall
-@bypass /setblock -3459 71 1731 deepslate_tile_wall
-@bypass /setblock -3459 71 1732 deepslate_tile_wall
-@bypass /setblock -3459 73 1730 barrier
-@bypass /setblock -3459 73 1731 barrier
-@bypass /setblock -3459 73 1732 barrier
+@console /execute in minecraft:theta run setblock -3459 71 1730 deepslate_tile_wall
+@console /execute in minecraft:theta run setblock -3459 71 1731 deepslate_tile_wall
+@console /execute in minecraft:theta run setblock -3459 71 1732 deepslate_tile_wall
+@console /execute in minecraft:theta run setblock -3459 73 1730 barrier
+@console /execute in minecraft:theta run setblock -3459 73 1731 barrier
+@console /execute in minecraft:theta run setblock -3459 73 1732 barrier
 
 @var runGondola()
 

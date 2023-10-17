@@ -1,0 +1,13 @@
+@namespace blackbox2
+
+    Boolean gondolaRunning = false
+    Boolean gondolaReseting = false
+    Boolean gondolaHome = true
+
+    Int[] gondolaXChanges = Int[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-4,-4,-4,-4,-4]
+    Int[] gondolaYChanges = Int[0,0,-4,-4,-4,-4,-4,-4,-4,-3,0,0,0,0,0,0,0,0,0,0,0]
+    Int[] gondolaZChanges = Int[0,0,0,0,0,0,0,0,0,0,-4,-4,-4,-4,-4,-6,0,0,0,0,0]
+
+    Void runGondola()
+
+@endnamespace
