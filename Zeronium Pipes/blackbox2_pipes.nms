@@ -1,0 +1,12 @@
+@namespace blackbox2
+
+    Boolean pipeTesting = false
+    Boolean exitOpen = false
+
+    Void rotatePipe(Int x, Int y, Int z)
+    Void resetPipes()
+    Block[] getNeighbours(BlockVector3 current)
+    Boolean testSolution(BlockVector3[] ends, String[] endTypes)
+    Void applySolution()
+
+@endnamespace

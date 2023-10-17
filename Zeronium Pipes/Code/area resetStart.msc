@@ -1,6 +1,0 @@
-@using blackbox2_pipes
-@global_cooldown 6
-
-@if Region("worf_pipe_area", "theta").getPlayersInside().length() == 0
-    @var resetPipes()
-@fi

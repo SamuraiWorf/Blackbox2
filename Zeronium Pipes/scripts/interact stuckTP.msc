@@ -1,3 +1,6 @@
+@using blackbox2_pipes
+
 @fast
 
+@var resetPipes()
 @var player.teleport(Position(-3461.5D, 71D, 1731.5D, -90.0, 0.0, "Theta"))

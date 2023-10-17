@@ -15,8 +15,8 @@
             @define Block[] neighbours = getNeighbours(end)
 
             @if endType == "gray_concrete"
-                @var neighbours[4] = Block(end.getX(), end.getY()+1, end.getZ(), "theta")
-                @var neighbours[5] = Block(end.getX(), end.getY()-1, end.getZ(), "theta")
+                @var neighbours[4] = Block(end.getX(), end.getY()+1, end.getZ(), "Theta")
+                @var neighbours[5] = Block(end.getX(), end.getY()-1, end.getZ(), "Theta")
             @fi
 
             @for Block b in neighbours
@@ -42,7 +42,7 @@
                     @var ends[ends.length()] = b.getLocation().asBlockVector3()
                     @var endTypes[endTypes.length()] = nType
                     @var newEnds += 1
-                    @bypass /setblock {{b.getX()}} {{b.getY()}} {{b.getZ()}} orange_concrete
+                    @console /execute in minecraft:theta run setblock {{b.getX()}} {{b.getY()}} {{b.getZ()}} orange_concrete
                 @fi
             @done
 
