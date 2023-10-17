@@ -1,4 +1,4 @@
-@namespace blackbox2
+@namespace blackbox2_pipes
 
     Boolean pipeTesting = false
     Boolean exitOpen = false
