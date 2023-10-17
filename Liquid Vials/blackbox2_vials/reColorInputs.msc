@@ -1,0 +1,25 @@
+@fast
+
+@if type == 0
+    @console /execute in minecraft:theta run setblock -3523 75 1712 lime_concrete
+    @console /execute in minecraft:theta run setblock -3522 75 1710 lime_concrete
+    @console /execute in minecraft:theta run setblock -3519 75 1710 lime_concrete
+    @console /execute in minecraft:theta run setblock -3517 75 1710 lime_concrete
+    @console /execute in minecraft:theta run setblock -3514 75 1710 lime_concrete
+    @console /execute in minecraft:theta run setblock -3513 75 1712 lime_concrete
+    @console /execute in minecraft:theta run setblock {{clicked.getX()}} {{clicked.getY()}} {{clicked.getZ()}} red_concrete
+@elseif type == 1
+    @console /execute in minecraft:theta run setblock -3523 75 1712 red_concrete
+    @console /execute in minecraft:theta run setblock -3522 75 1710 red_concrete
+    @console /execute in minecraft:theta run setblock -3519 75 1710 red_concrete
+    @console /execute in minecraft:theta run setblock -3517 75 1710 red_concrete
+    @console /execute in minecraft:theta run setblock -3514 75 1710 red_concrete
+    @console /execute in minecraft:theta run setblock -3513 75 1712 red_concrete
+@else
+    @console /execute in minecraft:theta run setblock -3523 75 1712 yellow_concrete
+    @console /execute in minecraft:theta run setblock -3522 75 1710 yellow_concrete
+    @console /execute in minecraft:theta run setblock -3519 75 1710 yellow_concrete
+    @console /execute in minecraft:theta run setblock -3517 75 1710 yellow_concrete
+    @console /execute in minecraft:theta run setblock -3514 75 1710 yellow_concrete
+    @console /execute in minecraft:theta run setblock -3513 75 1712 yellow_concrete
+@fi

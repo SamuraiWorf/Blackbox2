@@ -1,0 +1,29 @@
+# Reset Button
+@bypass /script import interact -3521 76 1715 Theta https://paste.minr.org/miquvetezo
+
+# Check Solution Button
+@bypass /script import interact -3515 76 1715 Theta https://paste.minr.org/axowadazux
+
+# Vial1 Button
+@bypass /script import interact -3523 75 1712 Theta https://paste.minr.org/talicozixa
+
+# Vial2 Button
+@bypass /script import interact -3522 75 1710 Theta https://paste.minr.org/isifisufax
+
+# Vial3 Button
+@bypass /script import interact -3519 75 1710 Theta https://paste.minr.org/rihabajaza
+
+# Vial4 Button
+@bypass /script import interact -3517 75 1710 Theta https://paste.minr.org/sosuyiwano
+
+# Vial5 Button
+@bypass /script import interact -3514 75 1710 Theta https://paste.minr.org/ruxiqulaka
+
+# Vial6 Button
+@bypass /script import interact -3513 75 1712 Theta https://paste.minr.org/axozujewih
+
+# Reset End Area:
+@bypass /script import area Theta worf_vial_end https://paste.minr.org/oyepocojek
+
+# Reset Start Area:
+@bypass /script import area Theta worf_vial_start https://paste.minr.org/aleyotizug

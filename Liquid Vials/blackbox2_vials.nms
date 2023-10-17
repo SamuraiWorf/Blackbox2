@@ -1,0 +1,38 @@
+@namespace blackbox2_vials
+
+    String[] blocks = String["air","green_concrete","orange_concrete","white_concrete","light_blue_concrete","gray_concrete"]
+    Boolean blockedVialInteract = false
+    Boolean exitOpen = false
+
+    blackbox2_vials::Vial vial1 = blackbox2_vials::Vial(BlockLocation(-3528,74,1710,"Theta"),Int[0,0,1,2,3,1,4])
+    blackbox2_vials::Vial vial2 = blackbox2_vials::Vial(BlockLocation(-3524,74,1705,"Theta"),Int[4,1,4,3,3,2,5])
+    blackbox2_vials::Vial vial3 = blackbox2_vials::Vial(BlockLocation(-3520,74,1705,"Theta"),Int[5,2,5,5,5,3,2])
+    blackbox2_vials::Vial vial4 = blackbox2_vials::Vial(BlockLocation(-3516,74,1705,"Theta"),Int[3,5,3,1,4,4,3])
+    blackbox2_vials::Vial vial5 = blackbox2_vials::Vial(BlockLocation(-3512,74,1705,"Theta"),Int[2,1,4,5,2,4,2])
+    blackbox2_vials::Vial vial6 = blackbox2_vials::Vial(BlockLocation(-3508,74,1710,"Theta"),Int[0,0,0,0,0,0,0])
+    blackbox2_vials::Vial selectedVial = null
+
+    Void resetVials()
+    Void moveLiquid(Vial from, Vial to)
+    Void reColorInputs(Block clicked, Int type)
+    Void interactVial(Block clicked, Vial interact)
+    Boolean checkSolution(Vial check)
+    Void applySolution()
+
+    @class Vial
+
+        Vial(BlockLocation baseBlock, Int[] liquids)
+
+        BlockLocation baseBlock
+        Int[] liquids
+        Vector2 velocity
+        Boolean sunk
+
+        Int[] getTopLiquid()
+        Int getFreeSpace()
+        Void removeTopLiquid()
+        Void putLiquid(Int type, Int amount)
+
+    @endclass
+
+@endnamespace

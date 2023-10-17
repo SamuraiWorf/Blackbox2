@@ -4,10 +4,10 @@
 @bypass /script import area Theta worf_vial_fall_end https://paste.minr.org/oyejugiyas
 
 # start gondola
-@bypass /script import interact -3456 72 1734 Theta https://paste.minr.org/eqibuhapaj
+@bypass /script import interact -3456 72 1734 Theta https://paste.minr.org/edexerozet
 
 # call gondola
-@bypass /script import interact -3461 72 1734 Theta https://paste.minr.org/esijifunit
+@bypass /script import interact -3461 72 1734 Theta https://paste.minr.org/tihudoxele
 
 # skip gondola
 @bypass /script import interact -3460 72 1729 Theta https://paste.minr.org/aqerihaquc
