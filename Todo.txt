@@ -1,1 +1,0 @@
-Run namespace scripts for whole map, zeronium pipes, liquid vials
