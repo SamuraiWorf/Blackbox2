@@ -1,0 +1,11 @@
+@using blackbox2_blink
+
+@if blinkPad.state == validState
+    @for Player p in map1.getPlayersInside()
+        @var p.teleport(Position(blinkPad.targets[validState], p.getYaw(), p.getPitch()))
+    @done
+
+    @for Player p in map2.getPlayersInside()
+        @var p.teleport(Position(blinkPad.targets[validState], p.getYaw(), p.getPitch()))
+    @done
+@fi

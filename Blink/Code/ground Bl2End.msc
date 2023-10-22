@@ -1,3 +1,0 @@
-@using blackbox2_blink
-
-@var blink(bluePad, 0, player)

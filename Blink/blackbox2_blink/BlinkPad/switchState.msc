@@ -1,3 +1,7 @@
+@using blackbox2_blink
+
+@fast
+
 @if this.state == 0
     @var this.state = 1
 @else

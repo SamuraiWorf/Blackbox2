@@ -1,0 +1,3 @@
+@using blackbox2_blink
+
+@var blink(redPad, 1)

@@ -1,0 +1,5 @@
+@var this.pos = pos
+@var this.state = state
+@var this.targets = targets
+@var this.padPositions = padPositions
+@var this.clones = clones

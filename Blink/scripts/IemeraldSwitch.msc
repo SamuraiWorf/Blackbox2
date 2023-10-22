@@ -1,0 +1,9 @@
+@using blackbox2_blink
+
+@var bluePad.switchState()
+@var pinkPad.switchState()
+@var orangePad.switchState()
+
+@var bluePad.updatePlacement()
+@var pinkPad.updatePlacement()
+@var orangePad.updatePlacement()

@@ -1,3 +1,0 @@
-@if blinkPad.state == validState
-    @var player.teleport(Position(blinkPad.targets[validState], player.getYaw(), player.getPitch()))
-@fi

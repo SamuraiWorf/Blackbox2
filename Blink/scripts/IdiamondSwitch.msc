@@ -1,0 +1,7 @@
+@using blackbox2_blink
+
+@var pinkPad.switchState()
+@var aquaPad.switchState()
+
+@var pinkPad.updatePlacement()
+@var aquaPad.updatePlacement()

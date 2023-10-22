@@ -1,0 +1,9 @@
+@using blackbox2_blink
+
+@var limePad.switchState()
+@var orangePad.switchState()
+@var redPad.switchState()
+
+@var limePad.updatePlacement()
+@var orangePad.updatePlacement()
+@var redPad.updatePlacement()
