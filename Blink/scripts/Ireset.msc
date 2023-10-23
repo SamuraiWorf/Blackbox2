@@ -9,6 +9,8 @@
 
 @var interactBlock = true
 
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.667
+
 @var reset()
 
 @delay 5
