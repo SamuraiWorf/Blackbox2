@@ -1,3 +1,16 @@
 @using blackbox2_blink
 
+@global_cooldown 6
+
+@if interactBlock == true
+    @player &4Cooldown is active!
+    @return
+@fi
+
+@var interactBlock = true
+
 @var reset()
+
+@delay 5
+
+@var interactBlock = false

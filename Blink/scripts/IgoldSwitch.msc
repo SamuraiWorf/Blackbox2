@@ -1,5 +1,17 @@
 @using blackbox2_blink
 
+@global_cooldown 6
+
+@if interactBlock == true
+    @player &4Cooldown is active!
+    @return
+@fi
+
+@var interactBlock = true
+
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.667
+@player &6Click!
+
 @var limePad.switchState()
 @var orangePad.switchState()
 @var redPad.switchState()
@@ -7,3 +19,7 @@
 @var limePad.updatePlacement()
 @var orangePad.updatePlacement()
 @var redPad.updatePlacement()
+
+@delay 5
+
+@var interactBlock = false

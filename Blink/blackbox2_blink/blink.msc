@@ -1,6 +1,16 @@
 @using blackbox2_blink
 
 @if blinkPad.state == validState
+
+    @if interactBlock == true
+        @player &4Cooldown is active!
+        @return
+    @fi
+
+    @var interactBlock = true
+
+    @var current = blinkPad.targets[validState]
+
     @for Player p in map1.getPlayersInside()
         @var p.teleport(Position(blinkPad.targets[validState], p.getYaw(), p.getPitch()))
     @done
@@ -8,4 +18,9 @@
     @for Player p in map2.getPlayersInside()
         @var p.teleport(Position(blinkPad.targets[validState], p.getYaw(), p.getPitch()))
     @done
+
+    @delay 5
+
+    @var interactBlock = false
+
 @fi

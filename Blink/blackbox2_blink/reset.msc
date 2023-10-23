@@ -1,6 +1,8 @@
 @using blackbox2_blink
 @fast
 
+@var current = start
+
 @for Player player in map1.getPlayersInside()
     @var player.teleport(Position(start, player.getYaw(), player.getPitch()))
 @done
@@ -26,5 +28,3 @@
 @var bluePad.updatePlacement()
 @var redPad.updatePlacement()
 @var yellowPad.updatePlacement()
-
-@var interactBlock = false

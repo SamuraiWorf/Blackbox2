@@ -99,3 +99,10 @@
 @bypass /script import interact -1532 79 697 Zero <#../scripts/Ireset.msc>
 @bypass /script import interact -1520 79 698 Zero <#../scripts/Ireset.msc>
 @bypass /script import interact -1503 79 697 Zero <#../scripts/Ireset.msc>
+
+# Area TP fall
+@bypass /script import area Zero blackbox2_blink_tp <#../scripts/AtpFall.msc>
+# Area Start
+@bypass /script import area Zero worf_blink_start <#../scripts/AresetStart.msc>
+# Area End
+@bypass /script import area Zero worf_blink_end <#../scripts/AresetEnd.msc>

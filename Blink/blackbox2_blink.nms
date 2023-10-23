@@ -2,8 +2,11 @@
 
     Region map1 = Region(-1497,77,746,-1526,81,694,"Zero")
     Region map2 = Region(-1526,81,694,-1538,76,707,"Zero")
+    Region map3 = Region(-1526,81,694,-1538,76,707,"Zero")
 
     Location start = Location(-1520.5D,78D,728.5D,"Zero")
+
+    Location current = Location(-1520.5D,78D,728.5D,"Zero")
 
     # The BlockVector3 is the top left corner of the cloning area (which is 3x3)
     # air0, pi f1, pi d2, pu d3, li f4, o f5, o d6, lb dA7, lb dB8, bl d9, r f10, y f11, g f12
