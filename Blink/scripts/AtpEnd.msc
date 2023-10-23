@@ -1,0 +1,5 @@
+@using blackbox2_blink
+
+@fast
+
+@var player.teleport(Position(Location(-3441.5D,30.0D,1754.5D,"Theta"), player.getYaw(), player.getPitch()))

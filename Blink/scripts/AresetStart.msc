@@ -1,5 +1,5 @@
 @using blackbox2_blink
 
-@if map1.getPlayersInside().length() == 0 && map2.getPlayersInside().length() == 0
+@if map1.getPlayersInside().length() == 0 && map2.getPlayersInside().length() == 0 && map3.getPlayersInside().length() == 0
     @var reset()
 @fi

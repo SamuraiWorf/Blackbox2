@@ -19,6 +19,10 @@
         @var p.teleport(Position(blinkPad.targets[validState], p.getYaw(), p.getPitch()))
     @done
 
+    @for Player p in map3.getPlayersInside()
+        @var p.teleport(Position(blinkPad.targets[validState], p.getYaw(), p.getPitch()))
+    @done
+
     @delay 5
 
     @var interactBlock = false

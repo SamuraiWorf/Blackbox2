@@ -1,3 +1,10 @@
 TP Regions (Bottom)
+Select -3478 1 1676 and -3514 7 1766. Regionname: worf_blink_tp Owner: samurai_worf
+Select -3477 7 1717 and -3462 1 1766. Regionname: worf_blink_tp2 Owner: samurai_worf
+Select -3461 1 1766 and -3440 7 1740. Regionname: worf_blink_tp3 Owner: samurai_worf
+Tp End
+Select -3445 30 1756 and -3445 33 1752. Regionname: worf_blink_end_tp Owner: samurai_worf
 Start Region
+Select -3478 39 1704 and -3476 43 1706. Regionname: worf_blink_start Owner: samurai_worf
 End Region
+Select -3440 29 1753 and -3438 33 1755. Regionname: worf_blink_end Owner: samurai_worf

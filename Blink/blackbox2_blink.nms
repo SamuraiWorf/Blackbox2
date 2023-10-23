@@ -1,48 +1,49 @@
 @namespace blackbox2_blink
 
-    Region map1 = Region(-1497,77,746,-1526,81,694,"Zero")
-    Region map2 = Region(-1526,81,694,-1538,76,707,"Zero")
+    Region map1 = Region(-3478,48,1676,-3514,1,1766,"Theta")
+    Region map2 = Region(-3477,48,1717,-3462,1,1766,"Theta")
+    Region map3 = Region(-3446,48,1740,-3461,1,1766,"Theta")
 
-    Location start = Location(-1520.5D,78D,728.5D,"Zero")
+    Location start = Location(-3480.5D,40D,1705.5D,"Theta")
 
-    Location current = Location(-1520.5D,78D,728.5D,"Zero")
+    Location current = Location(-3480.5D,40D,1705.5D,"Theta")
 
     # The BlockVector3 is the top left corner of the cloning area (which is 3x3)
     # air0, pi f1, pi d2, pu d3, li f4, o f5, o d6, lb dA7, lb dB8, bl d9, r f10, y f11, g f12
     BlockVector3[] cloneables = BlockVector3[
-        BlockVector3(-1530,64,703),
-        BlockVector3(-1534,64,699),
-        BlockVector3(-1534,64,703),
-        BlockVector3(-1530,64,699),
-        BlockVector3(-1526,64,699),
-        BlockVector3(-1522,64,699),
-        BlockVector3(-1522,64,703),
-        BlockVector3(-1518,64,699),
-        BlockVector3(-1518,64,703),
-        BlockVector3(-1514,64,699),
-        BlockVector3(-1510,64,699),
-        BlockVector3(-1506,64,699),
-        BlockVector3(-1502,64,699)
+        BlockVector3(-3487,3,1674),
+        BlockVector3(-3487,4,1674),
+        BlockVector3(-3487,5,1674),
+        BlockVector3(-3487,6,1674),
+        BlockVector3(-3487,7,1674),
+        BlockVector3(-3487,8,1674),
+        BlockVector3(-3487,9,1674),
+        BlockVector3(-3487,10,1674),
+        BlockVector3(-3487,11,1674),
+        BlockVector3(-3487,12,1674),
+        BlockVector3(-3487,13,1674),
+        BlockVector3(-3487,14,1674),
+        BlockVector3(-3487,15,1674)
     ]
 
-    Location pu = Location(-1502.5D,78D,741.5D,"Zero")
-    Location li = Location(-1515.5D,78D,741.5D,"Zero")
-    Location pin = Location(-1515.5D,78D,728.5D,"Zero")
-    Location o = Location(-1502.5D,78D,726.5D,"Zero")
-    Location aq = Location(-1519.5D,78D,714.5D,"Zero")
-    Location ye = Location(-1502.5D,78D,701.5D,"Zero")
-    Location re = Location(-1515.5D,78D,701.5D,"Zero")
-    Location bl = Location(-1531.5D,78D,701.5D,"Zero")
-    Location end = Location(-1544.5D,78D,701.5D,"Zero")
+    Location pu = Location(-3506.5D,44D,1688.5D,"Theta")
+    Location li = Location(-3484.5D,23D,1684.5D,"Theta")
+    Location pin = Location(-3485.5D,40D,1705.5D,"Theta")
+    Location o = Location(-3505.5D,12D,1704.5D,"Theta")
+    Location aq = Location(-3473.5D,26D,1734.5D,"Theta")
+    Location ye = Location(-3505.5D,41D,1755.5D,"Theta")
+    Location re = Location(-3483.5D,11D,1755.5D,"Theta")
+    Location bl = Location(-3454.5D,30D,1754.5D,"Theta")
+    Location end = Location(-3441.5D,30D,1754.5D,"Theta")
 
-    blackbox2_blink::BlinkPad purplePad = blackbox2_blink::BlinkPad(pu,0,Location[li,ye],BlockVector3[BlockVector3(-1508,77,740),BlockVector3(-1504,77,736)],Int[4,11])
-    blackbox2_blink::BlinkPad limePad = blackbox2_blink::BlinkPad(li,0,Location[pin,o],BlockVector3[BlockVector3(-1517,77,736),BlockVector3(-1514,77,737)],Int[1,6])
-    blackbox2_blink::BlinkPad pinkPad = blackbox2_blink::BlinkPad(pin,0,Location[pu,re],BlockVector3[BlockVector3(-1514,77,730),BlockVector3(-1517,77,723)],Int[3,10])
-    blackbox2_blink::BlinkPad orangePad = blackbox2_blink::BlinkPad(o,1,Location[aq,pin],BlockVector3[BlockVector3(-1507,77,722),BlockVector3(-1508,77,725)],Int[8,1])
-    blackbox2_blink::BlinkPad aquaPad = blackbox2_blink::BlinkPad(aq,0,Location[bl,pin],BlockVector3[BlockVector3(-1524,77,710),BlockVector3(-1518,77,716)],Int[9,2])
-    blackbox2_blink::BlinkPad yellowPad = blackbox2_blink::BlinkPad(ye,0,Location[o,aq],BlockVector3[BlockVector3(-1504,77,704),BlockVector3(-1507,77,703)],Int[5,7])
-    blackbox2_blink::BlinkPad redPad = blackbox2_blink::BlinkPad(re,0,Location[ye,li],BlockVector3[BlockVector3(-1513,77,700),BlockVector3(-1517,77,704)],Int[11,4])
-    blackbox2_blink::BlinkPad bluePad = blackbox2_blink::BlinkPad(bl,1,Location[end,ye],BlockVector3[BlockVector3(-1537,77,700),BlockVector3(-1529,77,700)],Int[12,11])
+    blackbox2_blink::BlinkPad purplePad = blackbox2_blink::BlinkPad(pu,0,Location[li,ye],BlockVector3[BlockVector3(-3504,43,1687),BlockVector3(-3508,43,1691)],Int[4,11])
+    blackbox2_blink::BlinkPad limePad = blackbox2_blink::BlinkPad(li,0,Location[pin,o],BlockVector3[BlockVector3(-3486,22,1687),BlockVector3(-3489,22,1686)],Int[1,6])
+    blackbox2_blink::BlinkPad pinkPad = blackbox2_blink::BlinkPad(pin,0,Location[pu,re],BlockVector3[BlockVector3(-3490,39,1701),BlockVector3(-3487,39,1708)],Int[3,10])
+    blackbox2_blink::BlinkPad orangePad = blackbox2_blink::BlinkPad(o,1,Location[aq,pin],BlockVector3[BlockVector3(-3504,11,1706),BlockVector3(-3503,11,1703)],Int[8,1])
+    blackbox2_blink::BlinkPad aquaPad = blackbox2_blink::BlinkPad(aq,0,Location[bl,pin],BlockVector3[BlockVector3(-3472,25,1736),BlockVector3(-3478,25,1730)],Int[9,2])
+    blackbox2_blink::BlinkPad yellowPad = blackbox2_blink::BlinkPad(ye,0,Location[o,aq],BlockVector3[BlockVector3(-3507,40,1750),BlockVector3(-3504,40,1751)],Int[5,7])
+    blackbox2_blink::BlinkPad redPad = blackbox2_blink::BlinkPad(re,0,Location[ye,li],BlockVector3[BlockVector3(-3489,10,1754),BlockVector3(-3485,10,1750)],Int[11,4])
+    blackbox2_blink::BlinkPad bluePad = blackbox2_blink::BlinkPad(bl,1,Location[end,ye],BlockVector3[BlockVector3(-3452,29,1753),BlockVector3(-3460,29,1753)],Int[12,11])
 
     Boolean interactBlock = false
 

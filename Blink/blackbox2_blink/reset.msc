@@ -11,6 +11,10 @@
     @var player.teleport(Position(start, player.getYaw(), player.getPitch()))
 @done
 
+@for Player player in map3.getPlayersInside()
+    @var player.teleport(Position(start, player.getYaw(), player.getPitch()))
+@done
+
 @var pinkPad.state = 0
 @var purplePad.state = 0
 @var limePad.state = 0
@@ -28,3 +32,5 @@
 @var bluePad.updatePlacement()
 @var redPad.updatePlacement()
 @var yellowPad.updatePlacement()
+
+@var interactBlock = false

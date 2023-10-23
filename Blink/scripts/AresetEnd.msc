@@ -1,5 +1,3 @@
 @using blackbox2_blink
 
-@delay 3s
-
 @var reset()
