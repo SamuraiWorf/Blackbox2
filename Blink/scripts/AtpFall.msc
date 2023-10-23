@@ -2,4 +2,4 @@
 
 @fast
 
-@var p.teleport(Position(current, p.getYaw(), p.getPitch()))
+@var player.teleport(Position(current, player.getYaw(), player.getPitch()))
