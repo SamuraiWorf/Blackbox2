@@ -9,7 +9,7 @@
 
 @var interactBlock = true
 
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.667
+@bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..40] ~ ~ ~ 1 0.667
 @player &8Clack!
 
 @var yellowPad.switchState()

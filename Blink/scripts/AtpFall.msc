@@ -2,4 +2,6 @@
 
 @fast
 
+@bypass /playsound minecraft:block.note_block.hat record {{player.getName()}} ~ ~ ~ 1 0.667
+
 @var player.teleport(Position(current, player.getYaw(), player.getPitch()))
