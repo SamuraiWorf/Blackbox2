@@ -1,5 +1,21 @@
 @namespace blackbox2_titan
 
+    # air, indicator
+    BlockVector3[] indicatorClones = BlockVector3[
+        BlockVector3(-1506,69,704),
+        BlockVector3(-1506,69,705)
+    ]
+
+    # lb, red, lime, purple, yellow, white
+    BlockVector3[] indicatorPastes = BlockVector3[
+        BlockVector3(-1516,68,709),
+        BlockVector3(-1518,74,709),
+        BlockVector3(-1516,80,709),
+        BlockVector3(-1508,80,709),
+        BlockVector3(-1506,74,709),
+        BlockVector3(-1508,68,709)
+    ]
+
     Int[] task = Int[]
 
     Void giveTask(Int amount)
