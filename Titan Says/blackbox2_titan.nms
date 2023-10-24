@@ -1,0 +1,7 @@
+@namespace blackbox2_titan
+
+    Int[] task = Int[]
+
+    Void giveTask(Int amount)
+
+@endnamespace
