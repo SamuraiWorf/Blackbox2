@@ -1,0 +1,67 @@
+@using blackbox2_titan
+
+@if !playerTurn && nextRound
+    @var round = round + 1
+    @var nextRound = false
+    @var announce("Round &6&l" + round + "&r -- &6&l" + (round*2) + "&f colors")
+    @delay 2s
+    @var announce("&c&lStarting in 3")
+    @delay 1s
+    @var announce("&c&l2")
+    @delay 1s
+    @var announce("&c&l1")
+    @delay 1s
+    @var giveTask(round*2)
+    @delay 10
+    @var announce("Your turn!")
+    @var playerTurn = true
+    @delay 4s
+    @if input == 0 && !failed && playerTurn
+        @var announce("&4&lTime has run out! Try again")
+        @var failed = true
+        @var playerTurn = false
+        @var nextRound = false
+        @delay 4s
+        @var reset()
+        @var announce("Ready for play!")
+    @fi
+@elseif playerTurn
+    @var input += 1
+    @define Int thisInput = input
+
+    @var announce(colorNames[color])
+
+    @if task[input - 1] == color
+        @if input == task.length()
+            @var playerTurn = false
+            @delay 4
+            @var announce("&2&lCorrect&f!")
+            @delay 10
+            @var announce("Preparing next round..")
+            @delay 2s
+            @var announce("Click any color glass to proceed!")
+            @var nextRound = true
+            @var task = Int[]
+            @var input = 0
+        @else
+            @delay 4s
+            @if input == thisInput && !failed && playerTurn
+                @var announce("&4&lTime has run out! Try again")
+                @var failed = true
+                @var playerTurn = false
+                @var nextRound = false
+                @delay 4s
+                @var reset()
+                @var announce("Ready for play!")
+            @fi
+        @fi
+    @else
+        @var announce("&4&lWrong color! Try again")
+        @var failed = true
+        @var playerTurn = false
+        @var nextRound = false
+        @delay 4s
+        @var reset()
+        @var announce("Ready for play!")
+    @fi
+@fi

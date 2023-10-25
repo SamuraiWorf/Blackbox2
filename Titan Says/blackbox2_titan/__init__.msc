@@ -1,1 +1,8 @@
-@bypass /script import interact -1510 71 738 Zero <#../scripts/Itest.msc>
+@bypass /script import interact -1510 72 743 Zero <#../scripts/Ireset.msc>
+
+@bypass /script import interact -1511 71 737 Zero <#../scripts/Iblue.msc>
+@bypass /script import interact -1512 72 737 Zero <#../scripts/Ired.msc>
+@bypass /script import interact -1512 73 737 Zero <#../scripts/Ilime.msc>
+@bypass /script import interact -1508 73 737 Zero <#../scripts/Ipurple.msc>
+@bypass /script import interact -1508 72 737 Zero <#../scripts/Iyellow.msc>
+@bypass /script import interact -1509 71 737 Zero <#../scripts/Iwhite.msc>

@@ -6,13 +6,17 @@
 
     @define Int color = Int(math::random(0.0D,6.0D))
 
+    @if i != 0 && task[i-1] == color
+        @var color = Int(math::random(0.0D,6.0D))
+    @fi
+
     @var task.append(color)
 
-    @console /execute in minecraft:overworld run clone {{indicatorClones[1].getX()}} {{indicatorClones[1].getY()}} {{indicatorClones[1].getZ()}} {{indicatorClones[1].getX()+4}} {{indicatorClones[1].getY()+4}} {{indicatorClones[1].getZ()}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}}
+    @console /execute in minecraft:overworld run clone {{indicatorClones[1].getX()}} {{indicatorClones[1].getY()}} {{indicatorClones[1].getZ()}} {{indicatorClones[1].getX()+4}} {{indicatorClones[1].getY()+4}} {{indicatorClones[1].getZ()}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}} masked
 
     @delay 15
 
-    @console /execute in minecraft:overworld run clone {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()}} {{indicatorClones[0].getZ()}} {{indicatorClones[0].getX()+4}} {{indicatorClones[0].getY()+4}} {{indicatorClones[0].getZ()}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}}
+    @console /execute in minecraft:overworld run clone {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()}} {{indicatorClones[0].getZ()}} {{indicatorClones[0].getX()+4}} {{indicatorClones[0].getY()+4}} {{indicatorClones[0].getZ()}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}} masked
 
     @delay 8
 

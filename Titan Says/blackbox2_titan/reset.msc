@@ -1,0 +1,8 @@
+@using blackbox2_titan
+
+@var task = Int[]
+@var round = 0
+@var input = 0
+@var playerTurn = false
+@var nextRound = true
+@var failed = false
