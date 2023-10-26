@@ -1,6 +1,6 @@
 @using blackbox2_titan
 
-@var task = Int[]
+@fast
 
 @for Int i in list::range(0, amount)
 

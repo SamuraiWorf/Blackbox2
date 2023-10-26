@@ -1,0 +1,8 @@
+@using blackbox2_titan
+
+@fast
+
+@var announce(message)
+@var failed = true
+@delay 4s
+@var gameReset()

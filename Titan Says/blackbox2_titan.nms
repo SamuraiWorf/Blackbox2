@@ -35,7 +35,9 @@
 
     Void giveTask(Int amount)
     Void pressColor(Int color)
+    Void correct()
+    Void fail(String message)
     Void announce(String message)
-    Void reset()
+    Void gameReset()
 
 @endnamespace

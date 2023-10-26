@@ -1,0 +1,14 @@
+@using blackbox2_titan
+
+@fast
+
+@var playerTurn = false
+@delay 4
+@var announce("&2&lCorrect&f!")
+@delay 10
+@var announce("Preparing next round..")
+@delay 2s
+@var nextRound = true
+@var task = Int[]
+@var input = 0
+@var announce("Click any color glass to proceed!")
