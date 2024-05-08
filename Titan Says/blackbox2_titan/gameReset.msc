@@ -5,7 +5,13 @@
 @var task = Int[]
 @var round = 0
 @var input = 0
-@var playerTurn = false
-@var nextRound = true
+@var nextRoundEnabled = true
+@var playerTurnEnabled = false
 @var failed = false
-@var announce("Ready for play!")
+
+# place blocks
+@console /execute in minecraft:theta run setblock -3480 169 1683 deepslate_tile_wall
+@console /execute in minecraft:theta run setblock -3480 168 1683 black_stained_glass_pane
+@console /execute in minecraft:theta run setblock -3480 167 1683 deepslate_tile_wall
+
+@var announce("Game Reset -- Ready for play!")

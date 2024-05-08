@@ -1,0 +1,5 @@
+@using blackbox2_titan
+
+@bypass /effect give @p minecraft:blindness 25 1 true
+@delay 3s
+@var gameReset()

@@ -1,3 +1,7 @@
 @using blackbox2_titan
 
-@var gameReset()
+@if nextRoundEnabled
+    @var gameReset()
+@else
+    @var announce("&4&lRound is in progress")
+@fi

@@ -2,13 +2,17 @@
 
 @fast
 
-@var playerTurn = false
+@var playerTurnEnabled = false
 @delay 4
 @var announce("&2&lCorrect&f!")
 @delay 10
-@var announce("Preparing next round..")
-@delay 2s
-@var nextRound = true
-@var task = Int[]
-@var input = 0
-@var announce("Click any color glass to proceed!")
+@if round == 5
+    @var announce("&6&lWell Done&f!")
+    @var applySolution()
+@else
+    @var announce("Preparing next round..")
+    @delay 2s
+    @var nextRoundEnabled = true
+    @var task = Int[]
+    @var announce("Click any color glass to proceed!")
+@fi

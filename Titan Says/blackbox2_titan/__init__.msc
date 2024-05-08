@@ -1,8 +1,17 @@
-@bypass /script import interact -1510 72 743 Zero <#../scripts/Ireset.msc>
+@bypass /script import interact -3488 168 1679 Theta <#../scripts/Ireset.msc>
 
-@bypass /script import interact -1511 71 737 Zero <#../scripts/Iblue.msc>
-@bypass /script import interact -1512 72 737 Zero <#../scripts/Ired.msc>
-@bypass /script import interact -1512 73 737 Zero <#../scripts/Ilime.msc>
-@bypass /script import interact -1508 73 737 Zero <#../scripts/Ipurple.msc>
-@bypass /script import interact -1508 72 737 Zero <#../scripts/Iyellow.msc>
-@bypass /script import interact -1509 71 737 Zero <#../scripts/Iwhite.msc>
+@bypass /script import interact -3490 167 1684 Theta <#../scripts/Iblue.msc>
+@bypass /script import interact -3490 168 1685 Theta <#../scripts/Ired.msc>
+@bypass /script import interact -3490 169 1685 Theta <#../scripts/Ilime.msc>
+@bypass /script import interact -3490 169 1681 Theta <#../scripts/Ipurple.msc>
+@bypass /script import interact -3490 168 1681 Theta <#../scripts/Iyellow.msc>
+@bypass /script import interact -3490 167 1682 Theta <#../scripts/Iwhite.msc>
+
+# area start1
+@bypass /script import area Theta worf_titan_start1 <#../scripts/Areset.msc>
+
+# area start2
+@bypass /script import area Theta worf_titan_start2 <#../scripts/Areset.msc>
+
+# area end
+@bypass /script import area Theta worf_titan_end <#../scripts/AresetEnd.msc>

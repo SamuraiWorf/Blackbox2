@@ -1,0 +1,6 @@
+@using blackbox2_titan
+@global_cooldown 4
+
+@if map.getPlayersInside().length() == 0
+    @var gameReset()
+@fi

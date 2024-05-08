@@ -2,18 +2,18 @@
 
     # air, indicator
     BlockVector3[] indicatorClones = BlockVector3[
-        BlockVector3(-1506,69,702),
-        BlockVector3(-1506,69,704)
+        BlockVector3(-3529,188,1680),
+        BlockVector3(-3528,188,1680)
     ]
 
     # blue, red, lime, purple, yellow, white
     BlockVector3[] indicatorPastes = BlockVector3[
-        BlockVector3(-1516,68,708),
-        BlockVector3(-1518,74,708),
-        BlockVector3(-1516,80,708),
-        BlockVector3(-1508,80,708),
-        BlockVector3(-1506,74,708),
-        BlockVector3(-1508,68,708)
+        BlockVector3(-3519,165,1685),
+        BlockVector3(-3519,172,1688),
+        BlockVector3(-3519,179,1685),
+        BlockVector3(-3519,179,1677),
+        BlockVector3(-3519,172,1674),
+        BlockVector3(-3519,165,1677)
     ]
 
     # blue, red, lime, purple, yellow, white
@@ -26,11 +26,24 @@
         "&f&lWhite"
     ]
 
+    # blue, red, lime, purple, yellow, white
+    Float[] colorPitch = Float[
+        0.53,
+        0.667,
+        0.794,
+        0.595,
+        0.749,
+        0.891
+    ]
+
+    Region map = Region(-3472,162,1697,-3533,186,1665,"Theta")
+
+    Final Int maxRounds = 5
     Int[] task = Int[]
     Int round = 0
     Int input = 0
-    Boolean playerTurn = false
-    Boolean nextRound = true
+    Boolean nextRoundEnabled = true
+    Boolean playerTurnEnabled = false
     Boolean failed = false
 
     Void giveTask(Int amount)
@@ -39,5 +52,6 @@
     Void fail(String message)
     Void announce(String message)
     Void gameReset()
+    Void applySolution()
 
 @endnamespace

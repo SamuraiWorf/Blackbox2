@@ -1,0 +1,14 @@
+@using blackbox2_titan
+
+@fast
+
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.749
+@delay 5
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.749
+@delay 5
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.749
+
+# remove blocks
+@console /execute in minecraft:theta run setblock -3480 169 1683 air
+@console /execute in minecraft:theta run setblock -3480 168 1683 air
+@console /execute in minecraft:theta run setblock -3480 167 1683 air

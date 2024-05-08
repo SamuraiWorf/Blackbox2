@@ -12,11 +12,13 @@
 
     @var task.append(color)
 
-    @console /execute in minecraft:overworld run clone {{indicatorClones[1].getX()}} {{indicatorClones[1].getY()}} {{indicatorClones[1].getZ()}} {{indicatorClones[1].getX()+4}} {{indicatorClones[1].getY()+4}} {{indicatorClones[1].getZ()}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}} masked
+    @console /execute in minecraft:theta run clone {{indicatorClones[1].getX()}} {{indicatorClones[1].getY()}} {{indicatorClones[1].getZ()}} {{indicatorClones[1].getX()}} {{indicatorClones[1].getY()+4}} {{indicatorClones[1].getZ()+4}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}}
+
+    @bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 {{colorPitch[color]}}
 
     @delay 15
 
-    @console /execute in minecraft:overworld run clone {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()}} {{indicatorClones[0].getZ()}} {{indicatorClones[0].getX()+4}} {{indicatorClones[0].getY()+4}} {{indicatorClones[0].getZ()}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}} masked
+    @console /execute in minecraft:theta run clone {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()}} {{indicatorClones[0].getZ()}} {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()+4}} {{indicatorClones[0].getZ()+4}} {{indicatorPastes[color].getX()}} {{indicatorPastes[color].getY()}} {{indicatorPastes[color].getZ()}}
 
     @delay 8
 
