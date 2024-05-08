@@ -1,0 +1,4 @@
+@using blackbox2
+
+@bypass /playsound minecraft:entity.enderman.teleport record @p ~ ~ ~ 1
+@var player.teleport(Position(-3436.5D, 181D, 1756.5D, 90.0, 0.0, "Theta"))

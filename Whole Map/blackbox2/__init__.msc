@@ -1,17 +1,26 @@
 @fast
 
-@bypass /script import area Theta worf_vial_fall_start https://paste.minr.org/etedesujil
-@bypass /script import area Theta worf_vial_fall_end https://paste.minr.org/oyejugiyas
+@bypass /script import area Theta worf_vial_fall_start <#../scripts/AvialFallStart.msc>
+@bypass /script import area Theta worf_vial_fall_end <#../scripts/AvialFallEnd.msc>
 
 # start gondola
-@bypass /script import interact -3456 72 1734 Theta https://paste.minr.org/iruyecumoy
+@bypass /script import interact -3456 72 1734 Theta <#../scripts/IstartGondola.msc>
 
 # call gondola
-@bypass /script import interact -3461 72 1734 Theta https://paste.minr.org/tihudoxele
+@bypass /script import interact -3461 72 1734 Theta <#../scripts/IcallGondola.msc>
 
 # skip gondola
-@bypass /script import interact -3460 72 1729 Theta https://paste.minr.org/aqerihaquc
+@bypass /script import interact -3460 72 1729 Theta <#../scripts/IskipGondola.msc>
 
 # failsafe tps
-@bypass /script import area Theta worf_gondola_tp1 https://paste.minr.org/aqerihaquc
-@bypass /script import area Theta worf_gondola_tp2 https://paste.minr.org/aqerihaquc
+@bypass /script import area Theta worf_gondola_tp1 <#../scripts/IskipGondola.msc>
+@bypass /script import area Theta worf_gondola_tp2 <#../scripts/IskipGondola.msc>
+
+# depart Train
+@bypass /script import interact -3432 31 1732 Theta <#../scripts/IdepartTrain.msc>
+
+# failsafe tp train
+@bypass /script import area Theta worf_train_jump_tp <#../scripts/AskipTrainJump.msc>
+
+# enderpearl jump
+@bypass /script import entity 0b98ea2f-a7d0-4671-98ce-e5b5b6199842 Theta <#../scripts/Eenderpearl.msc>
