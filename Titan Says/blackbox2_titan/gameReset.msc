@@ -19,5 +19,3 @@
     @console /execute in minecraft:theta run clone {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()}} {{indicatorClones[0].getZ()}} {{indicatorClones[0].getX()}} {{indicatorClones[0].getY()+4}} {{indicatorClones[0].getZ()+4}} {{indicatorPastes[i].getX()}} {{indicatorPastes[i].getY()}} {{indicatorPastes[i].getZ()}}
 
 @done
-
-@var announce("Game Reset -- Ready for play!")

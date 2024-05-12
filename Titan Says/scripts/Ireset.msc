@@ -2,6 +2,7 @@
 
 @if nextRoundEnabled
     @var gameReset()
+    @var announce("&4&lGame Reset &f-- Ready for play!")
 @else
     @var announce("&4&lRound is in progress")
 @fi

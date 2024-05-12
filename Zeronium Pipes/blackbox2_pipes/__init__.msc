@@ -1,66 +1,66 @@
 @fast
 
-@bypass /script import interact -3490 63 1738 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3490 63 1735 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3490 63 1732 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3490 63 1729 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3490 63 1726 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3490 63 1723 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3490 63 1720 Theta https://paste.minr.org/uwigojekas
+@bypass /script import interact -3490 63 1738 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3490 63 1735 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3490 63 1732 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3490 63 1729 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3490 63 1726 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3490 63 1723 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3490 63 1720 Theta <#../scripts/Irotator.msc>
 @delay 1
-@bypass /script import interact -3487 63 1738 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3487 63 1735 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3487 63 1732 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3487 63 1729 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3487 63 1726 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3487 63 1723 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3487 63 1720 Theta https://paste.minr.org/uwigojekas
+@bypass /script import interact -3487 63 1738 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3487 63 1735 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3487 63 1732 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3487 63 1729 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3487 63 1726 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3487 63 1723 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3487 63 1720 Theta <#../scripts/Irotator.msc>
 @delay 1
-@bypass /script import interact -3484 63 1738 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3484 63 1735 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3484 63 1732 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3484 63 1729 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3484 63 1723 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3484 63 1720 Theta https://paste.minr.org/uwigojekas
+@bypass /script import interact -3484 63 1738 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3484 63 1735 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3484 63 1732 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3484 63 1729 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3484 63 1723 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3484 63 1720 Theta <#../scripts/Irotator.msc>
 @delay 1
-@bypass /script import interact -3481 63 1738 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3481 63 1735 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3481 63 1732 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3481 63 1729 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3481 63 1726 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3481 63 1723 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3481 63 1720 Theta https://paste.minr.org/uwigojekas
+@bypass /script import interact -3481 63 1738 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3481 63 1735 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3481 63 1732 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3481 63 1729 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3481 63 1726 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3481 63 1723 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3481 63 1720 Theta <#../scripts/Irotator.msc>
 @delay 1
-@bypass /script import interact -3478 63 1738 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3478 63 1735 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3478 63 1732 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3478 63 1729 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3478 63 1726 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3478 63 1723 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3478 63 1720 Theta https://paste.minr.org/uwigojekas
+@bypass /script import interact -3478 63 1738 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3478 63 1735 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3478 63 1732 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3478 63 1729 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3478 63 1726 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3478 63 1723 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3478 63 1720 Theta <#../scripts/Irotator.msc>
 @delay 1
-@bypass /script import interact -3475 63 1738 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3475 63 1735 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3475 63 1732 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3475 63 1729 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3475 63 1726 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3475 63 1723 Theta https://paste.minr.org/uwigojekas
-@bypass /script import interact -3475 63 1720 Theta https://paste.minr.org/uwigojekas
+@bypass /script import interact -3475 63 1738 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3475 63 1735 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3475 63 1732 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3475 63 1729 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3475 63 1726 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3475 63 1723 Theta <#../scripts/Irotator.msc>
+@bypass /script import interact -3475 63 1720 Theta <#../scripts/Irotator.msc>
 
 # reset button
-@bypass /script import interact -3489 65 1742 Theta https://paste.minr.org/baxawegoci
+@bypass /script import interact -3489 65 1742 Theta <#../scripts/Ireset.msc>
 
 # check solution button
-@bypass /script import interact -3486 65 1742 Theta https://paste.minr.org/mafekelepa
+@bypass /script import interact -3486 65 1742 Theta <#../scripts/Itest.msc>
 
 # area start
-@bypass /script import area theta worf_pipe_start https://paste.minr.org/wijezecayi
+@bypass /script import area theta worf_pipe_start <#../scripts/Astart.msc>
 
 # area tp
-@bypass /script import area theta worf_pipe_tp https://paste.minr.org/inelocepec
+@bypass /script import area theta worf_pipe_tp <#../scripts/ATp.msc>
 
 # area end
-@bypass /script import area theta worf_pipe_end https://paste.minr.org/kumivoseji
+@bypass /script import area theta worf_pipe_end <#../scripts/AEnd.msc>
 
 # stuck tp
-@bypass /script import interact -3467 76 1731 Theta https://paste.minr.org/holupuvupo
+@bypass /script import interact -3467 76 1731 Theta <#../scripts/Istuck.msc>

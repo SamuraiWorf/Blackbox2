@@ -1,0 +1,17 @@
+@using blackbox2_gears
+
+@fast
+
+@if type == 0
+    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Small Gear","italic":false,"bold":true}]'},CustomModelData:116347,Tags:sg}
+@elseif type == 1
+    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:226347,Tags:mg}
+@elseif type == 2
+    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:336347,Tags:lg}
+@elseif type == 3
+    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Small Gear Fixed","italic":false,"bold":true}]'},CustomModelData:446347,Tags:sgf}
+@elseif type == 4
+    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:556347,Tags:mgf}
+@elseif type == 5
+    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:666347,Tags:lgf}
+@fi

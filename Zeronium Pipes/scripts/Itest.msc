@@ -10,6 +10,7 @@
 
 @player &f&lOpening Zeronium Valve...
 
+@bypass /playsound custom:open_valve record @a[distance=..80] ~ ~ ~ 0.2
 @define Boolean solved = testSolution(BlockVector3[BlockVector3(-3492,61,1738)], String["magenta_concrete"])
 
 @if solved == true
@@ -19,6 +20,7 @@
     @var applySolution()
     @var exitOpen = true
 @else
+    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..80] ~ ~ ~ 1 0.4
     @player &4&lInvalid Solution
     @delay 30
     @var pipeTesting = false

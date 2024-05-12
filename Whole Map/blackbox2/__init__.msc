@@ -23,4 +23,4 @@
 @bypass /script import area Theta worf_train_jump_tp <#../scripts/AskipTrainJump.msc>
 
 # enderpearl jump
-@bypass /script import entity 0b98ea2f-a7d0-4671-98ce-e5b5b6199842 Theta <#../scripts/Eenderpearl.msc>
+@bypass /script import entity 0b98ea2f-a7d0-4671-98ce-e5b5b6199842 <#../scripts/Eenderpearl.msc>
