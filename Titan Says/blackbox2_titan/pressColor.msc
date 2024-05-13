@@ -32,7 +32,7 @@
     @var announce(colorNames[color])
 
     @if task[input - 1] == color
-        @bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 {{colorPitch[color]}}
+        @bypass /playsound minecraft:block.note_block.bell record @a[distance=..60] ~ ~ ~ 1 {{colorPitch[color]}}
         @if input == task.length()
             @var correct()
         @else

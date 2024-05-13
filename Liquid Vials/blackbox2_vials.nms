@@ -18,6 +18,7 @@
     Void interactVial(Block clicked, Vial interact)
     Boolean checkSolution(Vial check)
     Void applySolution()
+    Void announce(String message)
 
     @class Vial
 

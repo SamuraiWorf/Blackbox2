@@ -8,20 +8,26 @@
 
 @var pipeTesting = true
 
-@player &f&lOpening Zeronium Valve...
+@var announce("&f&lOpening Zeronium Valve...")
 
-@bypass /playsound custom:open_valve record @a[distance=..80] ~ ~ ~ 0.2
+@delay 5
+
+@bypass /playsound custom:open_valve record @a[distance=..60] ~ ~ ~ 0.2
 @define Boolean solved = testSolution(BlockVector3[BlockVector3(-3492,61,1738)], String["magenta_concrete"])
 
 @if solved == true
-    @player &6&lGood Job!
-    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..80] ~ ~ ~ 1 1
+    @bypass /stopsound @a[distance=..60] record custom:open_valve
+    @delay 1
+    @var announce("&6&lGood Job!")
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
     @delay 16
     @var applySolution()
     @var exitOpen = true
 @else
-    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..80] ~ ~ ~ 1 0.4
-    @player &4&lInvalid Solution
+    @bypass /stopsound @a[distance=..60] record custom:open_valve
+    @delay 1
+    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..60] ~ ~ ~ 1 0.4
+    @var announce("&4&lInvalid Solution")
     @delay 30
     @var pipeTesting = false
     @var resetPipes()

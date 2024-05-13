@@ -16,10 +16,10 @@
     @var reColorInputs(clicked, 2)
 @else
     @if selectedVial.getTopLiquid()[1] > interact.getFreeSpace()
-        @player &4&lNot enough room in target vial!
+        @var announce("&4&lNot enough room in target vial!")
         @var canMove = false
     @elseif selectedVial.getTopLiquid()[0] != interact.getTopLiquid()[0] && interact.getTopLiquid()[0] != 0
-        @player &4&lMismatching liquids!
+        @var announce("&4&lMismatching liquids!")
         @var canMove = false
     @fi
     @if canMove == true

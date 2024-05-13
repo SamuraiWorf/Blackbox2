@@ -28,12 +28,12 @@
 
     # blue, red, lime, purple, yellow, white
     Float[] colorPitch = Float[
-        0.53,
-        0.667,
-        0.794,
-        0.595,
         0.749,
-        0.891
+        0.840,
+        0.890,
+        1.0,
+        1.122,
+        1.189
     ]
 
     Region map = Region(-3472,162,1697,-3533,186,1665,"Theta")

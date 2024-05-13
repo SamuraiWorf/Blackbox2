@@ -1,5 +1,5 @@
 @namespace blackbox2_gears
 
-    Void giveGearItem(Int type)
+    Void giveGearItem(Int type; Int amount)
 
 @endnamespace

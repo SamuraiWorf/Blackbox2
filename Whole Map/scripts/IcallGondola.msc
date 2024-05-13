@@ -18,7 +18,7 @@
 # place starting gondola
 @console /execute in minecraft:theta run clone -3461 77 1741 -3457 82 1745 -3458 69 1729
 
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 1.059
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 0.749
 
 # open entrance
 @console /execute in minecraft:theta run setblock -3458 70 1731 deepslate_tiles

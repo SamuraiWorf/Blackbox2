@@ -8,5 +8,5 @@ ShapeInBlack
 _Emphi
 Dalox02
 Also Visuumii
-Vermilion_Stone (having to test on a gruling version of blink)
+Vermilion_Stone
 Lennerd07

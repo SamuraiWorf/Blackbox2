@@ -8,5 +8,6 @@
     Block[] getNeighbours(BlockVector3 current)
     Boolean testSolution(BlockVector3[] ends, String[] endTypes)
     Void applySolution()
+    Void announce(String message)
 
 @endnamespace

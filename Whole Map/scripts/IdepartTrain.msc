@@ -1,8 +1,9 @@
 @using blackbox2
 
-@bypass /effect give @p minecraft:blindness 4 1 true
+@bypass /effect give @p minecraft:blindness 9 1 true
+@delay 5
 @var player.teleport(Position(-3437.5D, 83D, 1696.5D, 180.0, 0.0, "Theta"))
-@delay 4
-@bypass /playsound custom:train record @s ~ ~ ~ 1
-@delay 50
+@delay 1
+@bypass /playsound custom:train record @s ~ ~ ~ 0.8
+@delay 8s
 @var player.teleport(Position(-3431.5D, 181D, 1753.5D, 180.0, 0.0, "Theta"))

@@ -82,27 +82,27 @@
 @console /execute in minecraft:theta run setblock -3507 69 1722 orange_concrete
 @delay 3
 @console /execute in minecraft:theta run setblock -3507 68 1722 orange_concrete
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.595
+@bypass /playsound minecraft:block.note_block.chime record @a[distance=..40] ~ ~ ~ 1 0.749
 @console /execute in minecraft:theta run setblock -3518 76 1728 lime_concrete
 @delay 3
 @console /execute in minecraft:theta run setblock -3507 67 1722 orange_concrete
 @delay 3
 @console /execute in minecraft:theta run setblock -3507 66 1722 orange_concrete
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.667
+@bypass /playsound minecraft:block.note_block.chime record @a[distance=..40] ~ ~ ~ 1 0.840
 @console /execute in minecraft:theta run setblock -3518 77 1728 lime_concrete
 @delay 3
 @console /execute in minecraft:theta run setblock -3507 65 1722 orange_concrete
 @delay 3
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.749
+@bypass /playsound minecraft:block.note_block.chime record @a[distance=..40] ~ ~ ~ 1 0.890
 @console /execute in minecraft:theta run setblock -3518 78 1728 lime_concrete
 @delay 6
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 0.891
+@bypass /playsound minecraft:block.note_block.chime record @a[distance=..40] ~ ~ ~ 1 1
 @console /execute in minecraft:theta run setblock -3518 79 1728 lime_concrete
 @delay 6
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..40] ~ ~ ~ 1 1
+@bypass /playsound minecraft:block.note_block.chime record @a[distance=..40] ~ ~ ~ 1 1.122
 @console /execute in minecraft:theta run setblock -3518 80 1728 lime_concrete
 @delay 6
-@bypass /playsound minecraft:block.wood.break block @a[distance=..40] ~ ~ ~ 1 0.667
+@bypass /playsound minecraft:block.wood.break block @a[distance=..40] ~ ~ ~ 1 0.749
 @console /execute in minecraft:theta run setblock -3512 79 1728 air
 @console /execute in minecraft:theta run setblock -3512 78 1728 air
 @console /execute in minecraft:theta run setblock -3512 77 1728 air

@@ -31,7 +31,7 @@
     @fi
 @done
 
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 1.059
+@bypass /playsound minecraft:block.note_block.bell record @a[distance=..20] ~ ~ ~ 1 0.749
 
 # open exit
 @console /execute in minecraft:theta run setblock -3470 39 1705 deepslate_tiles

@@ -1,0 +1,16 @@
+@using blackbox2_vials
+
+@global_cooldown 8
+
+@if blockedVialInteract == true || exitOpen == true
+    @return
+@fi
+
+@if checkSolution(vial4) == true
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..40] ~ ~ ~ 1 0.749
+    @var announce("&6&lGood Job!")
+    @var applySolution()
+@else
+    @var announce("&4&lInvalid Solution")
+    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..40] ~ ~ ~ 1 0.4
+@fi

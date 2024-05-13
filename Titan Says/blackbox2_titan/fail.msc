@@ -3,7 +3,7 @@
 @fast
 
 @var announce(message)
-@bypass /playsound minecraft:block.note_block.bass record @a[distance=..80] ~ ~ ~ 1 0.4
+@bypass /playsound minecraft:block.note_block.bass record @a[distance=..60] ~ ~ ~ 1 0.4
 @var failed = true
 @delay 4s
 @var gameReset()

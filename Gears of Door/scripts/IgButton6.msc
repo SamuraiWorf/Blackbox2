@@ -1,3 +1,3 @@
 @using blackbox2_gears
 
-@var giveGearItem(5)
+@var giveGearItem(5,1)

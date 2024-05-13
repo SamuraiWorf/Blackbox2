@@ -1,34 +1,40 @@
 @fast
 
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.53
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.749
+@delay 8
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.840
 @console /execute in minecraft:theta run setblock -3465 67 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.667
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.890
 @console /execute in minecraft:theta run setblock -3465 68 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.794
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.840
 @console /execute in minecraft:theta run setblock -3465 69 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.595
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.840
 @console /execute in minecraft:theta run setblock -3465 70 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.749
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.890
 @console /execute in minecraft:theta run setblock -3465 71 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.891
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 1.0
 @console /execute in minecraft:theta run setblock -3465 72 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.707
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.890
 @console /execute in minecraft:theta run setblock -3465 73 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 0.891
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.890
 @console /execute in minecraft:theta run setblock -3465 74 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 1.059
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 1.0
 @console /execute in minecraft:theta run setblock -3465 75 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.note_block.bell record @a[distance=..80] ~ ~ ~ 1 1.414
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 1.122
 @console /execute in minecraft:theta run setblock -3465 76 1723 lime_concrete
 @delay 8
-@bypass /playsound minecraft:block.wood.break block @a[distance=..80] ~ ~ ~ 1 0.667
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.707
+@delay 8
+@bypass /playsound minecraft:block.note_block.harp record @a[distance=..60] ~ ~ ~ 1 0.749
+@delay 8
+@bypass /playsound minecraft:block.wood.break block @a[distance=..60] ~ ~ ~ 1 0.749
 @console /execute in minecraft:theta run clone -3464 75 1746 -3464 69 1740 -3465 69 1728

@@ -2,3 +2,4 @@
 @global_cooldown 6
 
 @var resetPipes()
+@var announce("Pipes reset!")
