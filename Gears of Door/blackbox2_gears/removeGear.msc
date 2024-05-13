@@ -1,0 +1,11 @@
+@using blackbox2_gears
+
+@fast
+
+@if gear == 0
+    @bypass /clear {{player}} iron_nugget{display:{Name:'["",{"text":"Small Gear","italic":false,"bold":true}]'},CustomModelData:116347,Tags:sg} 1
+@elseif gear == 1
+    @bypass /clear {{player}} iron_nugget{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:226347,Tags:mg} 1
+@elseif gear == 2
+    @bypass /clear {{player}} iron_nugget{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:336347,Tags:lg} 1
+@fi

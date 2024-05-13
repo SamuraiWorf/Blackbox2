@@ -1,0 +1,8 @@
+@using blackbox2_gears
+
+@fast
+
+@for Int i in list::range(0,map.getPlayersInside().length())
+    @define Player p = map.getPlayersInside()[i]
+    @console /clear {{p}}
+@done

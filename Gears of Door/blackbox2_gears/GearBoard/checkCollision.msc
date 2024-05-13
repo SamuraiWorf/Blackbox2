@@ -1,0 +1,43 @@
+@using blackbox2_gears
+
+@fast
+
+@for Int i in list::range(0,this.sockets.length())
+    @define Socket s = this.sockets[i]
+
+    @if s != socket
+        @define Int xDist = 0
+        @define Int yDist = 0
+
+        @if this.vertical
+            @var xDist = Int(math::abs(Double(s.baseBlock.getZ()-socket.baseBlock.getZ())))
+            @var yDist = Int(math::abs(Double(s.baseBlock.getY()-socket.baseBlock.getY())))
+        @else
+            @var xDist = Int(math::abs(Double(s.baseBlock.getX()-socket.baseBlock.getX())))
+            @var yDist = Int(math::abs(Double(s.baseBlock.getZ()-socket.baseBlock.getZ())))
+        @fi
+
+        @if xDist < 4 && yDist < 4
+            @define Int conGear = s.containedGear
+            @if conGear > 2
+                @var conGear = conGear - 3
+            @fi
+
+            @if gear == 0
+                @if conGear > sMask[xDist + 4* yDist]
+                    @return false
+                @fi
+            @elseif gear == 1
+                @if conGear > mMask[xDist + 4* yDist]
+                    @return false
+                @fi
+            @elseif gear == 2
+                @if conGear > lMask[xDist + 4* yDist]
+                    @return false
+                @fi
+            @fi
+        @fi
+    @fi
+@done
+
+@return true

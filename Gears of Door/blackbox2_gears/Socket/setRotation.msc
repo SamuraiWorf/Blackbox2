@@ -1,0 +1,3 @@
+@fast
+
+@console /execute in minecraft:zero run data merge entity {{this.uuid}} {ItemRotation:{{rotation}}}

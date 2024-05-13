@@ -1,0 +1,16 @@
+@using blackbox2_gears
+
+@fast
+
+@var clearBoards()
+@var clearInventories()
+
+# reset board1
+@for Int i in list::range(0,board1.sockets.length())
+    @define Socket s = board1.sockets[i]
+    @if s.interact
+        @var s.containedGear = s.defaultGear
+        @var putGearIntoFrame(s.uuid, s.defaultGear)
+        @var s.setRotation(s.baseRotation)
+    @fi
+@done

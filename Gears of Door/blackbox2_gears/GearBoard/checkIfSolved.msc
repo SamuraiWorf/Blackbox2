@@ -1,0 +1,84 @@
+@using blackbox2_gears
+
+@fast
+
+@define Boolean[] connected = Boolean[]
+
+@for Int i in list::range(0,this.sockets.length())
+    @var connected[i] = false
+@done
+
+@define Int temp = this.exits[0]
+
+# set first exit as connected
+@var connected[temp] = true
+
+@define Int[] openList = Int[temp]
+@define Int[] newOpens = Int[]
+
+@for Int d in list::range(0,30)
+
+    @for Int g in list::range(0,openList.length())
+        @define Socket current = this.sockets[openList[g]]
+
+        @if openList.length() > 0
+            @for Int i in list::range(0,this.sockets.length())
+                @define Socket s = this.sockets[i]
+
+                @if s != current && connected[i] == false
+                    @define Int xDist = 0
+                    @define Int yDist = 0
+
+                    @if this.vertical
+                        @var xDist = Int(math::abs(Double(s.baseBlock.getZ()-current.baseBlock.getZ())))
+                        @var yDist = Int(math::abs(Double(s.baseBlock.getY()-current.baseBlock.getY())))
+                    @else
+                        @var xDist = Int(math::abs(Double(s.baseBlock.getX()-current.baseBlock.getX())))
+                        @var yDist = Int(math::abs(Double(s.baseBlock.getZ()-current.baseBlock.getZ())))
+                    @fi
+
+                    @if xDist < 4 && yDist < 4
+                        @define Int conGear = s.containedGear
+                        @if conGear > 2
+                            @var conGear = conGear - 3
+                        @fi
+
+                        @if current.containedGear == 0 || current.containedGear == 3
+                            @if conGear == sMask[xDist + 4* yDist] && conGear > -1
+                                @var connected[i] = true
+                                @var newOpens.append(i)
+                            @fi
+                        @elseif current.containedGear == 1 || current.containedGear == 4
+                            @if conGear == mMask[xDist + 4* yDist] && conGear > -1
+                                @var connected[i] = true
+                                @var newOpens.append(i)
+                            @fi
+                        @elseif current.containedGear == 2 || current.containedGear == 5
+                            @if conGear == lMask[xDist + 4* yDist] && conGear > -1
+                                @var connected[i] = true
+                                @var newOpens.append(i)
+                            @fi
+                        @fi
+                    @fi
+                @fi
+            @done
+        @fi
+
+        @var openList.clear()
+
+        @for Int i in list::range(0,newOpens.length())
+            @var openList.append(newOpens[i])
+        @done
+
+        @var newOpens.clear()
+    @done
+@done
+
+@for Int i in list::range(0,this.exits.length())
+    @var temp = this.exits[i]
+    @if connected[temp] == false
+        @return false
+    @fi
+@done
+
+@return true

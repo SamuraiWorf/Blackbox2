@@ -1,0 +1,12 @@
+@using blackbox2_gears
+
+@fast
+
+# clear all sockets on board1
+@for Int i in list::range(0,board1.sockets.length())
+    @define Socket s = board1.sockets[i]
+    @if s.interact
+        @var putGearIntoFrame(s.uuid, -1)
+        @var s.containedGear = -1
+    @fi
+@done

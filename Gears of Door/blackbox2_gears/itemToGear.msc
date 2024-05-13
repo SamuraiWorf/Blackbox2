@@ -1,0 +1,11 @@
+@using blackbox2_gears
+
+@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:'sg'} } }]")
+    @return 0
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:'mg'} } }]")
+    @return 1
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:'lg'} } }]")
+    @return 2
+@else
+    @return -1
+@fi

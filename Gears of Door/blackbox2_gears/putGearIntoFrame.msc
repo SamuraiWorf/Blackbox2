@@ -1,0 +1,19 @@
+@using blackbox2_gears
+
+@fast
+
+@if gear == -1
+    @bypass /data merge entity {{uuid}} {Item:{id:""}}
+@elseif gear == 0
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Small Gear","italic":false,"bold":true}]'},CustomModelData:116347,Tags:sg}}}
+@elseif gear == 1
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:226347,Tags:mg}}}
+@elseif gear == 2
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:336347,Tags:lg}}}
+@elseif gear == 3
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Small Gear Fixed","italic":false,"bold":true}]'},CustomModelData:446347,Tags:sgf}}}
+@elseif gear == 4
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:556347,Tags:mgf}}}
+@elseif gear == 5
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:666347,Tags:lgf}}}
+@fi

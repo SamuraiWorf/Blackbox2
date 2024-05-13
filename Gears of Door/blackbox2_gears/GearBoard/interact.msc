@@ -1,0 +1,24 @@
+@using blackbox2_gears
+
+@fast
+
+@define Socket s = this.sockets[socket]
+
+@if s.containedGear > -1
+    @var giveGearItem(s.containedGear, 1)
+    @var s.containedGear = -1
+    @var putGearIntoFrame(s.uuid, -1)
+@else
+    @define Int gear = itemToGear(player)
+
+    @if gear > -1
+        @if this.checkCollision(s, gear)
+            @var removeGear(player, gear)
+            @var s.containedGear = gear
+            @var putGearIntoFrame(s.uuid, gear)
+        @else
+            @player &lThat gear doesn't fit!
+            @bypass /playsound minecraft:block.note_block.bass record {{player}} ~ ~ ~ 1 0.4
+        @fi
+    @fi
+@fi

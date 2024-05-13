@@ -1,0 +1,5 @@
+@var this.baseBlock = baseBlock
+@var this.uuid = uuid
+@var this.defaultGear = defaultGear
+@var this.containedGear = defaultGear
+@var this.interact = interact

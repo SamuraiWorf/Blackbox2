@@ -1,0 +1,7 @@
+@using blackbox2_gears
+
+@fast
+
+@var giveGearItem(0, 16)
+@var giveGearItem(1, 11)
+@var giveGearItem(2, 9)

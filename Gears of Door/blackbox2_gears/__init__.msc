@@ -1,9 +1,30 @@
+@using blackbox2_gears
+
 @fast
 
-# Admin Gear giving buttons
-@bypass /script import interact -3483 242 1730 Theta <#../scripts/IgButton1.msc>
-@bypass /script import interact -3483 242 1733 Theta <#../scripts/IgButton2.msc>
-@bypass /script import interact -3483 242 1735 Theta <#../scripts/IgButton3.msc>
-@bypass /script import interact -3483 242 1737 Theta <#../scripts/IgButton4.msc>
-@bypass /script import interact -3483 242 1740 Theta <#../scripts/IgButton5.msc>
-@bypass /script import interact -3483 242 1742 Theta <#../scripts/IgButton6.msc>
+# Admin Gear giving buttons -- removed cause only on minr, not test
+# @bypass /script import interact -3483 242 1730 Theta <#../scripts/IgButton1.msc>
+# @bypass /script import interact -3483 242 1733 Theta <#../scripts/IgButton2.msc>
+# @bypass /script import interact -3483 242 1735 Theta <#../scripts/IgButton3.msc>
+# @bypass /script import interact -3483 242 1737 Theta <#../scripts/IgButton4.msc>
+# @bypass /script import interact -3483 242 1740 Theta <#../scripts/IgButton5.msc>
+# @bypass /script import interact -3483 242 1742 Theta <#../scripts/IgButton6.msc>
+
+# Take all Gears
+@bypass /script import interact -1521 67 717 Zero <#../scripts/IgrabAllGears.msc>
+
+# Reset
+@bypass /script import interact -1522 67 717 Zero <#../scripts/Ireset.msc>
+
+# Turn the Gears
+@bypass /script import interact -1520 67 717 Zero <#../scripts/IturnTheGears.msc>
+
+# Board 1 Interacts
+@for Int i in list::range(0,board1.sockets.length())
+    @define Socket s = board1.sockets[i]
+    @if s.interact
+        @bypass /script import interact {{s.baseBlock}} <#../scripts/Iboard1.msc>
+    @fi
+@done
+
+@var reset()

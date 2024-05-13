@@ -1,0 +1,12 @@
+@using blackbox2_gears
+
+@global_cooldown 8
+
+@define BlockLocation bl = block.getLocation()
+
+@for Int i in list::range(0,board1.sockets.length())
+    @define Socket s = board1.sockets[i]
+    @if s.baseBlock.getX() == bl.getX() && s.baseBlock.getY() == bl.getY() && s.baseBlock.getZ() == bl.getZ()
+        @var board1.interact(i, player)
+    @fi
+@done

@@ -1,0 +1,15 @@
+@using blackbox2_gears
+
+@fast
+
+@if board1.checkIfSolved()
+    @player GJ!
+    # OPEN SESAME
+    # set blocking variable
+    # run applySolution Script
+@else
+    @player not quite!
+    # Not quite
+    # announce not quite!
+    # play error sound
+@fi
