@@ -3,13 +3,11 @@
 @fast
 
 @if board1.checkIfSolved() && board2.checkIfSolved() && board3.checkIfSolved() && board4.checkIfSolved() && board5.checkIfSolved()
-    @player GJ!
-    # OPEN SESAME
-    # set blocking variable
-    # run applySolution Script
+    @var announce("&lThe gears are turning!")
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
+    @var isSolved = true
+    @var applySolution()
 @else
-    @player not quite!
-    # Not quite
-    # announce not quite!
-    # play error sound
+    @var announce("&lThe gears are not moving! Something must be wrong.")
+    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..60] ~ ~ ~ 1 0.4
 @fi

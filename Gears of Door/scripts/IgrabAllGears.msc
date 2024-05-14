@@ -4,6 +4,10 @@
 
 @fast
 
+@if isSolved == true
+    @return
+@fi
+
 @var clearBoards()
 @var clearInventories()
 @var giveFullSet()

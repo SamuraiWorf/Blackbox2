@@ -1,0 +1,3 @@
+@using blackbox2_vials
+
+@console /execute in minecraft:theta run tellraw @e[x=-3495,y=227,z=1743,distance=0..60,type=player] {{slytools::cnv(message)}}

@@ -1,3 +1,179 @@
 @using blackbox2_gears
 
 @fast
+
+@bypass /playsound custom:turn_gears record @a[distance=..60] ~ ~ ~
+@delay 8
+# play turning sound
+@var rotateGears()
+@delay 8
+@var rotateGears()
+@delay 8
+# Move top lock
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3502 220 1723 air
+@console /execute in minecraft:theta run setblock -3500 220 1723 air
+@console /execute in minecraft:theta run setblock -3502 225 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3500 225 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3502 221 1723 air
+@console /execute in minecraft:theta run setblock -3500 221 1723 air
+@console /execute in minecraft:theta run setblock -3502 226 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3500 226 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3502 222 1723 air
+@console /execute in minecraft:theta run setblock -3500 222 1723 air
+@console /execute in minecraft:theta run setblock -3502 227 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3500 227 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3502 223 1723 air
+@console /execute in minecraft:theta run setblock -3500 223 1723 air
+@console /execute in minecraft:theta run setblock -3502 228 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3500 228 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3502 224 1723 air
+@console /execute in minecraft:theta run setblock -3500 224 1723 air
+@console /execute in minecraft:theta run setblock -3502 229 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3500 229 1723 smooth_stone
+@bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..60] ~ ~ ~ 1 0.749
+@delay 8
+# Move right lock
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3498 223 1723 air
+@console /execute in minecraft:theta run setblock -3498 221 1723 air
+@console /execute in minecraft:theta run setblock -3493 223 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3493 221 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3497 223 1723 air
+@console /execute in minecraft:theta run setblock -3497 221 1723 air
+@console /execute in minecraft:theta run setblock -3492 223 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3492 221 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3496 223 1723 air
+@console /execute in minecraft:theta run setblock -3496 221 1723 air
+@console /execute in minecraft:theta run setblock -3491 223 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3491 221 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3495 223 1723 air
+@console /execute in minecraft:theta run setblock -3495 221 1723 air
+@console /execute in minecraft:theta run setblock -3490 223 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3490 221 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3494 223 1723 air
+@console /execute in minecraft:theta run setblock -3494 221 1723 air
+@console /execute in minecraft:theta run setblock -3489 223 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3489 221 1723 smooth_stone
+@bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..60] ~ ~ ~ 1 0.749
+@delay 8
+# Move bottom lock
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3497 219 1723 air
+@console /execute in minecraft:theta run setblock -3495 219 1723 air
+@console /execute in minecraft:theta run setblock -3497 214 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3495 214 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3497 218 1723 air
+@console /execute in minecraft:theta run setblock -3495 218 1723 air
+@console /execute in minecraft:theta run setblock -3497 213 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3495 213 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3497 217 1723 air
+@console /execute in minecraft:theta run setblock -3495 217 1723 air
+@console /execute in minecraft:theta run setblock -3497 212 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3495 212 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3497 216 1723 air
+@console /execute in minecraft:theta run setblock -3495 216 1723 air
+@console /execute in minecraft:theta run setblock -3497 211 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3495 211 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3497 215 1723 air
+@console /execute in minecraft:theta run setblock -3495 215 1723 air
+@console /execute in minecraft:theta run setblock -3497 210 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3495 210 1723 smooth_stone
+@bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..60] ~ ~ ~ 1 0.749
+@delay 8
+# Move left lock
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3499 218 1723 air
+@console /execute in minecraft:theta run setblock -3499 216 1723 air
+@console /execute in minecraft:theta run setblock -3504 218 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3504 216 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3500 218 1723 air
+@console /execute in minecraft:theta run setblock -3500 216 1723 air
+@console /execute in minecraft:theta run setblock -3505 218 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3505 216 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3501 218 1723 air
+@console /execute in minecraft:theta run setblock -3501 216 1723 air
+@console /execute in minecraft:theta run setblock -3506 218 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3506 216 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3502 218 1723 air
+@console /execute in minecraft:theta run setblock -3502 216 1723 air
+@console /execute in minecraft:theta run setblock -3507 218 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3507 216 1723 smooth_stone
+@delay 8
+@var rotateGears()
+@console /execute in minecraft:theta run setblock -3503 218 1723 air
+@console /execute in minecraft:theta run setblock -3503 216 1723 air
+@console /execute in minecraft:theta run setblock -3508 218 1723 smooth_stone
+@console /execute in minecraft:theta run setblock -3508 216 1723 smooth_stone
+@bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..60] ~ ~ ~ 1 0.749
+@delay 8
+@var rotateGears()
+# Move top, right, bottom, left wing
+@console /execute in minecraft:theta run clone -3503 220 1723 -3499 224 1722 -3503 221 1722 masked move
+@console /execute in minecraft:theta run clone -3498 220 1723 -3494 224 1722 -3497 220 1722 masked move
+@console /execute in minecraft:theta run clone -3498 215 1723 -3494 219 1722 -3498 214 1722 masked move
+@console /execute in minecraft:theta run clone -3503 215 1723 -3499 219 1722 -3504 215 1722 masked move
+@delay 8
+@var rotateGears()
+# Move top, right, bottom, left wing
+@console /execute in minecraft:theta run clone -3503 221 1723 -3499 225 1722 -3503 222 1722 masked move
+@console /execute in minecraft:theta run clone -3497 220 1723 -3493 224 1722 -3496 220 1722 masked move
+@console /execute in minecraft:theta run clone -3498 214 1723 -3494 218 1722 -3498 213 1722 masked move
+@console /execute in minecraft:theta run clone -3504 215 1723 -3500 219 1722 -3505 215 1722 masked move
+@delay 8
+@var rotateGears()
+# Move top, right, bottom, left wing
+@console /execute in minecraft:theta run clone -3503 222 1723 -3499 226 1722 -3503 223 1722 masked move
+@console /execute in minecraft:theta run clone -3496 220 1723 -3492 224 1722 -3495 220 1722 masked move
+@console /execute in minecraft:theta run clone -3498 213 1723 -3494 217 1722 -3498 212 1722 masked move
+@console /execute in minecraft:theta run clone -3505 215 1723 -3501 219 1722 -3506 215 1722 masked move
+@delay 8
+@var rotateGears()
+# Move top, right, bottom, left wing
+@console /execute in minecraft:theta run clone -3503 223 1723 -3499 227 1722 -3503 224 1722 masked move
+@console /execute in minecraft:theta run clone -3495 220 1723 -3491 224 1722 -3494 220 1722 masked move
+@console /execute in minecraft:theta run clone -3498 212 1723 -3494 216 1722 -3498 211 1722 masked move
+@console /execute in minecraft:theta run clone -3506 215 1723 -3502 219 1722 -3507 215 1722 masked move
+@delay 8
+@var rotateGears()
+# Move top, right, bottom, left wing
+@console /execute in minecraft:theta run clone -3503 224 1723 -3499 228 1722 -3503 225 1722 masked move
+@console /execute in minecraft:theta run clone -3494 220 1723 -3490 224 1722 -3493 220 1722 masked move
+@console /execute in minecraft:theta run clone -3498 211 1723 -3494 215 1722 -3498 210 1722 masked move
+@console /execute in minecraft:theta run clone -3507 215 1723 -3503 219 1722 -3508 215 1722 masked move
+@bypass /playsound custom:boom record @a[distance=..60] ~ ~ ~
+@bypass /stopsound @a[distance=..60] record custom:turn_gears
+@delay 8s
+# sound + place bridge
+@bypass /playsound minecraft:block.wood.break block @a[distance=..60] ~ ~ ~ 1 0.749
+@console /execute in minecraft:theta run clone -3523 238 1735 -3518 246 1728 -3501 214 1721

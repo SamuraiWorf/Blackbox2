@@ -19,6 +19,12 @@
 # Turn the Gears
 @bypass /script import interact -3499 220 1763 Theta <#../scripts/IturnTheGears.msc>
 
+# Start Reset Area
+@bypass /script import area Theta worf_gears_start <#../scripts/AresetStart.msc>
+
+# End Reset Area
+@bypass /script import area Theta worf_gears_end <#../scripts/AresetEnd.msc>
+
 # Board 1 Interacts
 @for Int i in list::range(0,board1.sockets.length())
     @define Socket s = board1.sockets[i]

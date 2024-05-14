@@ -4,4 +4,8 @@
 
 @fast
 
+@if isSolved == true
+    @return
+@fi
+
 @var turnTheGears()

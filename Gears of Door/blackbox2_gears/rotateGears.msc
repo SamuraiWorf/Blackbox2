@@ -1,0 +1,45 @@
+@using blackbox2_gears
+
+@fast
+
+@if rotationAddition == 0
+    @var rotationAddition = 1
+@else
+    @var rotationAddition = 0
+@fi
+
+# turn gears board1
+@for Int i in list::range(0,board1.sockets.length())
+    @define Socket s = board1.sockets[i]
+    @var s.setRotation(s.baseRotation + rotationAddition)
+@done
+
+# turn gears board2
+@for Int i in list::range(0,board2.sockets.length())
+    @define Socket s = board2.sockets[i]
+    @var s.setRotation(s.baseRotation + rotationAddition)
+@done
+
+# turn gears board3
+@for Int i in list::range(0,board3.sockets.length())
+    @define Socket s = board3.sockets[i]
+    @var s.setRotation(s.baseRotation + rotationAddition)
+@done
+
+# turn gears board4
+@for Int i in list::range(0,board4.sockets.length())
+    @define Socket s = board4.sockets[i]
+    @var s.setRotation(s.baseRotation + rotationAddition)
+@done
+
+# turn gears board5
+@for Int i in list::range(0,board5.sockets.length())
+    @define Socket s = board5.sockets[i]
+    @var s.setRotation(s.baseRotation + rotationAddition)
+@done
+
+# turn gears miscs
+@for Int i in list::range(0,miscSockets.length())
+    @define Socket s = miscSockets[i]
+    @var s.setRotation(s.baseRotation + rotationAddition)
+@done

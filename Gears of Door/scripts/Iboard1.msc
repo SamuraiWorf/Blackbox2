@@ -2,6 +2,12 @@
 
 @global_cooldown 8
 
+@fast
+
+@if isSolved == true
+    @return
+@fi
+
 @define BlockLocation bl = block.getLocation()
 
 @for Int i in list::range(0,board1.sockets.length())

@@ -1,0 +1,2 @@
+Select -3503 227 1756 and -3507 235 1760. Regionname: worf_gears_start Owner: samurai_worf
+Select -3496 220 1718 and -3501 227 1716. Regionname: worf_gears_end Owner: samurai_worf

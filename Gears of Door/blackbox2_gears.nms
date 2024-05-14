@@ -2,14 +2,14 @@
 
     Socket[] board1Sockets = Socket[
         Socket(BlockLocation(-3510,225,1750,"Theta"),"47cecf26-9409-4d68-9b5b-e96bbed64ee2",4,false,0),
-        Socket(BlockLocation(-3510,224,1753,"Theta"),"35006852-1ad4-4773-a892-34f66a675fcb",-1,true,1),
-        Socket(BlockLocation(-3510,223,1751,"Theta"),"dbc28ffe-972e-41e1-ab5b-4b3ddd1357fa",-1,true,1),
+        Socket(BlockLocation(-3510,224,1753,"Theta"),"35006852-1ad4-4773-a892-34f66a675fcb",0,true,1),
+        Socket(BlockLocation(-3510,223,1751,"Theta"),"dbc28ffe-972e-41e1-ab5b-4b3ddd1357fa",1,true,1),
         Socket(BlockLocation(-3510,223,1755,"Theta"),"c58905ed-687d-40ed-a41b-8498f607aaf4",5,false,0),
-        Socket(BlockLocation(-3510,221,1754,"Theta"),"cc613a52-b10f-4aea-9205-6adca0296d28",-1,true,1),
+        Socket(BlockLocation(-3510,221,1754,"Theta"),"cc613a52-b10f-4aea-9205-6adca0296d28",0,true,1),
         Socket(BlockLocation(-3510,220,1753,"Theta"),"1adbac7c-06e3-4df2-9679-0381bdd600f2",-1,true,0),
-        Socket(BlockLocation(-3510,220,1752,"Theta"),"59cfa440-e80d-4db4-a8d5-b4c1a815e707",-1,true,0),
-        Socket(BlockLocation(-3510,219,1754,"Theta"),"f6979859-70a4-4950-81ae-ca750ea94551",-1,true,1),
-        Socket(BlockLocation(-3510,218,1752,"Theta"),"b5d8482a-3355-461b-8ae3-4f20ec61b667",-1,true,0),
+        Socket(BlockLocation(-3510,220,1752,"Theta"),"59cfa440-e80d-4db4-a8d5-b4c1a815e707",2,true,0),
+        Socket(BlockLocation(-3510,219,1754,"Theta"),"f6979859-70a4-4950-81ae-ca750ea94551",1,true,1),
+        Socket(BlockLocation(-3510,218,1752,"Theta"),"b5d8482a-3355-461b-8ae3-4f20ec61b667",0,true,0),
         Socket(BlockLocation(-3510,217,1750,"Theta"),"9a3d38ab-fbce-49bc-a10c-fa3b64ff5480",4,false,1)
     ]
 
@@ -17,19 +17,19 @@
 
     Socket[] board2Sockets = Socket[
         Socket(BlockLocation(-3511,216,1745,"Theta"),"1e16c0da-395a-40b0-b858-211ba4f1c0fd",3,false,0),
-        Socket(BlockLocation(-3511,216,1743,"Theta"),"2ce9bf03-552a-4ba2-bb43-2583171d57e2",-1,true,1),
-        Socket(BlockLocation(-3511,213,1743,"Theta"),"d3799173-ca32-4d86-91c5-5b2c20e5074e",-1,true,0),
-        Socket(BlockLocation(-3511,215,1741,"Theta"),"a68ca6e7-2577-419e-8592-4c19a1670146",-1,true,1),
-        Socket(BlockLocation(-3511,213,1741,"Theta"),"4b62c32c-2319-4d99-a8bc-7c404519f80c",-1,true,1),
-        Socket(BlockLocation(-3511,214,1740,"Theta"),"eda3ee86-7423-405e-909a-2fba0488ee06",-1,true,0),
+        Socket(BlockLocation(-3511,216,1743,"Theta"),"b9bac1c7-691f-466c-9a2d-2ff51e7264b3",1,true,1),
+        Socket(BlockLocation(-3511,213,1743,"Theta"),"d3799173-ca32-4d86-91c5-5b2c20e5074e",2,true,0),
+        Socket(BlockLocation(-3511,215,1741,"Theta"),"a68ca6e7-2577-419e-8592-4c19a1670146",0,true,1),
+        Socket(BlockLocation(-3511,213,1741,"Theta"),"4b62c32c-2319-4d99-a8bc-7c404519f80c",0,true,1),
+        Socket(BlockLocation(-3511,214,1740,"Theta"),"134374c8-3923-4d66-ae42-755883d13306",1,true,0),
         Socket(BlockLocation(-3511,213,1740,"Theta"),"2921fe89-b8b4-48ed-8b91-232e1a697d2d",-1,true,0),
         Socket(BlockLocation(-3511,214,1739,"Theta"),"88d5cdd2-a4d2-4f62-85eb-a77a25877fbe",-1,true,1),
-        Socket(BlockLocation(-3511,214,1737,"Theta"),"e64363b1-f9c6-42b6-96a8-0e0cd9350958",-1,true,1),
-        Socket(BlockLocation(-3511,215,1735,"Theta"),"31f7c7dc-9299-45d2-9e29-94b583a1abdf",-1,true,1),
-        Socket(BlockLocation(-3511,213,1734,"Theta"),"9add565f-6184-449f-b10e-f5ea970e031f",-1,true,0),
-        Socket(BlockLocation(-3511,215,1733,"Theta"),"154f651c-6ba3-4986-a1d8-0b9ce3702ac7",-1,true,1),
-        Socket(BlockLocation(-3511,213,1732,"Theta"),"e9eeeb0c-508b-4b30-9089-95e781330827",-1,true,0),
-        Socket(BlockLocation(-3511,215,1731,"Theta"),"de596736-dfcd-4768-add3-1f8af605bb6b",-1,true,1),
+        Socket(BlockLocation(-3511,214,1737,"Theta"),"e64363b1-f9c6-42b6-96a8-0e0cd9350958",2,true,1),
+        Socket(BlockLocation(-3511,215,1735,"Theta"),"31f7c7dc-9299-45d2-9e29-94b583a1abdf",0,true,1),
+        Socket(BlockLocation(-3511,213,1734,"Theta"),"9add565f-6184-449f-b10e-f5ea970e031f",1,true,0),
+        Socket(BlockLocation(-3511,215,1733,"Theta"),"154f651c-6ba3-4986-a1d8-0b9ce3702ac7",2,true,1),
+        Socket(BlockLocation(-3511,213,1732,"Theta"),"e9eeeb0c-508b-4b30-9089-95e781330827",0,true,0),
+        Socket(BlockLocation(-3511,215,1731,"Theta"),"de596736-dfcd-4768-add3-1f8af605bb6b",0,true,1),
         Socket(BlockLocation(-3511,213,1730,"Theta"),"4464b4c4-2ffc-4034-a3f9-2a7344a80006",5,false,0)
     ]
 
@@ -37,13 +37,13 @@
 
     Socket[] board3Sockets = Socket[
         Socket(BlockLocation(-3488,219,1731,"Theta"),"f97d1ed8-1ee2-4735-9de9-32780da62c01",4,false,1),
-        Socket(BlockLocation(-3488,218,1732,"Theta"),"c638b93f-1a8b-458d-8ce9-0de2ccae48f0",-1,true,1),
-        Socket(BlockLocation(-3488,217,1732,"Theta"),"d487cf9f-d61e-4db0-8706-3873ce52e5db",-1,true,0),
-        Socket(BlockLocation(-3488,218,1733,"Theta"),"80b248cb-d38a-47c9-b64b-4af37d8aab2d",-1,true,0),
-        Socket(BlockLocation(-3488,217,1733,"Theta"),"0e07154b-799d-4c75-a36e-3a65fc706e0b",-1,true,1),
-        Socket(BlockLocation(-3488,217,1735,"Theta"),"4455ccc2-022d-494b-b9f5-c97f1b43696d",-1,true,0),
-        Socket(BlockLocation(-3488,217,1737,"Theta"),"d8318887-927c-447f-b4ca-7d1528f4eece",-1,true,1),
-        Socket(BlockLocation(-3488,216,1738,"Theta"),"2eb93220-d24e-463b-b295-bec56f9ee094",-1,true,1),
+        Socket(BlockLocation(-3488,218,1732,"Theta"),"c638b93f-1a8b-458d-8ce9-0de2ccae48f0",0,true,1),
+        Socket(BlockLocation(-3488,217,1732,"Theta"),"d487cf9f-d61e-4db0-8706-3873ce52e5db",0,true,0),
+        Socket(BlockLocation(-3488,218,1733,"Theta"),"80b248cb-d38a-47c9-b64b-4af37d8aab2d",0,true,0),
+        Socket(BlockLocation(-3488,217,1733,"Theta"),"0e07154b-799d-4c75-a36e-3a65fc706e0b",0,true,1),
+        Socket(BlockLocation(-3488,217,1735,"Theta"),"4455ccc2-022d-494b-b9f5-c97f1b43696d",1,true,0),
+        Socket(BlockLocation(-3488,217,1737,"Theta"),"d8318887-927c-447f-b4ca-7d1528f4eece",1,true,1),
+        Socket(BlockLocation(-3488,216,1738,"Theta"),"2eb93220-d24e-463b-b295-bec56f9ee094",0,true,1),
         Socket(BlockLocation(-3488,216,1740,"Theta"),"f4e87155-f794-4618-8856-55340c9857a1",4,false,0)
     ]
 
@@ -51,12 +51,12 @@
 
     Socket[] board4Sockets = Socket[
         Socket(BlockLocation(-3482,220,1746,"Theta"),"624099a5-2bd3-4bd6-b004-72047c9768a4",5,false,0),
-        Socket(BlockLocation(-3482,220,1749,"Theta"),"07ad1250-51b7-4043-9005-efac28209657",-1,true,1),
-        Socket(BlockLocation(-3482,218,1750,"Theta"),"7c601587-46d6-4d40-a37d-ffbbf1a7ccce",-1,true,0),
+        Socket(BlockLocation(-3482,220,1749,"Theta"),"07ad1250-51b7-4043-9005-efac28209657",2,true,1),
+        Socket(BlockLocation(-3482,218,1750,"Theta"),"7c601587-46d6-4d40-a37d-ffbbf1a7ccce",1,true,0),
         Socket(BlockLocation(-3482,218,1751,"Theta"),"74ea5959-596f-4fd6-b5ab-6823252f1898",-1,true,1),
         Socket(BlockLocation(-3482,217,1751,"Theta"),"c8b07a78-9574-41ff-ac4f-9e01112336b4",-1,true,0),
         Socket(BlockLocation(-3482,218,1752,"Theta"),"ef856187-fffb-436e-a9dd-2a29bf9a1388",-1,true,0),
-        Socket(BlockLocation(-3482,217,1752,"Theta"),"9cc7893a-1751-4a4e-a836-a28686dec48f",-1,true,1),
+        Socket(BlockLocation(-3482,217,1752,"Theta"),"9cc7893a-1751-4a4e-a836-a28686dec48f",1,true,1),
         Socket(BlockLocation(-3482,218,1753,"Theta"),"73cb298f-f186-46e0-819e-6bc67f275c6f",3,false,0)
     ]
 
@@ -64,16 +64,16 @@
 
     Socket[] board5Sockets = Socket[
         Socket(BlockLocation(-3496,231,1748,"Theta"),"51573c49-7902-4801-b611-9047026ad0f7",5,false,1),
-        Socket(BlockLocation(-3496,231,1746,"Theta"),"8e18d528-ca40-4a3b-97f7-35ea2015e14f",-1,true,0),
-        Socket(BlockLocation(-3493,231,1744,"Theta"),"4127a24a-9771-4e99-948b-8a7979b7f269",-1,true,1),
-        Socket(BlockLocation(-3496,231,1744,"Theta"),"4b3261d0-e852-4da9-bd3c-610b16bda86f",-1,true,0),
-        Socket(BlockLocation(-3494,231,1742,"Theta"),"b50450b6-9aad-46d5-8779-696811e9754f",-1,true,1),
+        Socket(BlockLocation(-3496,231,1746,"Theta"),"8e18d528-ca40-4a3b-97f7-35ea2015e14f",0,true,0),
+        Socket(BlockLocation(-3493,231,1744,"Theta"),"4127a24a-9771-4e99-948b-8a7979b7f269",1,true,1),
+        Socket(BlockLocation(-3496,231,1744,"Theta"),"4b3261d0-e852-4da9-bd3c-610b16bda86f",2,true,0),
+        Socket(BlockLocation(-3494,231,1742,"Theta"),"b50450b6-9aad-46d5-8779-696811e9754f",2,true,1),
         Socket(BlockLocation(-3495,231,1741,"Theta"),"35457638-1831-4eee-9bb1-b7c1d23efb0f",-1,true,1),
         Socket(BlockLocation(-3494,231,1740,"Theta"),"c31f3c14-c455-4593-9ee2-d0086279511e",-1,true,0),
-        Socket(BlockLocation(-3496,231,1740,"Theta"),"6df09294-0ae5-4ac5-93df-5162556743c4",-1,true,0),
+        Socket(BlockLocation(-3496,231,1740,"Theta"),"6df09294-0ae5-4ac5-93df-5162556743c4",2,true,0),
         Socket(BlockLocation(-3493,231,1738,"Theta"),"46a8a348-1001-4ef3-a277-f0ec120ee3c1",-1,true,1),
-        Socket(BlockLocation(-3496,231,1738,"Theta"),"c9274d77-7dd6-4589-9264-49ac45b6eeea",-1,true,1),
-        Socket(BlockLocation(-3494,231,1737,"Theta"),"da05fe22-34f2-4cd2-80db-a098bb7800c0",-1,true,1),
+        Socket(BlockLocation(-3496,231,1738,"Theta"),"c9274d77-7dd6-4589-9264-49ac45b6eeea",0,true,1),
+        Socket(BlockLocation(-3494,231,1737,"Theta"),"da05fe22-34f2-4cd2-80db-a098bb7800c0",2,true,1),
         Socket(BlockLocation(-3495,231,1737,"Theta"),"9df2a589-ec79-4c22-9490-f4eb0f55d660",-1,true,1),
         Socket(BlockLocation(-3493,231,1736,"Theta"),"0e0d0791-7250-4c3d-84a0-b5192c3741b6",-1,true,0),
         Socket(BlockLocation(-3494,231,1736,"Theta"),"e63c0d76-75b5-4a7e-b8ff-b1c3320e94e3",-1,true,0),
@@ -119,12 +119,17 @@
 
     Region map = Region(-3531,235,1776,-3466,205,1718,"Theta")
 
+    Region openEnd = Region(-3505,226,1719,-3492,212,1728,"Theta")
+
     # 4x4 matrices converted to 1D arrays
     Int[] sMask = Int[ 0, 0, 2,10, 0, 1,10,10, 2,10,10,10,10,10,10,10]
 
     Int[] mMask = Int[ 1,-1, 1,10,-1, 0, 2,10, 1, 2,10,10,10,10,10,10]
 
     Int[] lMask = Int[ 2,-1, 0, 2,-1,-1, 1,10, 0, 1, 2,10, 2,10,10,10]
+
+    Boolean isSolved = false
+    Int rotationAddition = 0
 
     Void giveGearItem(Int type, Int amount)
     Void clearInventories()
@@ -136,6 +141,8 @@
     Void reset()
     Void turnTheGears()
     Void applySolution()
+    Void announce(String message)
+    Void rotateGears()
 
     @class Socket
 

@@ -64,3 +64,15 @@
         @var s.setRotation(s.baseRotation)
     @fi
 @done
+
+# remove bridge
+@console /execute in minecraft:theta run clone -3514 238 1735 -3509 246 1728 -3501 214 1721
+
+# delete wings top right bottom left
+@console /execute in minecraft:theta run fill -3503 225 1723 -3499 229 1722 air
+@console /execute in minecraft:theta run fill -3493 220 1723 -3489 224 1722 air
+@console /execute in minecraft:theta run fill -3498 210 1723 -3494 214 1722 air
+@console /execute in minecraft:theta run fill -3508 215 1723 -3504 219 1722 air
+
+# close door
+@console /execute in minecraft:theta run clone -3505 238 1735 -3496 247 1734 -3503 215 1722
