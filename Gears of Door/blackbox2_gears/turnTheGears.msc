@@ -2,7 +2,7 @@
 
 @fast
 
-@if board1.checkIfSolved()
+@if board1.checkIfSolved() && board2.checkIfSolved() && board3.checkIfSolved() && board4.checkIfSolved() && board5.checkIfSolved()
     @player GJ!
     # OPEN SESAME
     # set blocking variable

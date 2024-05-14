@@ -10,3 +10,39 @@
         @var s.containedGear = -1
     @fi
 @done
+
+# clear all sockets on board2
+@for Int i in list::range(0,board2.sockets.length())
+    @define Socket s = board2.sockets[i]
+    @if s.interact
+        @var putGearIntoFrame(s.uuid, -1)
+        @var s.containedGear = -1
+    @fi
+@done
+
+# clear all sockets on board3
+@for Int i in list::range(0,board3.sockets.length())
+    @define Socket s = board3.sockets[i]
+    @if s.interact
+        @var putGearIntoFrame(s.uuid, -1)
+        @var s.containedGear = -1
+    @fi
+@done
+
+# clear all sockets on board4
+@for Int i in list::range(0,board4.sockets.length())
+    @define Socket s = board4.sockets[i]
+    @if s.interact
+        @var putGearIntoFrame(s.uuid, -1)
+        @var s.containedGear = -1
+    @fi
+@done
+
+# clear all sockets on board5
+@for Int i in list::range(0,board5.sockets.length())
+    @define Socket s = board5.sockets[i]
+    @if s.interact
+        @var putGearIntoFrame(s.uuid, -1)
+        @var s.containedGear = -1
+    @fi
+@done

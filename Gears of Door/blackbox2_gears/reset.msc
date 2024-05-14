@@ -14,3 +14,53 @@
         @var s.setRotation(s.baseRotation)
     @fi
 @done
+
+# reset board2
+@for Int i in list::range(0,board2.sockets.length())
+    @define Socket s = board2.sockets[i]
+    @if s.interact
+        @var s.containedGear = s.defaultGear
+        @var putGearIntoFrame(s.uuid, s.defaultGear)
+        @var s.setRotation(s.baseRotation)
+    @fi
+@done
+
+# reset board3
+@for Int i in list::range(0,board3.sockets.length())
+    @define Socket s = board3.sockets[i]
+    @if s.interact
+        @var s.containedGear = s.defaultGear
+        @var putGearIntoFrame(s.uuid, s.defaultGear)
+        @var s.setRotation(s.baseRotation)
+    @fi
+@done
+
+# reset board4
+@for Int i in list::range(0,board4.sockets.length())
+    @define Socket s = board4.sockets[i]
+    @if s.interact
+        @var s.containedGear = s.defaultGear
+        @var putGearIntoFrame(s.uuid, s.defaultGear)
+        @var s.setRotation(s.baseRotation)
+    @fi
+@done
+
+# reset board5
+@for Int i in list::range(0,board5.sockets.length())
+    @define Socket s = board5.sockets[i]
+    @if s.interact
+        @var s.containedGear = s.defaultGear
+        @var putGearIntoFrame(s.uuid, s.defaultGear)
+        @var s.setRotation(s.baseRotation)
+    @fi
+@done
+
+# reset miscs
+@for Int i in list::range(0,miscSockets.length())
+    @define Socket s = miscSockets[i]
+    @if s.interact
+        @var s.containedGear = s.defaultGear
+        @var putGearIntoFrame(s.uuid, s.defaultGear)
+        @var s.setRotation(s.baseRotation)
+    @fi
+@done
