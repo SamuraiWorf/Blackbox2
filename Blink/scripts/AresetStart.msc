@@ -3,3 +3,5 @@
 @if map1.getPlayersInside().length() == 0 && map2.getPlayersInside().length() == 0 && map3.getPlayersInside().length() == 0
     @var reset()
 @fi
+
+@var blackbox2::playRandomSong()

@@ -1,0 +1,10 @@
+@using blackbox2
+
+@fast
+
+@bypass /stopsound @s record custom:amb1
+@bypass /stopsound @s record custom:amb2
+@bypass /stopsound @s record custom:amb3
+@bypass /stopsound @s record custom:amb4
+
+@var optInMusic[player] == false

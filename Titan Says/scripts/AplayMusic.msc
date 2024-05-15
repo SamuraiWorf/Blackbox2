@@ -1,0 +1,6 @@
+@using blackbox2_titan
+@global_cooldown 8
+
+@fast
+
+@var blackbox2::playRandomSong()

@@ -13,7 +13,7 @@
 @bypass /script import area Theta worf_titan_start1 <#../scripts/Areset.msc>
 
 # area start2
-@bypass /script import area Theta worf_titan_start2 <#../scripts/Areset.msc>
+@bypass /script import area Theta worf_titan_start2 <#../scripts/AplayMusic.msc>
 
 # area end
 @bypass /script import area Theta worf_titan_end <#../scripts/AresetEnd.msc>

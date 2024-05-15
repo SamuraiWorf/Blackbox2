@@ -2,6 +2,7 @@
 
 @fast
 
+@delay 4
 @bypass /playsound custom:turn_gears record @a[distance=..60] ~ ~ ~
 @delay 8
 # play turning sound
@@ -175,5 +176,5 @@
 @bypass /stopsound @a[distance=..60] record custom:turn_gears
 @delay 8s
 # sound + place bridge
-@bypass /playsound minecraft:block.wood.break block @a[distance=..60] ~ ~ ~ 1 0.749
+@bypass /playsound minecraft:block.wood.break record @a[distance=..60] ~ ~ ~ 1 0.749
 @console /execute in minecraft:theta run clone -3523 238 1735 -3518 246 1728 -3501 214 1721

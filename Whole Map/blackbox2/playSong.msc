@@ -1,0 +1,26 @@
+@using blackbox2
+
+@fast
+
+@if optInMusic[player] == false
+    @return
+@fi
+
+@bypass /stopsound @s record custom:amb1
+@bypass /stopsound @s record custom:amb2
+@bypass /stopsound @s record custom:amb3
+@bypass /stopsound @s record custom:amb4
+
+@if song == 0
+    @bypass /playsound minecraft:amb1 record @s ~ ~ ~ 1
+    @var currentTrack[player] = 0
+@elseif song == 1
+    @bypass /playsound minecraft:amb2 record @s ~ ~ ~ 1
+    @var currentTrack[player] = 1
+@elseif song == 2
+    @bypass /playsound minecraft:amb3 record @s ~ ~ ~ 1
+    @var currentTrack[player] = 2
+@elseif song == 3
+    @bypass /playsound minecraft:amb4 record @s ~ ~ ~ 1
+    @var currentTrack[player] = 3
+@fi

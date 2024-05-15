@@ -1,5 +1,8 @@
 @namespace blackbox2
 
+    Relative Boolean optInMusic = true
+    Relative Int currentTrack = 0
+
     Boolean gondolaRunning = false
     Boolean gondolaReseting = false
     Boolean gondolaHome = true
@@ -9,5 +12,7 @@
     Int[] gondolaZChanges = Int[0,0,0,0,0,0,0,0,0,0,-4,-4,-4,-4,-4,-6,0,0,0,0,0]
 
     Void runGondola()
+    Void playSong(Player player, Int song)
+    Void playRandomSong()
 
 @endnamespace

@@ -1,0 +1,7 @@
+@using blackbox2
+
+@fast
+
+@define Int random = Int(math::random(0.0D,4.0D))
+
+@var playSong(random)

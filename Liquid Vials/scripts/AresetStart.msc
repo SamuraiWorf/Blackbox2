@@ -4,3 +4,5 @@
 @if Region("worf_vial_area", "Theta").getPlayersInside().length() == 0
     @var resetVials()
 @fi
+
+@var blackbox2::playRandomSong()

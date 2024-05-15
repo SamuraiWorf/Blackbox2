@@ -7,3 +7,5 @@ Select -3476 33 1715 and -3461 31 1695. Regionname: worf_gondola_tp2 Owner: samu
 Select -3438 176 1753 and -3426 172 1736. Regionname: worf_train_jump_tp Owner: samurai_worf
 
 Select -3476 69 1680 and -3482 52 1686. Regionname: worf_vault_access Owner: samurai_worf
+
+Select -3496 234 1704 and -3501 241 1699. Regionname: worf_ending Owner: samurai_worf

@@ -1,0 +1,31 @@
+@using blackbox2
+
+@bypass /stopsound @s record custom:amb1
+@bypass /stopsound @s record custom:amb2
+@bypass /stopsound @s record custom:amb3
+@bypass /stopsound @s record custom:amb4
+
+@bypass /effect give @s minecraft:levitation 30 0 true
+@delay 5s
+@bypass /effect give @s minecraft:blindness 30 0 true
+@delay 1s
+@bypass /playsound minecraft:fanfare record @s ~ ~ ~ 1
+@delay 4s
+# tp to first credits
+@var player.teleport(Position(-3446.5D, 22, 1700.5D, 90.0, 0.0, "Theta"))
+@bypass /effect clear @s minecraft:levitation
+@bypass /effect give @s minecraft:slow_falling 60 0 true
+@delay 2s
+@bypass /effect clear @s minecraft:blindness
+@delay 8s
+@bypass /effect give @s minecraft:blindness 30 0 true
+@delay 3s
+# tp to second credits
+@var player.teleport(Position(-3448.5D, 22, 1710.5D, 90.0, 0.0, "Theta"))
+@delay 2s
+@bypass /effect clear @s minecraft:blindness
+@delay 10s
+@bypass /effect give @s minecraft:blindness 3 0 true
+@delay 1s
+# tp to vault height for perfect drama effect
+@var player.teleport(Position(-3448.5D, 11, 1714.5D, 90.0, 0.0, "Theta"))

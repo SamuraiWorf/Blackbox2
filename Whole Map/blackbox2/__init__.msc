@@ -23,7 +23,29 @@
 @bypass /script import area Theta worf_train_jump_tp <#../scripts/AskipTrainJump.msc>
 
 # enderpearl jump
-@bypass /script import entity 0b98ea2f-a7d0-4671-98ce-e5b5b6199842 <#../scripts/Eenderpearl.msc>
+@bypass /script import entity fde3514c-75a2-42c0-a5ac-ed4f55222c0c <#../scripts/Eenderpearl.msc>
 
 # vault access
 @bypass /script import area Theta worf_vault_access <#../scripts/AvaultAccess.msc>
+
+# skip ending
+@bypass /script import interact -3502 219 1721 Theta <#../scripts/IskipEnding.msc>
+
+# music boxes
+@bypass /script import interact -3476 94 1736 Theta <#../scripts/Iplay.msc>
+@bypass /script import interact -3476 94 1735 Theta <#../scripts/Istop.msc>
+
+@bypass /script import interact -3521 78 1723 Theta <#../scripts/Iplay.msc>
+@bypass /script import interact -3520 78 1723 Theta <#../scripts/Istop.msc>
+
+@bypass /script import interact -3481 65 1742 Theta <#../scripts/Iplay.msc>
+@bypass /script import interact -3480 65 1742 Theta <#../scripts/Istop.msc>
+
+@bypass /script import interact -3482 41 1708 Theta <#../scripts/Iplay.msc>
+@bypass /script import interact -3481 41 1708 Theta <#../scripts/Istop.msc>
+
+@bypass /script import interact -3479 168 1676 Theta <#../scripts/Iplay.msc>
+@bypass /script import interact -3479 168 1675 Theta <#../scripts/Istop.msc>
+
+@bypass /script import interact -3508 219 1760 Theta <#../scripts/Iplay.msc>
+@bypass /script import interact -3507 219 1761 Theta <#../scripts/Istop.msc>

@@ -6,4 +6,6 @@
     @return
 @fi
 
+@var blackbox2::playRandomSong()
+
 @var reset()

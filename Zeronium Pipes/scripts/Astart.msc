@@ -4,3 +4,5 @@
 @if Region("worf_pipe_area", "Theta").getPlayersInside().length() == 0
     @var resetPipes()
 @fi
+
+@var blackbox2::playRandomSong()
