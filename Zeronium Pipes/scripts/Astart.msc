@@ -5,4 +5,4 @@
     @var resetPipes()
 @fi
 
-@var blackbox2::playRandomSong()
+@var blackbox2::playRandomSong(player)

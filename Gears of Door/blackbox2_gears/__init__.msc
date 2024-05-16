@@ -1,7 +1,5 @@
 @using blackbox2_gears
 
-@fast
-
 # Admin Gear giving buttons -- removed cause only on minr, not test
 @bypass /script import interact -3483 242 1730 Theta <#../scripts/IgButton1.msc>
 @bypass /script import interact -3483 242 1733 Theta <#../scripts/IgButton2.msc>
@@ -9,6 +7,8 @@
 @bypass /script import interact -3483 242 1737 Theta <#../scripts/IgButton4.msc>
 @bypass /script import interact -3483 242 1740 Theta <#../scripts/IgButton5.msc>
 @bypass /script import interact -3483 242 1742 Theta <#../scripts/IgButton6.msc>
+
+@delay 8
 
 # Take all Gears
 @bypass /script import interact -3500 217 1749 Theta <#../scripts/IgrabAllGears.msc>
@@ -25,6 +25,8 @@
 # End Reset Area
 @bypass /script import area Theta worf_gears_end <#../scripts/AresetEnd.msc>
 
+@delay 8
+
 # Board 1 Interacts
 @for Int i in list::range(0,board1.sockets.length())
     @define Socket s = board1.sockets[i]
@@ -32,6 +34,8 @@
         @bypass /script import interact {{s.baseBlock}} <#../scripts/Iboard1.msc>
     @fi
 @done
+
+@delay 8
 
 # Board 2 Interacts
 @for Int i in list::range(0,board2.sockets.length())
@@ -41,6 +45,8 @@
     @fi
 @done
 
+@delay 8
+
 # Board 3 Interacts
 @for Int i in list::range(0,board3.sockets.length())
     @define Socket s = board3.sockets[i]
@@ -48,6 +54,8 @@
         @bypass /script import interact {{s.baseBlock}} <#../scripts/Iboard3.msc>
     @fi
 @done
+
+@delay 8
 
 # Board 4 Interacts
 @for Int i in list::range(0,board4.sockets.length())
@@ -57,6 +65,8 @@
     @fi
 @done
 
+@delay 8
+
 # Board 5 Interacts
 @for Int i in list::range(0,board5.sockets.length())
     @define Socket s = board5.sockets[i]
@@ -64,5 +74,7 @@
         @bypass /script import interact {{s.baseBlock}} <#../scripts/Iboard5.msc>
     @fi
 @done
+
+@delay 12
 
 @var reset()

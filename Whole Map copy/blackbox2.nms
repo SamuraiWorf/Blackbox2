@@ -1,0 +1,9 @@
+@namespace blackbox2
+
+    relative Boolean optInMusic = true
+    relative Int currentTrack = 0
+
+    Void playSong(Player player, Int song)
+    Void playRandomSong(Player player)
+
+@endnamespace

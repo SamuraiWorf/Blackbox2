@@ -8,6 +8,8 @@
 @bypass /script import ground -3507 43 1693 Theta <#../scripts/GPu2Ye.msc>
 @bypass /script import ground -3508 43 1693 Theta <#../scripts/GPu2Ye.msc>
 
+@delay 5
+
 # Lime to Pink
 @bypass /script import ground -3484 22 1689 Theta <#../scripts/GLi2Pi.msc>
 @bypass /script import ground -3485 22 1689 Theta <#../scripts/GLi2Pi.msc>
@@ -17,6 +19,8 @@
 @bypass /script import ground -3488 22 1688 Theta <#../scripts/GLi2O.msc>
 @bypass /script import ground -3489 22 1688 Theta <#../scripts/GLi2O.msc>
 @bypass /script import ground -3489 22 1687 Theta <#../scripts/GLi2O.msc>
+
+@delay 5
 
 # Pink to Purple
 @bypass /script import ground -3490 39 1702 Theta <#../scripts/GPi2Pu.msc>
@@ -28,6 +32,8 @@
 @bypass /script import ground -3486 39 1710 Theta <#../scripts/GPi2Re.msc>
 @bypass /script import ground -3487 39 1710 Theta <#../scripts/GPi2Re.msc>
 
+@delay 5
+
 # Orange to Aqua
 @bypass /script import ground -3502 11 1707 Theta <#../scripts/GO2Aq.msc>
 @bypass /script import ground -3502 11 1708 Theta <#../scripts/GO2Aq.msc>
@@ -37,6 +43,8 @@
 @bypass /script import ground -3501 11 1703 Theta <#../scripts/GO2Pi.msc>
 @bypass /script import ground -3501 11 1704 Theta <#../scripts/GO2Pi.msc>
 @bypass /script import ground -3501 11 1705 Theta <#../scripts/GO2Pi.msc>
+
+@delay 5
 
 # Aqua to Blue
 @bypass /script import ground -3470 25 1737 Theta <#../scripts/GAq2Bl.msc>
@@ -48,6 +56,8 @@
 @bypass /script import ground -3478 25 1730 Theta <#../scripts/GAq2Pi.msc>
 @bypass /script import ground -3477 25 1730 Theta <#../scripts/GAq2Pi.msc>
 
+@delay 5
+
 # Yellow to Orange
 @bypass /script import ground -3507 40 1750 Theta <#../scripts/GYe2O.msc>
 @bypass /script import ground -3506 40 1750 Theta <#../scripts/GYe2O.msc>
@@ -57,6 +67,8 @@
 @bypass /script import ground -3503 40 1751 Theta <#../scripts/GYe2Aq.msc>
 @bypass /script import ground -3502 40 1751 Theta <#../scripts/GYe2Aq.msc>
 @bypass /script import ground -3502 40 1752 Theta <#../scripts/GYe2Aq.msc>
+
+@delay 5
 
 # Red to Yellow
 @bypass /script import ground -3489 10 1756 Theta <#../scripts/GRe2Ye.msc>
@@ -68,6 +80,8 @@
 @bypass /script import ground -3484 10 1750 Theta <#../scripts/GRe2Li.msc>
 @bypass /script import ground -3483 10 1750 Theta <#../scripts/GRe2Li.msc>
 
+@delay 5
+
 # Blue to End
 @bypass /script import ground -3450 29 1753 Theta <#../scripts/GBl2End.msc>
 @bypass /script import ground -3450 29 1754 Theta <#../scripts/GBl2End.msc>
@@ -77,6 +91,8 @@
 @bypass /script import ground -3460 29 1755 Theta <#../scripts/GBl2Ye.msc>
 @bypass /script import ground -3460 29 1754 Theta <#../scripts/GBl2Ye.msc>
 @bypass /script import ground -3460 29 1753 Theta <#../scripts/GBl2Ye.msc>
+
+@delay 5
 
 # Gold Switch
 @bypass /script import interact -3482 24 1681 Theta <#../scripts/IgoldSwitch.msc>
@@ -89,6 +105,8 @@
 # Netherite Switch
 @bypass /script import interact -3510 42 1755 Theta <#../scripts/InetheriteSwitch.msc>
 
+@delay 5
+
 # Reset Interacts
 @bypass /script import interact -3482 41 1702 Theta <#../scripts/Ireset.msc>
 @bypass /script import interact -3488 24 1681 Theta <#../scripts/Ireset.msc>
@@ -99,6 +117,8 @@
 @bypass /script import interact -3455 31 1758 Theta <#../scripts/Ireset.msc>
 @bypass /script import interact -3481 12 1758 Theta <#../scripts/Ireset.msc>
 @bypass /script import interact -3506 42 1759 Theta <#../scripts/Ireset.msc>
+
+@delay 5
 
 # Area TP fall
 @bypass /script import area Theta worf_blink_tp <#../scripts/AtpFall.msc>

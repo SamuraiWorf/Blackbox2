@@ -51,7 +51,7 @@
     "amb4": {
       "sounds": [
       {
-          "name":"custom:amb3",
+          "name":"custom:amb4",
           "stream":true
       }]
     },

@@ -1,7 +1,7 @@
 @namespace blackbox2
 
-    Relative Boolean optInMusic = true
-    Relative Int currentTrack = 0
+    relative Boolean optInMusic = true
+    relative Int currentTrack = 0
 
     Boolean gondolaRunning = false
     Boolean gondolaReseting = false
@@ -13,6 +13,6 @@
 
     Void runGondola()
     Void playSong(Player player, Int song)
-    Void playRandomSong()
+    Void playRandomSong(Player)
 
 @endnamespace
