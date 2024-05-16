@@ -3,3 +3,4 @@
 @var this.defaultGear = defaultGear
 @var this.containedGear = defaultGear
 @var this.interact = interact
+@var this.baseRotation = baseRotation

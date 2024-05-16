@@ -13,6 +13,6 @@
 
     Void runGondola()
     Void playSong(Player player, Int song)
-    Void playRandomSong(Player)
+    Void playRandomSong(Player player)
 
 @endnamespace

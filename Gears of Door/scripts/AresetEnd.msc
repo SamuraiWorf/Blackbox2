@@ -9,7 +9,7 @@
 @fi
 
 @for Int i in list::range(0, openEnd.getPlayersInside().length())
-    @var openEnd.getPlayersInside()[i].teleport(Position(-3498D, 215D, 1730.5D, -180, -25.0, "Theta"))
+    @var openEnd.getPlayersInside()[i].teleport(Position(-3498D, 215D, 1730.5D, -180.0, -25.0, "Theta"))
 @done
 
 @var reset()

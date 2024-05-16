@@ -4,7 +4,7 @@
         Socket(BlockLocation(-3510,225,1750,"Theta"),"47cecf26-9409-4d68-9b5b-e96bbed64ee2",4,false,0),
         Socket(BlockLocation(-3510,224,1753,"Theta"),"35006852-1ad4-4773-a892-34f66a675fcb",0,true,1),
         Socket(BlockLocation(-3510,223,1751,"Theta"),"dbc28ffe-972e-41e1-ab5b-4b3ddd1357fa",1,true,1),
-        Socket(BlockLocation(-3510,223,1755,"Theta"),"c58905ed-687d-40ed-a41b-8498f607aaf4",5,false,0),
+        Socket(BlockLocation(-3510,223,1755,"Theta"),"aea96426-7738-40fb-8df1-874939d3d50a",5,false,0),
         Socket(BlockLocation(-3510,221,1754,"Theta"),"cc613a52-b10f-4aea-9205-6adca0296d28",0,true,1),
         Socket(BlockLocation(-3510,220,1753,"Theta"),"1adbac7c-06e3-4df2-9679-0381bdd600f2",-1,true,0),
         Socket(BlockLocation(-3510,220,1752,"Theta"),"59cfa440-e80d-4db4-a8d5-b4c1a815e707",2,true,0),

@@ -8,7 +8,7 @@
 @bypass /script import interact -3483 242 1740 Theta <#../scripts/IgButton5.msc>
 @bypass /script import interact -3483 242 1742 Theta <#../scripts/IgButton6.msc>
 
-@delay 8
+@delay 10
 
 # Take all Gears
 @bypass /script import interact -3500 217 1749 Theta <#../scripts/IgrabAllGears.msc>
@@ -25,7 +25,7 @@
 # End Reset Area
 @bypass /script import area Theta worf_gears_end <#../scripts/AresetEnd.msc>
 
-@delay 8
+@delay 20
 
 # Board 1 Interacts
 @for Int i in list::range(0,board1.sockets.length())
@@ -35,7 +35,7 @@
     @fi
 @done
 
-@delay 8
+@delay 20
 
 # Board 2 Interacts
 @for Int i in list::range(0,board2.sockets.length())
@@ -45,7 +45,7 @@
     @fi
 @done
 
-@delay 8
+@delay 20
 
 # Board 3 Interacts
 @for Int i in list::range(0,board3.sockets.length())
@@ -55,7 +55,7 @@
     @fi
 @done
 
-@delay 8
+@delay 20
 
 # Board 4 Interacts
 @for Int i in list::range(0,board4.sockets.length())
@@ -65,7 +65,7 @@
     @fi
 @done
 
-@delay 8
+@delay 20
 
 # Board 5 Interacts
 @for Int i in list::range(0,board5.sockets.length())

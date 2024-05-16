@@ -1,5 +1,0 @@
-# music boxes
-@bypass /script import interact -1508 64 737 Zero <#../scripts/Iplay.msc>
-@bypass /script import interact -1509 64 737 Zero <#../scripts/Istop.msc>
-@bypass /script import interact -1507 64 737 Zero <#../scripts/Irandom.msc>
-
