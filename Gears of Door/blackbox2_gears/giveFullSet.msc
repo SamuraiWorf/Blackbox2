@@ -2,6 +2,6 @@
 
 @fast
 
-@var giveGearItem(0, 15)
-@var giveGearItem(1, 10)
+@var giveGearItem(0, 13)
+@var giveGearItem(1, 9)
 @var giveGearItem(2, 9)

@@ -17,15 +17,17 @@
     @var reColorInputs(clicked, 2)
     @bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..40] ~ ~ ~ 1 0.667
 @else
-    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..40] ~ ~ ~ 1 0.4
     @if selectedVial.getTopLiquid()[1] > interact.getFreeSpace()
+        @bypass /playsound minecraft:block.note_block.bass record @a[distance=..40] ~ ~ ~ 1 0.4
         @var announce("&4&lNot enough room in target vial!")
         @var canMove = false
     @elseif selectedVial.getTopLiquid()[0] != interact.getTopLiquid()[0] && interact.getTopLiquid()[0] != 0
+        @bypass /playsound minecraft:block.note_block.bass record @a[distance=..40] ~ ~ ~ 1 0.4
         @var announce("&4&lMismatching liquids!")
         @var canMove = false
     @fi
     @if canMove == true
+        @bypass /playsound minecraft:block.note_block.bell record @a[distance=..60] ~ ~ ~ 1 0.749
         @var reColorInputs(clicked, 1)
         @var moveLiquid(selectedVial, interact)
     @fi

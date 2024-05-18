@@ -12,11 +12,15 @@
     @var announce("Round &6&l" + round + "&r -- &6&l" + (round*2) + "&f colors")
     @delay 2s
     @var announce("&c&lStarting in 3")
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
     @delay 1s
     @var announce("&c&l2")
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
     @delay 1s
     @var announce("&c&l1")
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
     @delay 1s
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 1.122
     @var giveTask(round*2)
     @var announce("Your turn!")
     @var playerTurnEnabled = true

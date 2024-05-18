@@ -15,7 +15,7 @@
 @bypass /script import area Theta worf_gondola_tp2 <#../scripts/IskipGondola.msc>
 
 # depart Train
-@bypass /script import interact -3432 31 1732 Theta <#../scripts/IdepartTrain.msc>
+@bypass /script import interact -3433 31 1732 Theta <#../scripts/IdepartTrain.msc>
 
 # failsafe tp train
 @bypass /script import area Theta worf_train_jump_tp <#../scripts/AskipTrainJump.msc>

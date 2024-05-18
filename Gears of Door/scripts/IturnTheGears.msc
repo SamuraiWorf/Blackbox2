@@ -1,6 +1,6 @@
 @using blackbox2_gears
 
-@global_cooldown 1s
+@global_cooldown 2s
 
 @fast
 
