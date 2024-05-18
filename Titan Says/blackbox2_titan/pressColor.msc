@@ -18,10 +18,10 @@
     @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
     @delay 1s
     @var announce("&c&l1")
-    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 0.749
-    @delay 1s
     @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 1.122
+    @delay 1s
     @var giveTask(round*2)
+    @bypass /playsound minecraft:block.note_block.bit record @a[distance=..60] ~ ~ ~ 1 1.122
     @var announce("Your turn!")
     @var playerTurnEnabled = true
     @var input = 0

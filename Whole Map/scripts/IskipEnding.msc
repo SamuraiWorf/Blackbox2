@@ -1,3 +1,18 @@
-@using blackbox2
+@using blackbox2_gears
+
+@fast
 
 @var player.teleport(Position(-3448.5D, -30D, 1714.5D, 90.0, 0.0, "Theta"))
+
+@delay 4s
+
+@if isSolved == false
+    @return
+@fi
+
+@for Int i in list::range(0, openEnd.getPlayersInside().length())
+    @var openEnd.getPlayersInside()[i].teleport(Position(-3498D, 215D, 1730.5D, -180.0, -25.0, "Theta"))
+@done
+
+@var reset()
+@var isSolved = false
