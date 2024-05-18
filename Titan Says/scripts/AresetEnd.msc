@@ -2,4 +2,5 @@
 
 @bypass /effect give @p minecraft:blindness 8 1 true
 @delay 3s
+@var round = 0
 @var gameReset()

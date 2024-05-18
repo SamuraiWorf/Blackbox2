@@ -3,7 +3,6 @@
 @fast
 
 @var task = Int[]
-@var round = 0
 @var input = 0
 @var nextRoundEnabled = true
 @var playerTurnEnabled = false

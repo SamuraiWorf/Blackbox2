@@ -2,5 +2,6 @@
 @global_cooldown 8
 
 @if map.getPlayersInside().length() == 0
+    @var round = 0
     @var gameReset()
 @fi

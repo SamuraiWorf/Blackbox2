@@ -2,6 +2,8 @@
 
 @global_cooldown 6
 
+@fast
+
 @if pipeTesting == true || exitOpen == true
     @return
 @fi
@@ -9,6 +11,9 @@
 @var pipeTesting = true
 
 @var announce("&f&lOpening Zeronium Valve...")
+
+# save board state
+@console /execute in minecraft:theta run clone -3474 61 1739 -3491 61 1719 -3491 53 1719
 
 @delay 5
 
@@ -31,4 +36,6 @@
     @delay 30
     @var pipeTesting = false
     @var resetPipes()
+    # resume board state
+    @console /execute in minecraft:theta run clone -3474 53 1739 -3491 53 1719 -3491 61 1719
 @fi

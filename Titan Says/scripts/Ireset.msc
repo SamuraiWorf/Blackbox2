@@ -1,6 +1,7 @@
 @using blackbox2_titan
 
 @if nextRoundEnabled
+    @var round = 0
     @var gameReset()
     @var announce("&4&lGame Reset &f-- Ready for play!")
 @else

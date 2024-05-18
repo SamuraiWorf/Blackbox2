@@ -10,11 +10,14 @@
 
 @if selectedVial == null
     @var selectedVial = interact
+    @bypass /playsound minecraft:block.note_block.hat record @a[distance=..40] ~ ~ ~ 1
     @var reColorInputs(clicked, 0)
 @elseif selectedVial == interact
     @var selectedVial = null
     @var reColorInputs(clicked, 2)
+    @bypass /playsound minecraft:block.note_block.basedrum record @a[distance=..40] ~ ~ ~ 1 0.667
 @else
+    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..40] ~ ~ ~ 1 0.4
     @if selectedVial.getTopLiquid()[1] > interact.getFreeSpace()
         @var announce("&4&lNot enough room in target vial!")
         @var canMove = false

@@ -1,5 +1,4 @@
 @using blackbox2_vials
-@global_cooldown 6
 
 @if Region("worf_vial_area", "Theta").getPlayersInside().length() == 0
     @var resetVials()

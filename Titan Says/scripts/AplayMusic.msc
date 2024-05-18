@@ -1,5 +1,4 @@
 @using blackbox2_titan
-@global_cooldown 8
 
 @fast
 

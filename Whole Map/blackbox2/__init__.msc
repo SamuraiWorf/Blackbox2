@@ -21,7 +21,8 @@
 @bypass /script import area Theta worf_train_jump_tp <#../scripts/AskipTrainJump.msc>
 
 # enderpearl jump
-@bypass /script import entity fde3514c-75a2-42c0-a5ac-ed4f55222c0c <#../scripts/Eenderpearl.msc>
+@bypass /script import entity 5f13b027-81cf-4a0a-a537-645b2f52a906 <#../scripts/Eenderpearl.msc>
+@bypass /data merge entity 5f13b027-81cf-4a0a-a537-645b2f52a906 {Item:{id:"minecraft:ender_pearl",Count:1b,tag:{display:{Name:'["",{"text":"Throw Ender Pearl","italic":false,"bold":true,"color":"aqua"}]'}}}}
 
 # vault access
 @bypass /script import area Theta worf_vault_access <#../scripts/AvaultAccess.msc>
