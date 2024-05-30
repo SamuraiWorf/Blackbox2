@@ -9,4 +9,4 @@
 @bypass /stopsound @s record custom:amb3
 @bypass /stopsound @s record custom:amb4
 
-@var optInMusic[player] == false
+@var optInMusic[player] = false

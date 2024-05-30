@@ -14,7 +14,9 @@
 @bypass /playsound custom:fanfare record @s ~ ~ ~ 1
 @delay 4s
 # tp to first credits
-@var player.teleport(Position(-3446.5D, 22D, 1700.5D, 90.0, 0.0, "Theta"))
+@if Region(-3493,214,1716,-3504,279,1658,"Theta").containsPlayer(player)
+    @var player.teleport(Position(-3445.5D, 22D, 1700.5D, 90.0, 0.0, "Theta"))
+@fi
 @bypass /effect clear @s minecraft:levitation
 @bypass /effect give @s minecraft:slow_falling 60 0 true
 @delay 2s
@@ -23,11 +25,15 @@
 @bypass /effect give @s minecraft:blindness 30 0 true
 @delay 3s
 # tp to second credits
-@var player.teleport(Position(-3446.5D, 22D, 1710.5D, 90.0, 0.0, "Theta"))
+@if Region(-3457,24,1717,-3444,14,1696,"Theta").containsPlayer(player)
+    @var player.teleport(Position(-3446.5D, 22D, 1710.5D, 90.0, 0.0, "Theta"))
+@fi
 @delay 2s
 @bypass /effect clear @s minecraft:blindness
 @delay 10s
 @bypass /effect give @s minecraft:blindness 3 0 true
 @delay 1s
 # tp to vault height for perfect drama effect
-@var player.teleport(Position(-3448.5D, 11D, 1714.5D, 90.0, 0.0, "Theta"))
+@if Region(-3457,24,1717,-3445,14,1696,"Theta").containsPlayer(player)
+    @var player.teleport(Position(-3448.5D, 11D, 1714.5D, 90.0, 0.0, "Theta"))
+@fi

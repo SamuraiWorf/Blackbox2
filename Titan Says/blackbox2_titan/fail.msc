@@ -8,3 +8,4 @@
 @delay 4s
 @var round = round - 1
 @var gameReset()
+@var announce("Click any color glass to try again!")

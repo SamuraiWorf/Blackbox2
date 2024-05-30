@@ -2,7 +2,7 @@
 
 @fast
 
-@var optInMusic[player] == true
+@var optInMusic[player] = true
 
 @player &lPlaying next Track
 

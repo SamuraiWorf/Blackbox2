@@ -6,4 +6,6 @@
 @delay 1
 @bypass /playsound custom:train record @s ~ ~ ~ 0.8
 @delay 8s
-@var player.teleport(Position(-3431.5D, 181D, 1753.5D, 180.0, 0.0, "Theta"))
+@if Region(-3440,82,1698,-3436,86,1694,"Theta").containsPlayer(player)
+    @var player.teleport(Position(-3431.5D, 181D, 1753.5D, 180.0, 0.0, "Theta"))
+@fi
