@@ -10,7 +10,7 @@
 
 @var pipeTesting = true
 
-@var announce("&f&lOpening Zeronium Valve...")
+@var announce("&f&lOpening Zeronium valve...")
 
 # save board state
 @console /execute in minecraft:theta run clone -3474 61 1739 -3491 61 1719 -3491 53 1719

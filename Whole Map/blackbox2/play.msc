@@ -1,0 +1,57 @@
+@using blackbox2
+
+@if optInMusic[player] == false || Region("samuraipuzzle2", "Theta").containsPlayer(player) == false
+    @return
+@fi
+
+@var loopCounter[player] = loopCounter[player] + 1
+@define Int curCounter = loopCounter[player]
+
+@if manual
+
+    @player &lPlaying next track
+
+    @if currentTrack[player] == 0
+        @var playSong(player, 1)
+    @elseif currentTrack[player] == 1
+        @var playSong(player, 2)
+    @elseif currentTrack[player] == 2
+        @var playSong(player, 3)
+    @elseif currentTrack[player] == 3
+        @var playSong(player, 0)
+    @fi
+
+@else
+
+    @player &lPlaying random track
+
+    @define Int rand = Int(math::random(0.0D,4.0D))
+
+    @if rand == currentTrack[player]
+        @var rand = Int(math::random(0.0D,4.0D))
+    @fi
+
+    @var playSong(player, rand)
+
+@fi
+
+@if currentTrack[player] == 0
+    @delay 206s
+@elseif currentTrack[player] == 1
+    @delay 132s
+@elseif currentTrack[player] == 2
+    @delay 145s
+@elseif currentTrack[player] == 3
+    @delay 190s
+@fi
+
+@if loopingMusic[player] && curCounter == loopCounter[player]
+
+    @var currentTrack[player] = -1
+
+    @if loopCounter[player] >= 1000
+        @var loopCounter[player] = 0
+    @fi
+
+    @var play(player, false)
+@fi

@@ -1,0 +1,13 @@
+@using blackbox2
+
+@cooldown 4
+
+@fast
+
+@var loopingMusic[player] = loopingMusic[player] == false
+
+@if loopingMusic[player]
+    @player &lLooping enabled
+@else
+    @player &lLooping disabled
+@fi

@@ -1,7 +1,7 @@
 @using blackbox2_vials
 
 @if blockedVialInteract == true && exitOpen == false
-    @return
+    @return false
 @fi
 
 @var vial1 = Vial(BlockLocation(-3528,74,1710,"Theta"),Int[0,0,1,2,3,1,4])
@@ -81,3 +81,5 @@
 @var selectedVial = null
 @var blockedVialInteract = false
 @var exitOpen = false
+
+@return true

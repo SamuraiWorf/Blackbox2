@@ -36,18 +36,24 @@
 # music boxes
 @bypass /script import interact -3476 94 1736 Theta <#../scripts/Iplay.msc>
 @bypass /script import interact -3476 94 1735 Theta <#../scripts/Istop.msc>
+@bypass /script import interact -3476 94 1737 Theta <#../scripts/Iloop.msc>
 
 @bypass /script import interact -3521 78 1723 Theta <#../scripts/Iplay.msc>
 @bypass /script import interact -3520 78 1723 Theta <#../scripts/Istop.msc>
+@bypass /script import interact -3523 78 1723 Theta <#../scripts/Iloop.msc>
 
 @bypass /script import interact -3481 65 1742 Theta <#../scripts/Iplay.msc>
 @bypass /script import interact -3480 65 1742 Theta <#../scripts/Istop.msc>
+@bypass /script import interact -3482 65 1742 Theta <#../scripts/Iloop.msc>
 
 @bypass /script import interact -3482 41 1708 Theta <#../scripts/Iplay.msc>
 @bypass /script import interact -3481 41 1708 Theta <#../scripts/Istop.msc>
+@bypass /script import interact -3480 41 1708 Theta <#../scripts/Iloop.msc>
 
 @bypass /script import interact -3479 168 1676 Theta <#../scripts/Iplay.msc>
 @bypass /script import interact -3479 168 1675 Theta <#../scripts/Istop.msc>
+@bypass /script import interact -3479 168 1677 Theta <#../scripts/Iloop.msc>
 
 @bypass /script import interact -3508 219 1760 Theta <#../scripts/Iplay.msc>
 @bypass /script import interact -3507 219 1761 Theta <#../scripts/Istop.msc>
+@bypass /script import interact -3509 219 1759 Theta <#../scripts/Iloop.msc>

@@ -12,7 +12,7 @@
     blackbox2_vials::Vial vial6 = blackbox2_vials::Vial(BlockLocation(-3508,74,1710,"Theta"),Int[0,0,0,0,0,0,0])
     blackbox2_vials::Vial selectedVial = null
 
-    Void resetVials()
+    Boolean resetVials()
     Void moveLiquid(Vial from, Vial to)
     Void reColorInputs(Block clicked, Int type)
     Void interactVial(Block clicked, Vial interact)

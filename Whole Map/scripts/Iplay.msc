@@ -1,17 +1,13 @@
 @using blackbox2
 
+@cooldown 4
+
 @fast
 
 @var optInMusic[player] = true
 
-@player &lPlaying next Track
-
-@if currentTrack[player] == 0
-    @var playSong(player, 1)
-@elseif currentTrack[player] == 1
-    @var playSong(player, 2)
-@elseif currentTrack[player] == 2
-    @var playSong(player, 3)
-@elseif currentTrack[player] == 3
-    @var playSong(player, 0)
+@if currentTrack[player] == -1
+    @var currentTrack[player] = Int(math::random(0.0D,4.0D))
 @fi
+
+@var play(player, true)

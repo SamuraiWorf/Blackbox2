@@ -7,6 +7,8 @@
 @bypass /stopsound @s record custom:amb3
 @bypass /stopsound @s record custom:amb4
 
+@var loopCounter[player] = loopCounter[player] + 1
+
 @bypass /effect give @s minecraft:levitation 30 5 true
 @delay 3s
 @bypass /effect give @s minecraft:blindness 30 0 true

@@ -10,3 +10,4 @@
 @bypass /stopsound @s record custom:amb4
 
 @var optInMusic[player] = false
+@var currentTrack[player] = -1

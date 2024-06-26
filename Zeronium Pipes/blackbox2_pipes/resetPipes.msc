@@ -3,7 +3,7 @@
 @fast
 
 @if pipeTesting == true && exitOpen == false
-    @return
+    @return false
 @fi
 
 # destination = lowest coordinate corner
@@ -28,3 +28,5 @@
 
 @var pipeTesting = false
 @var exitOpen = false
+
+@return true

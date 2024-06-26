@@ -1,3 +1,8 @@
 @using blackbox2_vials
 @global_cooldown 6
-@var resetVials()
+
+@if resetVials()
+    @bypass /playsound minecraft:block.note_block.bass record @a[distance=..40] ~ ~ ~ 1 0.4
+
+    @var announce("&lVials reset!")
+@fi

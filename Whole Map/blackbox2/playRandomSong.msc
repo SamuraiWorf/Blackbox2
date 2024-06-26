@@ -2,6 +2,9 @@
 
 @fast
 
-@define Int random = Int(math::random(0.0D,4.0D))
+# This function has been changed to "playFromPuzzle"
+# The name wasnt changed, so that not every Puzzle needs to be reimported
 
-@var playSong(player, random)
+@if loopingMusic[player] == false
+    @var play(player, false)
+@fi
