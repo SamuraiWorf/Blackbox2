@@ -1,0 +1,36 @@
+@using blackbox2_blink
+@fast
+
+@var current = start
+
+@for Player player2 in map1.getPlayersInside()
+    @var player2.teleport(Position(start, player2.getYaw(), player2.getPitch()))
+@done
+
+@for Player player2 in map2.getPlayersInside()
+    @var player2.teleport(Position(start, player2.getYaw(), player2.getPitch()))
+@done
+
+@for Player player2 in map3.getPlayersInside()
+    @var player2.teleport(Position(start, player2.getYaw(), player2.getPitch()))
+@done
+
+@var pinkPad.state = 0
+@var purplePad.state = 0
+@var limePad.state = 0
+@var orangePad.state = 1
+@var aquaPad.state = 0
+@var bluePad.state = 1
+@var redPad.state = 0
+@var yellowPad.state = 0
+
+@var pinkPad.updatePlacement()
+@var purplePad.updatePlacement()
+@var limePad.updatePlacement()
+@var orangePad.updatePlacement()
+@var aquaPad.updatePlacement()
+@var bluePad.updatePlacement()
+@var redPad.updatePlacement()
+@var yellowPad.updatePlacement()
+
+@var interactBlock = false

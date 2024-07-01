@@ -1,0 +1,6 @@
+@bypass /script import interact -3500 109 1716 Theta <#../scripts/IresetGondola.msc>
+@bypass /script import interact -3500 109 1717 Theta <#../scripts/IresetVials.msc>
+@bypass /script import interact -3500 109 1718 Theta <#../scripts/IresetPipes.msc>
+@bypass /script import interact -3500 109 1719 Theta <#../scripts/IresetBlink.msc>
+@bypass /script import interact -3500 109 1720 Theta <#../scripts/IresetTitan.msc>
+@bypass /script import interact -3500 109 1721 Theta <#../scripts/IresetGears.msc>

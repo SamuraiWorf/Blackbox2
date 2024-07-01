@@ -46,32 +46,38 @@
                         @if current.containedGear == 0 || current.containedGear == 3
                             @if conGear == sMask[xDist + 4* yDist] && conGear > -1
                                 @var connected[i] = true
-                                @var newOpens.append(i)
+                                @if newOpens.contains(i) == false
+                                    @var newOpens.append(i)
+                                @fi
                             @fi
                         @elseif current.containedGear == 1 || current.containedGear == 4
                             @if conGear == mMask[xDist + 4* yDist] && conGear > -1
                                 @var connected[i] = true
-                                @var newOpens.append(i)
+                                @if newOpens.contains(i) == false
+                                    @var newOpens.append(i)
+                                @fi
                             @fi
                         @elseif current.containedGear == 2 || current.containedGear == 5
                             @if conGear == lMask[xDist + 4* yDist] && conGear > -1
                                 @var connected[i] = true
-                                @var newOpens.append(i)
+                                @if newOpens.contains(i) == false
+                                    @var newOpens.append(i)
+                                @fi
                             @fi
                         @fi
                     @fi
                 @fi
             @done
         @fi
-
-        @var openList.clear()
-
-        @for Int i in list::range(0,newOpens.length())
-            @var openList.append(newOpens[i])
-        @done
-
-        @var newOpens.clear()
     @done
+
+    @var openList.clear()
+
+    @for Int i in list::range(0,newOpens.length())
+        @var openList.append(newOpens[i])
+    @done
+
+    @var newOpens.clear()
 @done
 
 @for Int i in list::range(0,this.exits.length())
