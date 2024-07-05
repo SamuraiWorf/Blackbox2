@@ -90,3 +90,5 @@
 
 # close door
 @console /execute in minecraft:theta run clone -3505 238 1735 -3496 247 1734 -3503 215 1722
+
+@var isSolved = false

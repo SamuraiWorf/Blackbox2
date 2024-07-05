@@ -2,7 +2,7 @@
 
 @fast
 
-@if isSolved == true || map.getPlayersInside().length() > 0
+@if map.getPlayersInside().length() > 0
     @return
 @fi
 
