@@ -1,10 +1,10 @@
 @using blackbox2_gears
 
-@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:'sg'} } }]")
+@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{components:{'minecraft:custom_data':{Tags:'sg'} } } }]")
     @return 0
-@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:'mg'} } }]")
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{components:{'minecraft:custom_data':{Tags:'mg'} } } }]")
     @return 1
-@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:'lg'} } }]")
+@elseif util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{components:{'minecraft:custom_data':{Tags:'lg'} } } }]")
     @return 2
 @else
     @return -1

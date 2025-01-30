@@ -3,15 +3,15 @@
 @fast
 
 @if type == 0
-    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Small Gear","italic":false,"bold":true}]'},CustomModelData:116347,Tags:sg} {{amount}}
+    @bypass /give @s minecraft:iron_nugget[minecraft:custom_model_data=116347,minecraft:custom_name='["",{"text":"Small Gear","italic":false,"bold":true}]',minecraft:custom_data={Tags:"sg"}] {{amount}}
 @elseif type == 1
-    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:226347,Tags:mg} {{amount}}
+    @bypass /give @s minecraft:iron_nugget[minecraft:custom_model_data=226347,minecraft:custom_name='["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear","italic":false,"bold":true}]',minecraft:custom_data={Tags:"mg"}] {{amount}}
 @elseif type == 2
-    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:336347,Tags:lg} {{amount}}
+    @bypass /give @s minecraft:iron_nugget[minecraft:custom_model_data=336347,minecraft:custom_name='["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear","italic":false,"bold":true}]',minecraft:custom_data={Tags:"lg"}] {{amount}}
 @elseif type == 3
-    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Small Gear Fixed","italic":false,"bold":true}]'},CustomModelData:446347,Tags:sgf} {{amount}}
+    @bypass /give @s minecraft:iron_nugget[minecraft:custom_model_data=446347,minecraft:custom_name='["",{"text":"Small Gear Fixed","italic":false,"bold":true}]',minecraft:custom_data={Tags:"sgf"}] {{amount}}
 @elseif type == 4
-    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:556347,Tags:mgf} {{amount}}
+    @bypass /give @s minecraft:iron_nugget[minecraft:custom_model_data=556347,minecraft:custom_name='["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear Fixed","italic":false,"bold":true}]',minecraft:custom_data={Tags:"mgf"}] {{amount}}
 @elseif type == 5
-    @bypass /give @s iron_nugget{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:666347,Tags:lgf} {{amount}}
+    @bypass /give @s minecraft:iron_nugget[minecraft:custom_model_data=666347,minecraft:custom_name='["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear Fixed","italic":false,"bold":true}]',minecraft:custom_data={Tags:"lgf"}] {{amount}}
 @fi

@@ -3,17 +3,17 @@
 @fast
 
 @if gear == -1
-    @bypass /data merge entity {{uuid}} {Item:{id:""}}
+    @bypass /data merge entity {{uuid}} {Item:{id:""} }
 @elseif gear == 0
-    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Small Gear","italic":false,"bold":true}]'},CustomModelData:116347,Tags:sg}}}
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",count:1,components:{"minecraft:custom_name":'{"bold":true,"text":"Small Gear"}',"minecraft:custom_model_data":116347,"minecraft:custom_data":{Tags:sg} } } }
 @elseif gear == 1
-    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:226347,Tags:mg}}}
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",count:1,components:{"minecraft:custom_name":'[{"bold":true,"color":"aqua","text":"Medium"},{"bold":true,"color":"white","text":" Gear"}]',"minecraft:custom_model_data":226347,"minecraft:custom_data":{Tags:mg} } } }
 @elseif gear == 2
-    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear","italic":false,"bold":true}]'},CustomModelData:336347,Tags:lg}}}
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",count:1,components:{"minecraft:custom_name":'[{"bold":true,"color":"green","text":"Large"},{"bold":true,"color":"white","text":" Gear"}]',"minecraft:custom_model_data":336347,"minecraft:custom_data":{Tags:lg} } } }
 @elseif gear == 3
-    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Small Gear Fixed","italic":false,"bold":true}]'},CustomModelData:446347,Tags:sgf}}}
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",count:1,components:{"minecraft:custom_name":'{"bold":true,"text":"Small Gear Fixed"}',"minecraft:custom_model_data":446347,"minecraft:custom_data":{Tags:sgf} } } }
 @elseif gear == 4
-    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Medium","italic":false,"bold":true,"color":"aqua"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:556347,Tags:mgf}}}
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",count:1,components:{"minecraft:custom_name":'[{"bold":true,"color":"aqua","text":"Medium"},{"bold":true,"color":"white","text":" Gear Fixed"}]',"minecraft:custom_model_data":556347,"minecraft:custom_data":{Tags:mgf} } } }
 @elseif gear == 5
-    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",Count:1b,tag:{display:{Name:'["",{"text":"Large","italic":false,"bold":true,"color":"green"},{"text":" Gear Fixed","italic":false,"bold":true}]'},CustomModelData:666347,Tags:lgf}}}
+    @bypass /data merge entity {{uuid}} {Item:{id:"minecraft:iron_nugget",count:1,components:{"minecraft:custom_name":'[{"bold":true,"color":"green","text":"Large"},{"bold":true,"color":"white","text":" Gear Fixed"}]',"minecraft:custom_model_data":666347,"minecraft:custom_data":{Tags:lgf} } } }
 @fi
