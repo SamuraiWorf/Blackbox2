@@ -1,0 +1,5 @@
+@using blackbox2_billiard
+
+@global_cooldown 5
+
+@var reset()

@@ -1,0 +1,105 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Boolean anyMoving = false
+
+# Update physics
+@for Int i in list::range(0,16)
+    @define Boolean sunk = false
+    
+    @var balls[i].position = Vector2(balls[i].position.getX() + balls[i].velocity.getX(), balls[i].position.getZ() + balls[i].velocity.getZ())
+    
+    @if balls[i].sunk == false
+        # left side
+        @if balls[i].position.getX() < -5193D + radius
+            @if balls[i].position.getZ() >= -8607D + radius || balls[i].position.getZ() <= -8617D - radius || (balls[i].position.getZ() >= -8613D + radius && balls[i].position.getZ() <= -8611D - radius)
+                @if balls[i].position.getX() < -5193D
+                    @var sunk = true
+                    @if balls[i].velocity.getX() > -0.05D
+                        @var balls[i].velocity = Vector2(-0.05D, balls[i].velocity.getZ())
+                    @fi
+                @fi
+            @else
+                @var balls[i].position = Vector2(-5193D + radius, balls[i].position.getZ())
+                @var balls[i].velocity = Vector2(-balls[i].velocity.getX(), balls[i].velocity.getZ())
+            @fi
+        @fi
+        
+        # right side
+        @if balls[i].position.getX() > -5186D - radius
+            @if balls[i].position.getZ() >= -8607D + radius || balls[i].position.getZ() <= -8617D - radius || (balls[i].position.getZ() >= -8613D + radius && balls[i].position.getZ() <= -8611D - radius)
+                @if balls[i].position.getX() > -5186D
+                    @var sunk = true
+                    @if balls[i].velocity.getX() < 0.05D
+                        @var balls[i].velocity = Vector2(0.05D, balls[i].velocity.getZ())
+                    @fi
+                @fi
+            @else
+                @var balls[i].position = Vector2(-5186D - radius, balls[i].position.getZ())
+                @var balls[i].velocity = Vector2(-balls[i].velocity.getX(), balls[i].velocity.getZ())
+            @fi
+        @fi
+        
+        # top side
+        @if balls[i].position.getZ() < -8618D + radius
+            @if balls[i].position.getX() >= -5187D + radius || balls[i].position.getX() <= -5192D - radius
+                @if balls[i].position.getZ() < -8618D
+                    @var sunk = true
+                    @if balls[i].velocity.getZ() > -0.05D
+                        @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -0.05D)
+                    @fi
+                @fi
+            @else
+                @var balls[i].position = Vector2(balls[i].position.getX(), -8618D + radius)
+                @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -balls[i].velocity.getZ())
+            @fi
+        @fi
+        
+        # bottom side
+        @if balls[i].position.getZ() > -8606D - radius
+            @if balls[i].position.getX() >= -5187D + radius || balls[i].position.getX() <= -5192D - radius
+                @if balls[i].position.getZ() > -8606D
+                    @var sunk = true
+                    @if balls[i].velocity.getZ() < 0.05D
+                        @var balls[i].velocity = Vector2(balls[i].velocity.getX(), 0.05D)
+                    @fi
+                @fi
+            @else
+                @var balls[i].position = Vector2(balls[i].position.getX(), -8606D - radius)
+                @var balls[i].velocity = Vector2(balls[i].velocity.getX(), -balls[i].velocity.getZ())
+            @fi
+        @fi
+    @fi
+    
+    @if sunk
+        @var sunkThisShot.append(i)
+        @if solids == 0 && i != 8 && i != 0
+            @if i >= 9
+                @var solids = 3 - team
+            @else
+                @var solids = team
+            @fi
+            @var showSets()
+        @fi
+        @var balls[i].sink(i)
+    @fi
+    
+    @var balls[i].velocity = Vector2(balls[i].velocity.getX()*0.965D, balls[i].velocity.getZ()*0.965D)
+    
+    @if balls[i].velocity.length() <= 0.025D
+        @var balls[i].velocity = Vector2(0.0D, 0.0D)
+    @else
+        @var anyMoving = true
+    @fi
+    
+    @if balls[i].sunk
+        @if balls[i].height > 63
+            @var anyMoving = true
+            @var balls[i].height = balls[i].height - 0.1D
+        @fi
+        @var updateSunkMovement(i)
+    @fi
+@done
+
+@return anyMoving

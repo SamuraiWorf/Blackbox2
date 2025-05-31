@@ -25,7 +25,7 @@
 @console /execute in minecraft:theta run fill -3364 210 1743 -3364 209 1743 red_concrete
 @console /execute in minecraft:theta run fill -3366 208 1743 -3364 208 1743 red_concrete
 
-@if util::executeAndQuerySuccess("execute if entity @e[limit=1,name={{player}},nbt={SelectedItem:{tag:{Tags:[cue]} } }]")
+@if util::executeAndQuerySuccess("execute in minecraft:theta if entity @p[name={{player}},nbt={SelectedItem:{id:'minecraft:stick',count:1,components:{'minecraft:custom_data':{Tags:['cue']} } } }]")
     @define Double distance = player.getLocation().asVector2().distance(entity.getLocation().asVector2())
     @define Vector2 direction = Vector2(entity.getX()-player.getX(), entity.getZ()-player.getZ()).normalise()
 

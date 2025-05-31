@@ -1,0 +1,6 @@
+# cue
+@bypass /script import interact -5196 67 -8609 Zero <#../scripts/IGetCue.msc>
+# reset
+@bypass /script import interact -5196 67 -8607 Zero <#../scripts/IReset.msc>
+# cue ball reset
+@bypass /script import interact -5196 67 -8605 Zero <#../scripts/IRespawnCue.msc>

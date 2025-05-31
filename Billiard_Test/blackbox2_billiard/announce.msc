@@ -1,0 +1,5 @@
+@using blackbox2_billiard
+
+@fast
+
+@console /execute in minecraft:overworld run tellraw @e[x=-5190,y=68,z=-8612,distance=0..30,type=player] {{slytools::cnv(message)}}

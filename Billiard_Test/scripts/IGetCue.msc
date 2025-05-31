@@ -12,4 +12,4 @@
 
 @delay 4
 
-@console /execute in minecraft:theta run give {{player.getName()}} stick{Tags:["cue"],display:{Name:'{"text":"Pool Cue","color":"dark_gray","bold":true}'}} 1
+@console /execute in minecraft:overworld run give {{player.getName()}} minecraft:stick[minecraft:custom_name='{"text":"Pool Cue","color":"dark_gray","bold":true}',minecraft:custom_data={Tags:["cue"]}] 1

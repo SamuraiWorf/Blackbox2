@@ -1,0 +1,44 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Item item = player.getItemInMainHand()
+
+@if item == null || item.getItemType() != "STICK"
+    @return
+@fi
+
+@if interactBlock
+    @player &4The balls are still moving!
+    @return
+@fi
+
+@if winner != 0
+    @player &4The game is already over!
+    @return
+@fi
+
+@var interactBlock = true
+
+@console /execute in minecraft:overworld run fill -5191 69 -8622 -5189 68 -8622 red_concrete
+
+@if util::executeAndQuerySuccess("execute in minecraft:overworld if entity @p[name={{player}},nbt={SelectedItem:{id:'minecraft:stick',count:1,components:{'minecraft:custom_data':{Tags:['cue']} } } }]")
+    @define Double distance = player.getLocation().asVector2().distance(entity.getLocation().asVector2())
+    @define Vector2 direction = Vector2(entity.getX()-player.getX(), entity.getZ()-player.getZ()).normalise()
+
+    @define Double speed = distance / 3.0D
+
+    @if distance / 3.0D > 1.2D
+        @var speed = 1.2D
+    @fi
+
+    @var balls[0].velocity = Vector2(direction.getX()*speed, direction.getZ()*speed)
+
+    @var update()
+
+    @var postShot()
+@fi
+
+@console /execute in minecraft:overworld run fill -5191 69 -8622 -5189 68 -8622 lime_concrete
+
+@var interactBlock = false

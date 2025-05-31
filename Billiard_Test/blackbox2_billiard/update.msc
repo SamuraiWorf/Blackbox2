@@ -1,0 +1,19 @@
+@using blackbox2_billiard
+
+@fast
+
+@for Int i in list::range(0,150)
+
+    @define Boolean anyMoving = false
+
+    @var anyMoving = updateMovement()
+    @var anyMoving = resolveCollisions() || anyMoving
+    @var render()
+
+    @if anyMoving == false
+        @return
+    @fi
+
+    @delay 1
+
+@done

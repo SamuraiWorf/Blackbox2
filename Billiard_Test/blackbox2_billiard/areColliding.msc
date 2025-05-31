@@ -1,0 +1,24 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Double relativeVelocityX = b1.velocity.getX() - b2.velocity.getX()
+@define Double relativeVelocityZ = b1.velocity.getZ() - b2.velocity.getZ()
+
+@if b1.position.distanceSq(b2.position) <= (2*radius)*(2*radius)
+    @return true
+@fi
+
+@define Double relativePosX = b1.position.getX() - b2.position.getX()
+@define Double relativePosZ = b1.position.getZ() - b2.position.getZ()
+@define Double a = relativeVelocityX * relativeVelocityX + relativeVelocityZ * relativeVelocityZ
+@define Double b = 2.0D * (relativeVelocityX * relativePosX + relativeVelocityZ * relativePosZ)
+@define Double c = (relativePosX * relativePosX + relativePosZ * relativePosZ) - math::pow(radius*2.0D, 2.0D)
+
+@define Double discriminant = b * b - 4.0D * a * c
+@if discriminant < 0.0D
+    @return false
+@fi
+
+@define Double t = (-b - math::sqrt(discriminant)) / (2.0D * a)
+@return t > 0.0D && t <= 1.0D

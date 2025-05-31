@@ -1,0 +1,75 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Ball ball = balls[index]
+@define Double x = ball.position.getX()
+@define Double z = ball.position.getZ()
+@define Double vx = ball.velocity.getX()
+@define Double vz = ball.velocity.getZ()
+
+@for Int i in list::range(0,16)
+    @if balls[i] != ball && balls[i].sunk == true
+        @if ball.position.distanceSq(balls[i].position) <= (2*radius)*(2*radius)
+            @define Double dist = ball.position.distance(balls[i].position)
+            @define Double overlap = 0.5D* (dist - (2*radius))
+            @define Vector2 dir = Vector2(ball.position.getX() - balls[i].position.getX(), ball.position.getZ() - balls[i].position.getZ()).normalise()
+            
+            @var ball.position = Vector2(ball.position.getX() - overlap * dir.getX(), ball.position.getZ() - overlap * dir.getZ())
+            @var balls[i].position = Vector2(balls[i].position.getX() + overlap * dir.getX(), balls[i].position.getZ() + overlap * dir.getZ())
+        @fi
+    @fi
+@done
+
+# X
+@if x < -5186D + radius && x > -5189.5D
+    @var ball.position = Vector2(-5186D + radius, z)
+    @var ball.velocity = Vector2(-vx, vz)
+@fi
+
+@if x > -5192D - radius && x < -5189.5D
+    @var ball.position = Vector2(-5192D - radius, z)
+    @var ball.velocity = Vector2(-vx, vz)
+@fi
+
+# Z
+@if z < -8607 + radius && z > -8610D
+    @var ball.position = Vector2(x, -8607 + radius)
+    @var ball.velocity = Vector2(vx, -vz)
+@fi
+
+@if z < -8613 + radius && z > -8617D
+    @var ball.position = Vector2(x, -8613 + radius)
+    @var ball.velocity = Vector2(vx, -vz)
+@fi
+
+@if z > -8617 - radius && z < -8614D
+    @var ball.position = Vector2(x, -8617 - radius)
+    @var ball.velocity = Vector2(vx, -vz)
+@fi
+
+@if z > -8611 - radius && z < -8607D
+    @var ball.position = Vector2(x, -8611 - radius)
+    @var ball.velocity = Vector2(vx, -vz)
+@fi
+
+# outer 4
+@if x - radius < -5194D
+    @var ball.position = Vector2(-5194D + radius, z)
+    @var ball.velocity = Vector2(0.0D, vz)
+@fi
+
+@if x + radius > -5185D
+    @var ball.position = Vector2(-5185D - radius, z)
+    @var ball.velocity = Vector2(0.0D, vz)
+@fi
+
+@if z - radius < -8619
+    @var ball.position = Vector2(x, -8619 + radius)
+    @var ball.velocity = Vector2(vx, 0.0D)
+@fi
+
+@if z + radius > -8605
+    @var ball.position = Vector2(x, -8605 - radius)
+    @var ball.velocity = Vector2(vx, 0.0D)
+@fi

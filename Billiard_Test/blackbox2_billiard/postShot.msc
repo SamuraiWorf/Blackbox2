@@ -1,0 +1,68 @@
+@using blackbox2_billiard
+
+@fast
+
+@define Boolean sunk8 = false
+@define Boolean sunkCue = false
+@define Boolean sunkOwn = false
+@define Boolean sunkOther = false
+
+@for Int i in sunkThisShot
+    @if i == 0
+        @var sunkCue = true
+    @elseif i == 8
+        @var sunk8 = true
+    @elseif team == solids
+        @if i < 8
+            @var sunkOwn = true
+        @else
+            @var sunkOther = true
+        @fi
+    @elseif team != solids
+        @if i > 8
+            @var sunkOwn = true
+        @else
+            @var sunkOther = true
+        @fi
+    @fi
+@done
+
+@if sunk8
+    @if team == solids && sunkCue == false && balls[1].sunk && balls[2].sunk && balls[3].sunk && balls[4].sunk && balls[5].sunk && balls[6].sunk && balls[7].sunk
+        @var winner = team
+    @elseif team != solids && sunkCue == false && balls[9].sunk && balls[10].sunk && balls[11].sunk && balls[12].sunk && balls[13].sunk && balls[14].sunk && balls[15].sunk
+        @var winner = team
+    @else
+        @var winner = 3 - team
+    @fi
+
+    @if winner == 1
+        @var announce("&fTeam &6&lCopper&f&r has &lwon!")
+    @else
+        @var announce("&fTeam &8&lCoal&f&r has &lwon!")
+    @fi
+@else
+
+    @if sunkCue || sunkOther || !sunkOwn
+        @var team = 3 - team
+    @fi
+
+    @if team == 1
+        @var announce("&fTeam &6&lCopper&f&r's turn!")
+        @console /execute in minecraft:overworld run setblock -5190 67 -8621 magenta_glazed_terracotta[facing=south]
+    @else
+        @var announce("&fTeam &8&lCoal&f&r's turn!")
+        @console /execute in minecraft:overworld run setblock -5190 67 -8621 magenta_glazed_terracotta[facing=north]
+    @fi
+
+    @if sunkCue
+        @console /execute in minecraft:overworld run teleport @e[name="blackbox2_billiard_cueBall"] -5189.5 63.8 -8608.5
+        @var balls[0].sunk = false
+        @var balls[0].height = 63.8D
+        @var balls[0].position = Vector2(-5189.5D,-8608.5D)
+        @var balls[0].velocity = Vector2(0.0D,0.0D)
+    @fi
+
+@fi
+
+@var sunkThisShot = Int[]

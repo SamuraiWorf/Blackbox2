@@ -64,7 +64,7 @@
   @var uuidstring = u[0] + u[1] + u[2] + u[3] + u[4] + u[5] + u[6] + u[7] + "-" + u[8] + u[9] + u[10] + u[11] + "-" + u[12] + u[13] + u[14] + u[15] + "-" + u[16] + u[17] + u[18] + u[19] + "-" + u[20] + u[21] + u[22] + u[23] + u[24] + u[25] + u[26] + u[27] + u[28] + u[29] + u[30] + u[31]
 @fi
 
-@console /execute in minecraft:theta run kill @e[name="blackbox2_billiard_cueBall"]
-@console /execute in minecraft:theta run summon armor_stand -3364.5 204.8 1760.5 {UUID:[I;{{int_form_UUID[0]}},{{int_form_UUID[1]}},{{int_form_UUID[2]}},{{int_form_UUID[3]}}],DisabledSlots:4144959,Invisible:1b,Silent:1b,Small:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"blackbox2_billiard_cueBall"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;847790243,215764893,-1399049444,-1259991534],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmI2MzQwMWEzY2YzMmYyODVhZjdlZTJkMzBlZTMzMzBjMzMzYTk0NmU4ZjBhODE2OWVlMTBkNTcxZmI4MDdmIn19fQ=="}]}}}}]}
+@console /execute in minecraft:theta run minecraft:kill @e[name="blackbox2_billiard_cueBall"]
+@console /execute in minecraft:theta run summon armor_stand -3364.5 204.8 1760.5 {ArmorItems:[{},{},{},{components:{"minecraft:profile":{id:[I;847790243,215764893,-1399049444,-1259991534],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmI2MzQwMWEzY2YzMmYyODVhZjdlZTJkMzBlZTMzMzBjMzMzYTk0NmU4ZjBhODE2OWVlMTBkNTcxZmI4MDdmIn19fQ=="}]}},count:1,id:"minecraft:player_head"}],CustomName:'{"text":"blackbox2_billiard_cueBall"}',DisabledSlots:4144959,Invisible:1b,Invulnerable:1b,NoGravity:1b,Silent:1b,Small:1b,UUID:[I;{{int_form_UUID[0]}},{{int_form_UUID[1]}},{{int_form_UUID[2]}},{{int_form_UUID[3]}}]}
 
-@bypass /script import entity {{uuidstring}} https://paste.minr.org/hapifopori
+@bypass /script import entity {{uuidstring}} https://paste.minr.org/kifalazono

@@ -57,7 +57,7 @@
 @done
 
 @for Int i in list::range(1,16)
-    @console /execute in minecraft:theta run kill @e[name="{{ballEntityNames[i]}}"]
+    @console /execute in minecraft:theta run minecraft:kill @e[name="{{ballEntityNames[i]}}"]
 @done
 
 @slow

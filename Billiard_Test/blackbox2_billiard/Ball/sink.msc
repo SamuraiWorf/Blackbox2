@@ -1,0 +1,25 @@
+@using blackbox2_billiard
+
+@var this.sunk = true
+@var announce("{{ballVisualNames[index]}} &r&fhas been sunk!")
+
+@define Int offset = index*4
+
+@if index == 8
+    @define BlockLocation bl = copperPlacements[sunkCopper]
+    @if team == 2
+        @var bl = coalPlacements[sunkCoal]
+    @fi
+    @console /execute in minecraft:overworld run setblock {{bl.getX()}} {{bl.getY()}} {{bl.getZ()}} minecraft:player_wall_head[facing=south]{SkullOwner:{Id:[I;{{headUUIDs[offset]}},{{headUUIDs[offset+1]}},{{headUUIDs[offset+2]}},{{headUUIDs[offset+3]}}],Properties:{textures:[{Value:"{{headTextures[index]}}"}]}}} 
+@elseif index != 0
+    @define BlockLocation bl = copperPlacements[sunkCopper]
+    @if (index < 8 && solids == 2) || (index > 8 && solids == 1)
+        @var bl = coalPlacements[sunkCoal]
+    @fi
+    @console /execute in minecraft:overworld run setblock {{bl.getX()}} {{bl.getY()}} {{bl.getZ()}} minecraft:player_wall_head[facing=south]{SkullOwner:{Id:[I;{{headUUIDs[offset]}},{{headUUIDs[offset+1]}},{{headUUIDs[offset+2]}},{{headUUIDs[offset+3]}}],Properties:{textures:[{Value:"{{headTextures[index]}}"}]}}}
+    @if (index < 8 && solids == 2) || (index > 8 && solids == 1)
+        @var sunkCoal = sunkCoal + 1
+    @else
+        @var sunkCopper = sunkCopper + 1
+    @fi
+@fi

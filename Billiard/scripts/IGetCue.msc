@@ -1,0 +1,15 @@
+@using blackbox2_billiard
+
+@cooldown 5
+
+@for Int i in list::range(0, 36)
+    @define Item item = player.getItem(i)
+
+    @if item != null && item.getItemType() == "STICK" 
+        @var player.setItem(i, null)
+    @fi
+@done
+
+@delay 4
+
+@console /execute in minecraft:theta run give {{player.getName()}} minecraft:stick[minecraft:custom_name='{"text":"Pool Cue","color":"dark_gray","bold":true}',minecraft:custom_data={Tags:["cue"]}] 1

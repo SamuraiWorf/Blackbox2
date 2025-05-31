@@ -2,22 +2,22 @@
 
     # cue, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
     blackbox2_billiard::Ball[] balls = blackbox2_billiard::Ball[
-        blackbox2_billiard::Ball(Vector2(-3364.5D,1760.5D)),
-        blackbox2_billiard::Ball(Vector2(-3364.125D,1755.25D)),
-        blackbox2_billiard::Ball(Vector2(-3364.875D,1755.25D)),
-        blackbox2_billiard::Ball(Vector2(-3363.375D,1753.75D)),
-        blackbox2_billiard::Ball(Vector2(-3364.875D,1753.75D)),
-        blackbox2_billiard::Ball(Vector2(-3363.0D,1753D)),
-        blackbox2_billiard::Ball(Vector2(-3364.5D,1753D)),
-        blackbox2_billiard::Ball(Vector2(-3366.0D,1753D)),
-        blackbox2_billiard::Ball(Vector2(-3364.5D,1754.5D)),
-        blackbox2_billiard::Ball(Vector2(-3364.5D,1756D)),
-        blackbox2_billiard::Ball(Vector2(-3363.75D,1754.5D)),
-        blackbox2_billiard::Ball(Vector2(-3365.25D,1754.5D)),
-        blackbox2_billiard::Ball(Vector2(-3364.125D,1753.75D)),
-        blackbox2_billiard::Ball(Vector2(-3365.625D,1753.75D)),
-        blackbox2_billiard::Ball(Vector2(-3363.75D,1753D)),
-        blackbox2_billiard::Ball(Vector2(-3365.25D,1753D))
+        blackbox2_billiard::Ball(Vector2(-5189.5D,-8608.5D)),
+        blackbox2_billiard::Ball(Vector2(-5189.125D,-8613.25D)),
+        blackbox2_billiard::Ball(Vector2(-5189.875D,-8613.25D)),
+        blackbox2_billiard::Ball(Vector2(-5188.375D,-8614.75D)),
+        blackbox2_billiard::Ball(Vector2(-5189.875D,-8614.75D)),
+        blackbox2_billiard::Ball(Vector2(-5188.0D,-8615.5D)),
+        blackbox2_billiard::Ball(Vector2(-5189.5D,-8615.5D)),
+        blackbox2_billiard::Ball(Vector2(-5191.0D,-8615.5D)),
+        blackbox2_billiard::Ball(Vector2(-5189.5D,-8614D)),
+        blackbox2_billiard::Ball(Vector2(-5189.5D,-8612.5D)),
+        blackbox2_billiard::Ball(Vector2(-5188.75D,-8614D)),
+        blackbox2_billiard::Ball(Vector2(-5190.25D,-8614D)),
+        blackbox2_billiard::Ball(Vector2(-5189.125D,-8614.75D)),
+        blackbox2_billiard::Ball(Vector2(-5190.625D,-8614.75D)),
+        blackbox2_billiard::Ball(Vector2(-5188.75D,-8615.5D)),
+        blackbox2_billiard::Ball(Vector2(-5190.25D,-8615.5D))
     ]
 
     # cue, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 (each *4 / each 1 line)
@@ -101,25 +101,25 @@
     ]
 
     BlockLocation[] copperPlacements = BlockLocation[
-        BlockLocation(-3372,210,1744,"Theta"),
-        BlockLocation(-3371,210,1744,"Theta"),
-        BlockLocation(-3370,210,1744,"Theta"),
-        BlockLocation(-3369,210,1744,"Theta"),
-        BlockLocation(-3372,209,1744,"Theta"),
-        BlockLocation(-3371,209,1744,"Theta"),
-        BlockLocation(-3370,209,1744,"Theta"),
-        BlockLocation(-3369,209,1744,"Theta")
+        BlockLocation(-5194,68,-8621,"Zero"),
+        BlockLocation(-5193,68,-8621,"Zero"),
+        BlockLocation(-5195,67,-8621,"Zero"),
+        BlockLocation(-5194,67,-8621,"Zero"),
+        BlockLocation(-5193,67,-8621,"Zero"),
+        BlockLocation(-5192,67,-8621,"Zero"),
+        BlockLocation(-5194,66,-8621,"Zero"),
+        BlockLocation(-5193,66,-8621,"Zero")
     ]
 
     BlockLocation[] coalPlacements = BlockLocation[
-        BlockLocation(-3361,210,1744,"Theta"),
-        BlockLocation(-3360,210,1744,"Theta"),
-        BlockLocation(-3359,210,1744,"Theta"),
-        BlockLocation(-3358,210,1744,"Theta"),
-        BlockLocation(-3361,209,1744,"Theta"),
-        BlockLocation(-3360,209,1744,"Theta"),
-        BlockLocation(-3359,209,1744,"Theta"),
-        BlockLocation(-3358,209,1744,"Theta")
+        BlockLocation(-5187,68,-8621,"Zero"),
+        BlockLocation(-5186,68,-8621,"Zero"),
+        BlockLocation(-5188,67,-8621,"Zero"),
+        BlockLocation(-5187,67,-8621,"Zero"),
+        BlockLocation(-5186,67,-8621,"Zero"),
+        BlockLocation(-5185,67,-8621,"Zero"),
+        BlockLocation(-5187,66,-8621,"Zero"),
+        BlockLocation(-5186,66,-8621,"Zero")
     ]
 
     Boolean interactBlock = false
